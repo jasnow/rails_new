@@ -1,5 +1,5 @@
 {
-  "name": "Rails_6_new",
+  "name": "rails_6_new",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
