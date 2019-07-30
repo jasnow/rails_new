@@ -2,12 +2,8 @@
 #   srb rbi todo
 
 # typed: ignore
-module ::ActionCable::Connection::TestCase; end
 module ::ActionController::Base; end
-module ::ActiveJob::Base; end
-module ::Spring; end
 module ActionDispatch::Routing::Mapper; end
-module ActionDispatch::SystemTestCase; end
 module ActionMailer::Base::Mail::Message; end
 module ActiveModel::AttributeMethods; end
 module ActiveModel::Conversion; end
@@ -56,12 +52,7 @@ module ActiveRecord::Translation; end
 module ActiveSupport::ActionController::Base; end
 module ActiveSupport::Benchmarkable; end
 module ActiveSupport::DescendantsTracker; end
-module ActiveSupport::EventedFileUpdateChecker; end
-module ActiveSupport::Logger; end
 module ActiveSupport::Multibyte::Chars; end
 module ActiveSupport::StringInquirer; end
-module ActiveSupport::TaggedLogging; end
 module ActiveSupport::TimeWithZone; end
-module ApplicationCable::ActionCable::Channel::Base; end
-module ApplicationCable::ActionCable::Connection::Base; end
 module Gem::SilentUI; end
