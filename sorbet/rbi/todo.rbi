@@ -56,4 +56,3 @@ module ActiveSupport::Multibyte::Chars; end
 module ActiveSupport::StringInquirer; end
 module ActiveSupport::TimeWithZone; end
 module Gem::SilentUI; end
-module Minitest::Runnable; end
