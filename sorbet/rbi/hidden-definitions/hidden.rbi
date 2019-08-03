@@ -12421,8 +12421,6 @@ class Array
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
   include ::JSON::Ext::Generator::GeneratorMethods::Array
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
-  def append(*_); end
-
   def bsearch(); end
 
   def bsearch_index(); end
@@ -12434,8 +12432,6 @@ class Array
   def flatten!(*_); end
 
   def pack(*_); end
-
-  def prepend(*_); end
 
   def quote(); end
 
@@ -26197,14 +26193,6 @@ end
 
 class ThreadGroup
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
-  def add(_); end
-
-  def enclose(); end
-
-  def enclosed?(); end
-
-  def list(); end
-  Default = ::T.let(nil, ::T.untyped)
 end
 
 module ThreadSafe
