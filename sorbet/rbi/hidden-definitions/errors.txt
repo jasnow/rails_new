@@ -23,8 +23,6 @@
 # wrong constant name <RESERVED_10>
 # wrong constant name <RESERVED_110>
 # wrong constant name <RESERVED_111>
-# wrong constant name <RESERVED_112>
-# wrong constant name <RESERVED_113>
 # wrong constant name <RESERVED_11>
 # wrong constant name <RESERVED_12>
 # wrong constant name <RESERVED_13>
@@ -147,7 +145,6 @@
 # wrong constant name response_body
 # wrong constant name response_body=
 # wrong constant name send_action
-# wrong constant name <static-init>
 # wrong constant name abstract
 # wrong constant name abstract!
 # wrong constant name abstract?
@@ -730,7 +727,6 @@
 # wrong constant name rescue_handlers?
 # wrong constant name stylesheets_dir
 # wrong constant name stylesheets_dir=
-# wrong constant name <static-init>
 # wrong constant name __callbacks
 # wrong constant name __callbacks=
 # wrong constant name __callbacks?
@@ -843,9 +839,6 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <Class:ClassMethods>
-# wrong constant name add_flash_types
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <Class:ClassMethods>
@@ -973,12 +966,9 @@
 # wrong constant name middleware_stack
 # wrong constant name middleware_stack=
 # wrong constant name middleware_stack?
-# wrong constant name params
 # wrong constant name params=
-# wrong constant name request
 # wrong constant name request=
 # wrong constant name reset_session
-# wrong constant name response
 # wrong constant name response=
 # wrong constant name response_body=
 # wrong constant name response_code
@@ -989,7 +979,6 @@
 # wrong constant name status=
 # wrong constant name to_a
 # wrong constant name url_for
-# wrong constant name <static-init>
 # wrong constant name action
 # wrong constant name binary_params_for?
 # wrong constant name controller_name
@@ -1091,11 +1080,8 @@
 # wrong constant name setup_renderer!
 # wrong constant name <static-init>
 # wrong constant name <static-init>
-# wrong constant name <Class:ClassMethods>
 # wrong constant name <Class:ProtectionMethods>
-# wrong constant name protect_from_forgery
 # wrong constant name skip_forgery_protection
-# wrong constant name <static-init>
 # wrong constant name <Class:Exception>
 # wrong constant name <Class:NullSession>
 # wrong constant name <Class:ResetSession>
@@ -1106,13 +1092,13 @@
 # wrong constant name <Class:NullSessionHash>
 # wrong constant name handle_unverified_request
 # wrong constant name initialize
-# uninitialized constant #<Class:0x00007f8d755b2fc0>::DOMAIN_REGEXP
+# uninitialized constant #<Class:0x00007fa9314f2bd0>::DOMAIN_REGEXP
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullCookieJar::DOMAIN_REGEXP
-# uninitialized constant #<Class:0x00007f8d755b2fc0>::Elem
+# uninitialized constant #<Class:0x00007fa9314f2bd0>::Elem
 # wrong constant name write
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007f8d755b3178>::Elem
-# uninitialized constant #<Class:0x00007f8d755b3178>::Unspecified
+# uninitialized constant #<Class:0x00007fa9314f2e78>::Elem
+# uninitialized constant #<Class:0x00007fa9314f2e78>::Unspecified
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullSessionHash::Unspecified
 # wrong constant name initialize
 # wrong constant name <static-init>
@@ -4663,26 +4649,26 @@
 # wrong constant name cache_version
 # wrong constant name to_param
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::ACTIONS
+# uninitialized constant #<Class:0x00007fa936c6e440>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::CALLBACKS
+# uninitialized constant #<Class:0x00007fa936c6e440>::CALLBACKS
 # Did you mean?  ActiveRecord::Callbacks
 #                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fa936c6e440>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa936c6e440>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fa936c6e440>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fa936c6e440>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fa936c6e440>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f8d7a5fd5e8>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007fa936c6e440>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -6359,35 +6345,6 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
-# uninitialized constant ApplicationController::ACTION_OPTIONS
-# Did you mean?  ApplicationController::ACTION_OPTIONS
-# uninitialized constant ApplicationController::AUTHENTICITY_TOKEN_LENGTH
-# Did you mean?  ApplicationController::AUTHENTICITY_TOKEN_LENGTH
-# uninitialized constant ApplicationController::CALLBACK_FILTER_TYPES
-# Did you mean?  ApplicationController::CALLBACK_FILTER_TYPES
-# uninitialized constant ApplicationController::DEFAULT_PROTECTED_INSTANCE_VARIABLES
-# Did you mean?  ApplicationController::DEFAULT_PROTECTED_INSTANCE_VARIABLES
-# uninitialized constant ApplicationController::DEFAULT_SEND_FILE_DISPOSITION
-# Did you mean?  ApplicationController::DEFAULT_SEND_FILE_DISPOSITION
-# uninitialized constant ApplicationController::DEFAULT_SEND_FILE_TYPE
-# Did you mean?  ApplicationController::DEFAULT_SEND_FILE_TYPE
-# uninitialized constant ApplicationController::EXCLUDE_PARAMETERS
-# Did you mean?  ApplicationController::EXCLUDE_PARAMETERS
-# uninitialized constant ApplicationController::MODULES
-# Did you mean?  Module
-#                ApplicationController::MODULES
-# uninitialized constant ApplicationController::NULL_ORIGIN_MESSAGE
-# Did you mean?  ApplicationController::NULL_ORIGIN_MESSAGE
-# uninitialized constant ApplicationController::PROTECTED_IVARS
-# Did you mean?  ApplicationController::PROTECTED_IVARS
-# uninitialized constant ApplicationController::REDIRECT_OPTIONS
-# Did you mean?  ApplicationController::REDIRECT_OPTIONS
-# uninitialized constant ApplicationController::RENDERERS
-# Did you mean?  ApplicationController::RENDERERS
-# uninitialized constant ApplicationController::RENDER_FORMATS_IN_PRIORITY
-# Did you mean?  ApplicationController::RENDER_FORMATS_IN_PRIORITY
-# uninitialized constant ApplicationController::URL_OPTIONS
-# Did you mean?  ApplicationController::URL_OPTIONS
 # uninitialized constant ApplicationJob::CALLBACK_FILTER_TYPES
 # Did you mean?  ApplicationJob::CALLBACK_FILTER_TYPES
 # wrong constant name <static-init>
@@ -7425,38 +7382,6 @@
 # uninitialized constant FileUtils::DryRun::VERSION
 # Did you mean?  FileUtils::DryRun::VERSION
 #                FileUtils::VERSION
-# wrong constant name blockdev?
-# wrong constant name chardev?
-# wrong constant name chmod
-# wrong constant name chown
-# wrong constant name copy
-# wrong constant name copy_file
-# wrong constant name copy_metadata
-# wrong constant name dereference?
-# wrong constant name directory?
-# wrong constant name door?
-# wrong constant name entries
-# wrong constant name exist?
-# wrong constant name file?
-# wrong constant name initialize
-# wrong constant name lstat
-# wrong constant name lstat!
-# wrong constant name path
-# wrong constant name pipe?
-# wrong constant name platform_support
-# wrong constant name postorder_traverse
-# wrong constant name prefix
-# wrong constant name preorder_traverse
-# wrong constant name rel
-# wrong constant name remove
-# wrong constant name remove_dir1
-# wrong constant name remove_file
-# wrong constant name socket?
-# wrong constant name stat
-# wrong constant name stat!
-# wrong constant name symlink?
-# wrong constant name traverse
-# wrong constant name wrap_traverse
 # uninitialized constant FileUtils::NoWrite::LN_SUPPORTED
 # Did you mean?  FileUtils::NoWrite::LN_SUPPORTED
 #                FileUtils::LN_SUPPORTED
@@ -7475,56 +7400,6 @@
 # uninitialized constant FileUtils::Verbose::VERSION
 # Did you mean?  FileUtils::Verbose::VERSION
 #                FileUtils::VERSION
-# undefined singleton method `cp_r$1' for `FileUtils'
-# undefined singleton method `mkdir_p$1' for `FileUtils'
-# wrong constant name cd
-# wrong constant name chdir
-# wrong constant name chmod
-# wrong constant name chmod_R
-# wrong constant name chown
-# wrong constant name chown_R
-# wrong constant name cmp
-# wrong constant name collect_method
-# wrong constant name commands
-# wrong constant name compare_file
-# wrong constant name compare_stream
-# wrong constant name copy
-# wrong constant name copy_entry
-# wrong constant name copy_file
-# wrong constant name copy_stream
-# wrong constant name cp
-# wrong constant name cp_r$1
-# wrong constant name getwd
-# wrong constant name have_option?
-# wrong constant name identical?
-# wrong constant name install
-# wrong constant name link
-# wrong constant name ln
-# wrong constant name ln_s
-# wrong constant name ln_sf
-# wrong constant name makedirs
-# wrong constant name mkdir
-# wrong constant name mkdir_p$1
-# wrong constant name mkpath
-# wrong constant name move
-# wrong constant name mv
-# wrong constant name options
-# wrong constant name options_of
-# wrong constant name private_module_function
-# wrong constant name pwd
-# wrong constant name remove
-# wrong constant name remove_dir
-# wrong constant name remove_entry
-# wrong constant name remove_entry_secure
-# wrong constant name remove_file
-# wrong constant name rm
-# wrong constant name rm_f
-# wrong constant name rm_rf
-# wrong constant name rmdir
-# wrong constant name rmtree
-# wrong constant name safe_unlink
-# wrong constant name symlink
-# wrong constant name uptodate?
 # undefined method `rationalize$2' for class `Float'
 # Did you mean?  Rational
 # uninitialized constant Float::EXABYTE
@@ -9472,7 +9347,7 @@
 # wrong constant name transform_values
 # wrong constant name transform_values!
 # wrong constant name update
-# wrong constant name try_convert
+# wrong constant name from_xml
 # wrong constant name <Class:Gettext>
 # wrong constant name <Class:Locale>
 # wrong constant name <Class:Middleware>
@@ -9963,8 +9838,8 @@
 # uninitialized constant Mail::BccField::CRLF
 # Did you mean?  Mail::BccField::CRLF
 # uninitialized constant Mail::BccField::CR_ENCODED
-# Did you mean?  Mail::BccField::LF_ENCODED
-#                Mail::BccField::CR_ENCODED
+# Did you mean?  Mail::BccField::CR_ENCODED
+#                Mail::BccField::LF_ENCODED
 # uninitialized constant Mail::BccField::EMPTY
 # Did you mean?  Mail::BccField::EMPTY
 # uninitialized constant Mail::BccField::ENCODED_VALUE
@@ -9996,8 +9871,8 @@
 # uninitialized constant Mail::BccField::LF
 # Did you mean?  Mail::BccField::LF
 # uninitialized constant Mail::BccField::LF_ENCODED
-# Did you mean?  Mail::BccField::LF_ENCODED
-#                Mail::BccField::CR_ENCODED
+# Did you mean?  Mail::BccField::CR_ENCODED
+#                Mail::BccField::LF_ENCODED
 # uninitialized constant Mail::BccField::NULL_SENDER
 # Did you mean?  Mail::BccField::NULL_SENDER
 # uninitialized constant Mail::BccField::PHRASE_UNSAFE
@@ -10041,8 +9916,8 @@
 # uninitialized constant Mail::CcField::CRLF
 # Did you mean?  Mail::CcField::CRLF
 # uninitialized constant Mail::CcField::CR_ENCODED
-# Did you mean?  Mail::CcField::LF_ENCODED
-#                Mail::CcField::CR_ENCODED
+# Did you mean?  Mail::CcField::CR_ENCODED
+#                Mail::CcField::LF_ENCODED
 # uninitialized constant Mail::CcField::EMPTY
 # Did you mean?  Mail::CcField::EMPTY
 # uninitialized constant Mail::CcField::ENCODED_VALUE
@@ -10074,8 +9949,8 @@
 # uninitialized constant Mail::CcField::LF
 # Did you mean?  Mail::CcField::LF
 # uninitialized constant Mail::CcField::LF_ENCODED
-# Did you mean?  Mail::CcField::LF_ENCODED
-#                Mail::CcField::CR_ENCODED
+# Did you mean?  Mail::CcField::CR_ENCODED
+#                Mail::CcField::LF_ENCODED
 # uninitialized constant Mail::CcField::NULL_SENDER
 # Did you mean?  Mail::CcField::NULL_SENDER
 # uninitialized constant Mail::CcField::PHRASE_UNSAFE
@@ -10126,8 +10001,8 @@
 # uninitialized constant Mail::CommentsField::CRLF
 # Did you mean?  Mail::CommentsField::CRLF
 # uninitialized constant Mail::CommentsField::CR_ENCODED
-# Did you mean?  Mail::CommentsField::LF_ENCODED
-#                Mail::CommentsField::CR_ENCODED
+# Did you mean?  Mail::CommentsField::CR_ENCODED
+#                Mail::CommentsField::LF_ENCODED
 # uninitialized constant Mail::CommentsField::EMPTY
 # Did you mean?  Mail::CommentsField::EMPTY
 # uninitialized constant Mail::CommentsField::ENCODED_VALUE
@@ -10159,8 +10034,8 @@
 # uninitialized constant Mail::CommentsField::LF
 # Did you mean?  Mail::CommentsField::LF
 # uninitialized constant Mail::CommentsField::LF_ENCODED
-# Did you mean?  Mail::CommentsField::LF_ENCODED
-#                Mail::CommentsField::CR_ENCODED
+# Did you mean?  Mail::CommentsField::CR_ENCODED
+#                Mail::CommentsField::LF_ENCODED
 # uninitialized constant Mail::CommentsField::NULL_SENDER
 # Did you mean?  Mail::CommentsField::NULL_SENDER
 # uninitialized constant Mail::CommentsField::PHRASE_UNSAFE
@@ -10204,8 +10079,8 @@
 # uninitialized constant Mail::CommonField::CRLF
 # Did you mean?  Mail::CommonField::CRLF
 # uninitialized constant Mail::CommonField::CR_ENCODED
-# Did you mean?  Mail::CommonField::LF_ENCODED
-#                Mail::CommonField::CR_ENCODED
+# Did you mean?  Mail::CommonField::CR_ENCODED
+#                Mail::CommonField::LF_ENCODED
 # uninitialized constant Mail::CommonField::EMPTY
 # Did you mean?  Mail::CommonField::EMPTY
 # uninitialized constant Mail::CommonField::ENCODED_VALUE
@@ -10238,8 +10113,8 @@
 # uninitialized constant Mail::CommonField::LF
 # Did you mean?  Mail::CommonField::LF
 # uninitialized constant Mail::CommonField::LF_ENCODED
-# Did you mean?  Mail::CommonField::LF_ENCODED
-#                Mail::CommonField::CR_ENCODED
+# Did you mean?  Mail::CommonField::CR_ENCODED
+#                Mail::CommonField::LF_ENCODED
 # uninitialized constant Mail::CommonField::NULL_SENDER
 # Did you mean?  Mail::CommonField::NULL_SENDER
 # uninitialized constant Mail::CommonField::PHRASE_UNSAFE
@@ -10281,8 +10156,8 @@
 # uninitialized constant Mail::ContentDescriptionField::CRLF
 # Did you mean?  Mail::ContentDescriptionField::CRLF
 # uninitialized constant Mail::ContentDescriptionField::CR_ENCODED
-# Did you mean?  Mail::ContentDescriptionField::LF_ENCODED
-#                Mail::ContentDescriptionField::CR_ENCODED
+# Did you mean?  Mail::ContentDescriptionField::CR_ENCODED
+#                Mail::ContentDescriptionField::LF_ENCODED
 # uninitialized constant Mail::ContentDescriptionField::EMPTY
 # Did you mean?  Mail::ContentDescriptionField::EMPTY
 # uninitialized constant Mail::ContentDescriptionField::ENCODED_VALUE
@@ -10314,8 +10189,8 @@
 # uninitialized constant Mail::ContentDescriptionField::LF
 # Did you mean?  Mail::ContentDescriptionField::LF
 # uninitialized constant Mail::ContentDescriptionField::LF_ENCODED
-# Did you mean?  Mail::ContentDescriptionField::LF_ENCODED
-#                Mail::ContentDescriptionField::CR_ENCODED
+# Did you mean?  Mail::ContentDescriptionField::CR_ENCODED
+#                Mail::ContentDescriptionField::LF_ENCODED
 # uninitialized constant Mail::ContentDescriptionField::NULL_SENDER
 # Did you mean?  Mail::ContentDescriptionField::NULL_SENDER
 # uninitialized constant Mail::ContentDescriptionField::PHRASE_UNSAFE
@@ -10363,8 +10238,8 @@
 # uninitialized constant Mail::ContentDispositionField::CRLF
 # Did you mean?  Mail::ContentDispositionField::CRLF
 # uninitialized constant Mail::ContentDispositionField::CR_ENCODED
-# Did you mean?  Mail::ContentDispositionField::LF_ENCODED
-#                Mail::ContentDispositionField::CR_ENCODED
+# Did you mean?  Mail::ContentDispositionField::CR_ENCODED
+#                Mail::ContentDispositionField::LF_ENCODED
 # uninitialized constant Mail::ContentDispositionField::EMPTY
 # Did you mean?  Mail::ContentDispositionField::EMPTY
 # uninitialized constant Mail::ContentDispositionField::ENCODED_VALUE
@@ -10396,8 +10271,8 @@
 # uninitialized constant Mail::ContentDispositionField::LF
 # Did you mean?  Mail::ContentDispositionField::LF
 # uninitialized constant Mail::ContentDispositionField::LF_ENCODED
-# Did you mean?  Mail::ContentDispositionField::LF_ENCODED
-#                Mail::ContentDispositionField::CR_ENCODED
+# Did you mean?  Mail::ContentDispositionField::CR_ENCODED
+#                Mail::ContentDispositionField::LF_ENCODED
 # uninitialized constant Mail::ContentDispositionField::NULL_SENDER
 # Did you mean?  Mail::ContentDispositionField::NULL_SENDER
 # uninitialized constant Mail::ContentDispositionField::PHRASE_UNSAFE
@@ -10441,8 +10316,8 @@
 # uninitialized constant Mail::ContentIdField::CRLF
 # Did you mean?  Mail::ContentIdField::CRLF
 # uninitialized constant Mail::ContentIdField::CR_ENCODED
-# Did you mean?  Mail::ContentIdField::LF_ENCODED
-#                Mail::ContentIdField::CR_ENCODED
+# Did you mean?  Mail::ContentIdField::CR_ENCODED
+#                Mail::ContentIdField::LF_ENCODED
 # uninitialized constant Mail::ContentIdField::EMPTY
 # Did you mean?  Mail::ContentIdField::EMPTY
 # uninitialized constant Mail::ContentIdField::ENCODED_VALUE
@@ -10474,8 +10349,8 @@
 # uninitialized constant Mail::ContentIdField::LF
 # Did you mean?  Mail::ContentIdField::LF
 # uninitialized constant Mail::ContentIdField::LF_ENCODED
-# Did you mean?  Mail::ContentIdField::LF_ENCODED
-#                Mail::ContentIdField::CR_ENCODED
+# Did you mean?  Mail::ContentIdField::CR_ENCODED
+#                Mail::ContentIdField::LF_ENCODED
 # uninitialized constant Mail::ContentIdField::NULL_SENDER
 # Did you mean?  Mail::ContentIdField::NULL_SENDER
 # uninitialized constant Mail::ContentIdField::PHRASE_UNSAFE
@@ -10523,8 +10398,8 @@
 # uninitialized constant Mail::ContentLocationField::CRLF
 # Did you mean?  Mail::ContentLocationField::CRLF
 # uninitialized constant Mail::ContentLocationField::CR_ENCODED
-# Did you mean?  Mail::ContentLocationField::LF_ENCODED
-#                Mail::ContentLocationField::CR_ENCODED
+# Did you mean?  Mail::ContentLocationField::CR_ENCODED
+#                Mail::ContentLocationField::LF_ENCODED
 # uninitialized constant Mail::ContentLocationField::EMPTY
 # Did you mean?  Mail::ContentLocationField::EMPTY
 # uninitialized constant Mail::ContentLocationField::ENCODED_VALUE
@@ -10556,8 +10431,8 @@
 # uninitialized constant Mail::ContentLocationField::LF
 # Did you mean?  Mail::ContentLocationField::LF
 # uninitialized constant Mail::ContentLocationField::LF_ENCODED
-# Did you mean?  Mail::ContentLocationField::LF_ENCODED
-#                Mail::ContentLocationField::CR_ENCODED
+# Did you mean?  Mail::ContentLocationField::CR_ENCODED
+#                Mail::ContentLocationField::LF_ENCODED
 # uninitialized constant Mail::ContentLocationField::NULL_SENDER
 # Did you mean?  Mail::ContentLocationField::NULL_SENDER
 # uninitialized constant Mail::ContentLocationField::PHRASE_UNSAFE
@@ -10604,8 +10479,8 @@
 # uninitialized constant Mail::ContentTransferEncodingField::CRLF
 # Did you mean?  Mail::ContentTransferEncodingField::CRLF
 # uninitialized constant Mail::ContentTransferEncodingField::CR_ENCODED
-# Did you mean?  Mail::ContentTransferEncodingField::LF_ENCODED
-#                Mail::ContentTransferEncodingField::CR_ENCODED
+# Did you mean?  Mail::ContentTransferEncodingField::CR_ENCODED
+#                Mail::ContentTransferEncodingField::LF_ENCODED
 # uninitialized constant Mail::ContentTransferEncodingField::EMPTY
 # Did you mean?  Mail::ContentTransferEncodingField::EMPTY
 # uninitialized constant Mail::ContentTransferEncodingField::ENCODED_VALUE
@@ -10637,8 +10512,8 @@
 # uninitialized constant Mail::ContentTransferEncodingField::LF
 # Did you mean?  Mail::ContentTransferEncodingField::LF
 # uninitialized constant Mail::ContentTransferEncodingField::LF_ENCODED
-# Did you mean?  Mail::ContentTransferEncodingField::LF_ENCODED
-#                Mail::ContentTransferEncodingField::CR_ENCODED
+# Did you mean?  Mail::ContentTransferEncodingField::CR_ENCODED
+#                Mail::ContentTransferEncodingField::LF_ENCODED
 # uninitialized constant Mail::ContentTransferEncodingField::NULL_SENDER
 # Did you mean?  Mail::ContentTransferEncodingField::NULL_SENDER
 # uninitialized constant Mail::ContentTransferEncodingField::PHRASE_UNSAFE
@@ -10687,8 +10562,8 @@
 # uninitialized constant Mail::ContentTypeField::CRLF
 # Did you mean?  Mail::ContentTypeField::CRLF
 # uninitialized constant Mail::ContentTypeField::CR_ENCODED
-# Did you mean?  Mail::ContentTypeField::LF_ENCODED
-#                Mail::ContentTypeField::CR_ENCODED
+# Did you mean?  Mail::ContentTypeField::CR_ENCODED
+#                Mail::ContentTypeField::LF_ENCODED
 # uninitialized constant Mail::ContentTypeField::EMPTY
 # Did you mean?  Mail::ContentTypeField::EMPTY
 # uninitialized constant Mail::ContentTypeField::ENCODED_VALUE
@@ -10720,8 +10595,8 @@
 # uninitialized constant Mail::ContentTypeField::LF
 # Did you mean?  Mail::ContentTypeField::LF
 # uninitialized constant Mail::ContentTypeField::LF_ENCODED
-# Did you mean?  Mail::ContentTypeField::LF_ENCODED
-#                Mail::ContentTypeField::CR_ENCODED
+# Did you mean?  Mail::ContentTypeField::CR_ENCODED
+#                Mail::ContentTypeField::LF_ENCODED
 # uninitialized constant Mail::ContentTypeField::NULL_SENDER
 # Did you mean?  Mail::ContentTypeField::NULL_SENDER
 # uninitialized constant Mail::ContentTypeField::PHRASE_UNSAFE
@@ -10765,8 +10640,8 @@
 # uninitialized constant Mail::DateField::CRLF
 # Did you mean?  Mail::DateField::CRLF
 # uninitialized constant Mail::DateField::CR_ENCODED
-# Did you mean?  Mail::DateField::LF_ENCODED
-#                Mail::DateField::CR_ENCODED
+# Did you mean?  Mail::DateField::CR_ENCODED
+#                Mail::DateField::LF_ENCODED
 # uninitialized constant Mail::DateField::EMPTY
 # Did you mean?  Mail::DateField::EMPTY
 # uninitialized constant Mail::DateField::ENCODED_VALUE
@@ -10798,8 +10673,8 @@
 # uninitialized constant Mail::DateField::LF
 # Did you mean?  Mail::DateField::LF
 # uninitialized constant Mail::DateField::LF_ENCODED
-# Did you mean?  Mail::DateField::LF_ENCODED
-#                Mail::DateField::CR_ENCODED
+# Did you mean?  Mail::DateField::CR_ENCODED
+#                Mail::DateField::LF_ENCODED
 # uninitialized constant Mail::DateField::NULL_SENDER
 # Did you mean?  Mail::DateField::NULL_SENDER
 # uninitialized constant Mail::DateField::PHRASE_UNSAFE
@@ -10854,8 +10729,8 @@
 # uninitialized constant Mail::Field::CRLF
 # Did you mean?  Mail::Field::CRLF
 # uninitialized constant Mail::Field::CR_ENCODED
-# Did you mean?  Mail::Field::LF_ENCODED
-#                Mail::Field::CR_ENCODED
+# Did you mean?  Mail::Field::CR_ENCODED
+#                Mail::Field::LF_ENCODED
 # uninitialized constant Mail::Field::EMPTY
 # Did you mean?  Mail::Field::EMPTY
 # uninitialized constant Mail::Field::ENCODED_VALUE
@@ -10888,8 +10763,8 @@
 # uninitialized constant Mail::Field::LF
 # Did you mean?  Mail::Field::LF
 # uninitialized constant Mail::Field::LF_ENCODED
-# Did you mean?  Mail::Field::LF_ENCODED
-#                Mail::Field::CR_ENCODED
+# Did you mean?  Mail::Field::CR_ENCODED
+#                Mail::Field::LF_ENCODED
 # uninitialized constant Mail::Field::NULL_SENDER
 # Did you mean?  Mail::Field::NULL_SENDER
 # uninitialized constant Mail::Field::PHRASE_UNSAFE
@@ -10938,8 +10813,8 @@
 # uninitialized constant Mail::FromField::CRLF
 # Did you mean?  Mail::FromField::CRLF
 # uninitialized constant Mail::FromField::CR_ENCODED
-# Did you mean?  Mail::FromField::LF_ENCODED
-#                Mail::FromField::CR_ENCODED
+# Did you mean?  Mail::FromField::CR_ENCODED
+#                Mail::FromField::LF_ENCODED
 # uninitialized constant Mail::FromField::EMPTY
 # Did you mean?  Mail::FromField::EMPTY
 # uninitialized constant Mail::FromField::ENCODED_VALUE
@@ -10971,8 +10846,8 @@
 # uninitialized constant Mail::FromField::LF
 # Did you mean?  Mail::FromField::LF
 # uninitialized constant Mail::FromField::LF_ENCODED
-# Did you mean?  Mail::FromField::LF_ENCODED
-#                Mail::FromField::CR_ENCODED
+# Did you mean?  Mail::FromField::CR_ENCODED
+#                Mail::FromField::LF_ENCODED
 # uninitialized constant Mail::FromField::NULL_SENDER
 # Did you mean?  Mail::FromField::NULL_SENDER
 # uninitialized constant Mail::FromField::PHRASE_UNSAFE
@@ -11016,8 +10891,8 @@
 # uninitialized constant Mail::Header::CRLF
 # Did you mean?  Mail::Header::CRLF
 # uninitialized constant Mail::Header::CR_ENCODED
-# Did you mean?  Mail::Header::LF_ENCODED
-#                Mail::Header::CR_ENCODED
+# Did you mean?  Mail::Header::CR_ENCODED
+#                Mail::Header::LF_ENCODED
 # uninitialized constant Mail::Header::EMPTY
 # Did you mean?  Mail::Header::EMPTY
 # uninitialized constant Mail::Header::ENCODED_VALUE
@@ -11050,8 +10925,8 @@
 # uninitialized constant Mail::Header::LF
 # Did you mean?  Mail::Header::LF
 # uninitialized constant Mail::Header::LF_ENCODED
-# Did you mean?  Mail::Header::LF_ENCODED
-#                Mail::Header::CR_ENCODED
+# Did you mean?  Mail::Header::CR_ENCODED
+#                Mail::Header::LF_ENCODED
 # uninitialized constant Mail::Header::NULL_SENDER
 # Did you mean?  Mail::Header::NULL_SENDER
 # uninitialized constant Mail::Header::PHRASE_UNSAFE
@@ -11102,8 +10977,8 @@
 # uninitialized constant Mail::InReplyToField::CRLF
 # Did you mean?  Mail::InReplyToField::CRLF
 # uninitialized constant Mail::InReplyToField::CR_ENCODED
-# Did you mean?  Mail::InReplyToField::LF_ENCODED
-#                Mail::InReplyToField::CR_ENCODED
+# Did you mean?  Mail::InReplyToField::CR_ENCODED
+#                Mail::InReplyToField::LF_ENCODED
 # uninitialized constant Mail::InReplyToField::EMPTY
 # Did you mean?  Mail::InReplyToField::EMPTY
 # uninitialized constant Mail::InReplyToField::ENCODED_VALUE
@@ -11135,8 +11010,8 @@
 # uninitialized constant Mail::InReplyToField::LF
 # Did you mean?  Mail::InReplyToField::LF
 # uninitialized constant Mail::InReplyToField::LF_ENCODED
-# Did you mean?  Mail::InReplyToField::LF_ENCODED
-#                Mail::InReplyToField::CR_ENCODED
+# Did you mean?  Mail::InReplyToField::CR_ENCODED
+#                Mail::InReplyToField::LF_ENCODED
 # uninitialized constant Mail::InReplyToField::NULL_SENDER
 # Did you mean?  Mail::InReplyToField::NULL_SENDER
 # uninitialized constant Mail::InReplyToField::PHRASE_UNSAFE
@@ -11180,8 +11055,8 @@
 # uninitialized constant Mail::KeywordsField::CRLF
 # Did you mean?  Mail::KeywordsField::CRLF
 # uninitialized constant Mail::KeywordsField::CR_ENCODED
-# Did you mean?  Mail::KeywordsField::LF_ENCODED
-#                Mail::KeywordsField::CR_ENCODED
+# Did you mean?  Mail::KeywordsField::CR_ENCODED
+#                Mail::KeywordsField::LF_ENCODED
 # uninitialized constant Mail::KeywordsField::EMPTY
 # Did you mean?  Mail::KeywordsField::EMPTY
 # uninitialized constant Mail::KeywordsField::ENCODED_VALUE
@@ -11213,8 +11088,8 @@
 # uninitialized constant Mail::KeywordsField::LF
 # Did you mean?  Mail::KeywordsField::LF
 # uninitialized constant Mail::KeywordsField::LF_ENCODED
-# Did you mean?  Mail::KeywordsField::LF_ENCODED
-#                Mail::KeywordsField::CR_ENCODED
+# Did you mean?  Mail::KeywordsField::CR_ENCODED
+#                Mail::KeywordsField::LF_ENCODED
 # uninitialized constant Mail::KeywordsField::NULL_SENDER
 # Did you mean?  Mail::KeywordsField::NULL_SENDER
 # uninitialized constant Mail::KeywordsField::PHRASE_UNSAFE
@@ -11264,8 +11139,8 @@
 # uninitialized constant Mail::Message::CRLF
 # Did you mean?  Mail::Message::CRLF
 # uninitialized constant Mail::Message::CR_ENCODED
-# Did you mean?  Mail::Message::LF_ENCODED
-#                Mail::Message::CR_ENCODED
+# Did you mean?  Mail::Message::CR_ENCODED
+#                Mail::Message::LF_ENCODED
 # uninitialized constant Mail::Message::EMPTY
 # Did you mean?  Mail::Message::EMPTY
 # uninitialized constant Mail::Message::ENCODED_VALUE
@@ -11298,8 +11173,8 @@
 # uninitialized constant Mail::Message::LF
 # Did you mean?  Mail::Message::LF
 # uninitialized constant Mail::Message::LF_ENCODED
-# Did you mean?  Mail::Message::LF_ENCODED
-#                Mail::Message::CR_ENCODED
+# Did you mean?  Mail::Message::CR_ENCODED
+#                Mail::Message::LF_ENCODED
 # uninitialized constant Mail::Message::NULL_SENDER
 # Did you mean?  Mail::Message::NULL_SENDER
 # uninitialized constant Mail::Message::PHRASE_UNSAFE
@@ -11343,8 +11218,8 @@
 # uninitialized constant Mail::MessageIdField::CRLF
 # Did you mean?  Mail::MessageIdField::CRLF
 # uninitialized constant Mail::MessageIdField::CR_ENCODED
-# Did you mean?  Mail::MessageIdField::LF_ENCODED
-#                Mail::MessageIdField::CR_ENCODED
+# Did you mean?  Mail::MessageIdField::CR_ENCODED
+#                Mail::MessageIdField::LF_ENCODED
 # uninitialized constant Mail::MessageIdField::EMPTY
 # Did you mean?  Mail::MessageIdField::EMPTY
 # uninitialized constant Mail::MessageIdField::ENCODED_VALUE
@@ -11376,8 +11251,8 @@
 # uninitialized constant Mail::MessageIdField::LF
 # Did you mean?  Mail::MessageIdField::LF
 # uninitialized constant Mail::MessageIdField::LF_ENCODED
-# Did you mean?  Mail::MessageIdField::LF_ENCODED
-#                Mail::MessageIdField::CR_ENCODED
+# Did you mean?  Mail::MessageIdField::CR_ENCODED
+#                Mail::MessageIdField::LF_ENCODED
 # uninitialized constant Mail::MessageIdField::NULL_SENDER
 # Did you mean?  Mail::MessageIdField::NULL_SENDER
 # uninitialized constant Mail::MessageIdField::PHRASE_UNSAFE
@@ -11429,8 +11304,8 @@
 # uninitialized constant Mail::MimeVersionField::CRLF
 # Did you mean?  Mail::MimeVersionField::CRLF
 # uninitialized constant Mail::MimeVersionField::CR_ENCODED
-# Did you mean?  Mail::MimeVersionField::LF_ENCODED
-#                Mail::MimeVersionField::CR_ENCODED
+# Did you mean?  Mail::MimeVersionField::CR_ENCODED
+#                Mail::MimeVersionField::LF_ENCODED
 # uninitialized constant Mail::MimeVersionField::EMPTY
 # Did you mean?  Mail::MimeVersionField::EMPTY
 # uninitialized constant Mail::MimeVersionField::ENCODED_VALUE
@@ -11462,8 +11337,8 @@
 # uninitialized constant Mail::MimeVersionField::LF
 # Did you mean?  Mail::MimeVersionField::LF
 # uninitialized constant Mail::MimeVersionField::LF_ENCODED
-# Did you mean?  Mail::MimeVersionField::LF_ENCODED
-#                Mail::MimeVersionField::CR_ENCODED
+# Did you mean?  Mail::MimeVersionField::CR_ENCODED
+#                Mail::MimeVersionField::LF_ENCODED
 # uninitialized constant Mail::MimeVersionField::NULL_SENDER
 # Did you mean?  Mail::MimeVersionField::NULL_SENDER
 # uninitialized constant Mail::MimeVersionField::PHRASE_UNSAFE
@@ -11507,8 +11382,8 @@
 # uninitialized constant Mail::OptionalField::CRLF
 # Did you mean?  Mail::OptionalField::CRLF
 # uninitialized constant Mail::OptionalField::CR_ENCODED
-# Did you mean?  Mail::OptionalField::LF_ENCODED
-#                Mail::OptionalField::CR_ENCODED
+# Did you mean?  Mail::OptionalField::CR_ENCODED
+#                Mail::OptionalField::LF_ENCODED
 # uninitialized constant Mail::OptionalField::EMPTY
 # Did you mean?  Mail::OptionalField::EMPTY
 # uninitialized constant Mail::OptionalField::ENCODED_VALUE
@@ -11543,8 +11418,8 @@
 # uninitialized constant Mail::OptionalField::LF
 # Did you mean?  Mail::OptionalField::LF
 # uninitialized constant Mail::OptionalField::LF_ENCODED
-# Did you mean?  Mail::OptionalField::LF_ENCODED
-#                Mail::OptionalField::CR_ENCODED
+# Did you mean?  Mail::OptionalField::CR_ENCODED
+#                Mail::OptionalField::LF_ENCODED
 # uninitialized constant Mail::OptionalField::NULL_SENDER
 # Did you mean?  Mail::OptionalField::NULL_SENDER
 # uninitialized constant Mail::OptionalField::PHRASE_UNSAFE
@@ -11599,8 +11474,8 @@
 # uninitialized constant Mail::ReceivedElement::CRLF
 # Did you mean?  Mail::ReceivedElement::CRLF
 # uninitialized constant Mail::ReceivedElement::CR_ENCODED
-# Did you mean?  Mail::ReceivedElement::LF_ENCODED
-#                Mail::ReceivedElement::CR_ENCODED
+# Did you mean?  Mail::ReceivedElement::CR_ENCODED
+#                Mail::ReceivedElement::LF_ENCODED
 # uninitialized constant Mail::ReceivedElement::EMPTY
 # Did you mean?  Mail::ReceivedElement::EMPTY
 # uninitialized constant Mail::ReceivedElement::ENCODED_VALUE
@@ -11633,8 +11508,8 @@
 # uninitialized constant Mail::ReceivedElement::LF
 # Did you mean?  Mail::ReceivedElement::LF
 # uninitialized constant Mail::ReceivedElement::LF_ENCODED
-# Did you mean?  Mail::ReceivedElement::LF_ENCODED
-#                Mail::ReceivedElement::CR_ENCODED
+# Did you mean?  Mail::ReceivedElement::CR_ENCODED
+#                Mail::ReceivedElement::LF_ENCODED
 # uninitialized constant Mail::ReceivedElement::NULL_SENDER
 # Did you mean?  Mail::ReceivedElement::NULL_SENDER
 # uninitialized constant Mail::ReceivedElement::PHRASE_UNSAFE
@@ -11683,8 +11558,8 @@
 # uninitialized constant Mail::ReceivedField::CRLF
 # Did you mean?  Mail::ReceivedField::CRLF
 # uninitialized constant Mail::ReceivedField::CR_ENCODED
-# Did you mean?  Mail::ReceivedField::LF_ENCODED
-#                Mail::ReceivedField::CR_ENCODED
+# Did you mean?  Mail::ReceivedField::CR_ENCODED
+#                Mail::ReceivedField::LF_ENCODED
 # uninitialized constant Mail::ReceivedField::EMPTY
 # Did you mean?  Mail::ReceivedField::EMPTY
 # uninitialized constant Mail::ReceivedField::ENCODED_VALUE
@@ -11716,8 +11591,8 @@
 # uninitialized constant Mail::ReceivedField::LF
 # Did you mean?  Mail::ReceivedField::LF
 # uninitialized constant Mail::ReceivedField::LF_ENCODED
-# Did you mean?  Mail::ReceivedField::LF_ENCODED
-#                Mail::ReceivedField::CR_ENCODED
+# Did you mean?  Mail::ReceivedField::CR_ENCODED
+#                Mail::ReceivedField::LF_ENCODED
 # uninitialized constant Mail::ReceivedField::NULL_SENDER
 # Did you mean?  Mail::ReceivedField::NULL_SENDER
 # uninitialized constant Mail::ReceivedField::PHRASE_UNSAFE
@@ -11761,8 +11636,8 @@
 # uninitialized constant Mail::ReferencesField::CRLF
 # Did you mean?  Mail::ReferencesField::CRLF
 # uninitialized constant Mail::ReferencesField::CR_ENCODED
-# Did you mean?  Mail::ReferencesField::LF_ENCODED
-#                Mail::ReferencesField::CR_ENCODED
+# Did you mean?  Mail::ReferencesField::CR_ENCODED
+#                Mail::ReferencesField::LF_ENCODED
 # uninitialized constant Mail::ReferencesField::EMPTY
 # Did you mean?  Mail::ReferencesField::EMPTY
 # uninitialized constant Mail::ReferencesField::ENCODED_VALUE
@@ -11794,8 +11669,8 @@
 # uninitialized constant Mail::ReferencesField::LF
 # Did you mean?  Mail::ReferencesField::LF
 # uninitialized constant Mail::ReferencesField::LF_ENCODED
-# Did you mean?  Mail::ReferencesField::LF_ENCODED
-#                Mail::ReferencesField::CR_ENCODED
+# Did you mean?  Mail::ReferencesField::CR_ENCODED
+#                Mail::ReferencesField::LF_ENCODED
 # uninitialized constant Mail::ReferencesField::NULL_SENDER
 # Did you mean?  Mail::ReferencesField::NULL_SENDER
 # uninitialized constant Mail::ReferencesField::PHRASE_UNSAFE
@@ -11839,8 +11714,8 @@
 # uninitialized constant Mail::ReplyToField::CRLF
 # Did you mean?  Mail::ReplyToField::CRLF
 # uninitialized constant Mail::ReplyToField::CR_ENCODED
-# Did you mean?  Mail::ReplyToField::LF_ENCODED
-#                Mail::ReplyToField::CR_ENCODED
+# Did you mean?  Mail::ReplyToField::CR_ENCODED
+#                Mail::ReplyToField::LF_ENCODED
 # uninitialized constant Mail::ReplyToField::EMPTY
 # Did you mean?  Mail::ReplyToField::EMPTY
 # uninitialized constant Mail::ReplyToField::ENCODED_VALUE
@@ -11872,8 +11747,8 @@
 # uninitialized constant Mail::ReplyToField::LF
 # Did you mean?  Mail::ReplyToField::LF
 # uninitialized constant Mail::ReplyToField::LF_ENCODED
-# Did you mean?  Mail::ReplyToField::LF_ENCODED
-#                Mail::ReplyToField::CR_ENCODED
+# Did you mean?  Mail::ReplyToField::CR_ENCODED
+#                Mail::ReplyToField::LF_ENCODED
 # uninitialized constant Mail::ReplyToField::NULL_SENDER
 # Did you mean?  Mail::ReplyToField::NULL_SENDER
 # uninitialized constant Mail::ReplyToField::PHRASE_UNSAFE
@@ -11917,8 +11792,8 @@
 # uninitialized constant Mail::ResentBccField::CRLF
 # Did you mean?  Mail::ResentBccField::CRLF
 # uninitialized constant Mail::ResentBccField::CR_ENCODED
-# Did you mean?  Mail::ResentBccField::LF_ENCODED
-#                Mail::ResentBccField::CR_ENCODED
+# Did you mean?  Mail::ResentBccField::CR_ENCODED
+#                Mail::ResentBccField::LF_ENCODED
 # uninitialized constant Mail::ResentBccField::EMPTY
 # Did you mean?  Mail::ResentBccField::EMPTY
 # uninitialized constant Mail::ResentBccField::ENCODED_VALUE
@@ -11950,8 +11825,8 @@
 # uninitialized constant Mail::ResentBccField::LF
 # Did you mean?  Mail::ResentBccField::LF
 # uninitialized constant Mail::ResentBccField::LF_ENCODED
-# Did you mean?  Mail::ResentBccField::LF_ENCODED
-#                Mail::ResentBccField::CR_ENCODED
+# Did you mean?  Mail::ResentBccField::CR_ENCODED
+#                Mail::ResentBccField::LF_ENCODED
 # uninitialized constant Mail::ResentBccField::NULL_SENDER
 # Did you mean?  Mail::ResentBccField::NULL_SENDER
 # uninitialized constant Mail::ResentBccField::PHRASE_UNSAFE
@@ -11995,8 +11870,8 @@
 # uninitialized constant Mail::ResentCcField::CRLF
 # Did you mean?  Mail::ResentCcField::CRLF
 # uninitialized constant Mail::ResentCcField::CR_ENCODED
-# Did you mean?  Mail::ResentCcField::LF_ENCODED
-#                Mail::ResentCcField::CR_ENCODED
+# Did you mean?  Mail::ResentCcField::CR_ENCODED
+#                Mail::ResentCcField::LF_ENCODED
 # uninitialized constant Mail::ResentCcField::EMPTY
 # Did you mean?  Mail::ResentCcField::EMPTY
 # uninitialized constant Mail::ResentCcField::ENCODED_VALUE
@@ -12028,8 +11903,8 @@
 # uninitialized constant Mail::ResentCcField::LF
 # Did you mean?  Mail::ResentCcField::LF
 # uninitialized constant Mail::ResentCcField::LF_ENCODED
-# Did you mean?  Mail::ResentCcField::LF_ENCODED
-#                Mail::ResentCcField::CR_ENCODED
+# Did you mean?  Mail::ResentCcField::CR_ENCODED
+#                Mail::ResentCcField::LF_ENCODED
 # uninitialized constant Mail::ResentCcField::NULL_SENDER
 # Did you mean?  Mail::ResentCcField::NULL_SENDER
 # uninitialized constant Mail::ResentCcField::PHRASE_UNSAFE
@@ -12073,8 +11948,8 @@
 # uninitialized constant Mail::ResentDateField::CRLF
 # Did you mean?  Mail::ResentDateField::CRLF
 # uninitialized constant Mail::ResentDateField::CR_ENCODED
-# Did you mean?  Mail::ResentDateField::LF_ENCODED
-#                Mail::ResentDateField::CR_ENCODED
+# Did you mean?  Mail::ResentDateField::CR_ENCODED
+#                Mail::ResentDateField::LF_ENCODED
 # uninitialized constant Mail::ResentDateField::EMPTY
 # Did you mean?  Mail::ResentDateField::EMPTY
 # uninitialized constant Mail::ResentDateField::ENCODED_VALUE
@@ -12106,8 +11981,8 @@
 # uninitialized constant Mail::ResentDateField::LF
 # Did you mean?  Mail::ResentDateField::LF
 # uninitialized constant Mail::ResentDateField::LF_ENCODED
-# Did you mean?  Mail::ResentDateField::LF_ENCODED
-#                Mail::ResentDateField::CR_ENCODED
+# Did you mean?  Mail::ResentDateField::CR_ENCODED
+#                Mail::ResentDateField::LF_ENCODED
 # uninitialized constant Mail::ResentDateField::NULL_SENDER
 # Did you mean?  Mail::ResentDateField::NULL_SENDER
 # uninitialized constant Mail::ResentDateField::PHRASE_UNSAFE
@@ -12151,8 +12026,8 @@
 # uninitialized constant Mail::ResentFromField::CRLF
 # Did you mean?  Mail::ResentFromField::CRLF
 # uninitialized constant Mail::ResentFromField::CR_ENCODED
-# Did you mean?  Mail::ResentFromField::LF_ENCODED
-#                Mail::ResentFromField::CR_ENCODED
+# Did you mean?  Mail::ResentFromField::CR_ENCODED
+#                Mail::ResentFromField::LF_ENCODED
 # uninitialized constant Mail::ResentFromField::EMPTY
 # Did you mean?  Mail::ResentFromField::EMPTY
 # uninitialized constant Mail::ResentFromField::ENCODED_VALUE
@@ -12184,8 +12059,8 @@
 # uninitialized constant Mail::ResentFromField::LF
 # Did you mean?  Mail::ResentFromField::LF
 # uninitialized constant Mail::ResentFromField::LF_ENCODED
-# Did you mean?  Mail::ResentFromField::LF_ENCODED
-#                Mail::ResentFromField::CR_ENCODED
+# Did you mean?  Mail::ResentFromField::CR_ENCODED
+#                Mail::ResentFromField::LF_ENCODED
 # uninitialized constant Mail::ResentFromField::NULL_SENDER
 # Did you mean?  Mail::ResentFromField::NULL_SENDER
 # uninitialized constant Mail::ResentFromField::PHRASE_UNSAFE
@@ -12229,8 +12104,8 @@
 # uninitialized constant Mail::ResentMessageIdField::CRLF
 # Did you mean?  Mail::ResentMessageIdField::CRLF
 # uninitialized constant Mail::ResentMessageIdField::CR_ENCODED
-# Did you mean?  Mail::ResentMessageIdField::LF_ENCODED
-#                Mail::ResentMessageIdField::CR_ENCODED
+# Did you mean?  Mail::ResentMessageIdField::CR_ENCODED
+#                Mail::ResentMessageIdField::LF_ENCODED
 # uninitialized constant Mail::ResentMessageIdField::EMPTY
 # Did you mean?  Mail::ResentMessageIdField::EMPTY
 # uninitialized constant Mail::ResentMessageIdField::ENCODED_VALUE
@@ -12262,8 +12137,8 @@
 # uninitialized constant Mail::ResentMessageIdField::LF
 # Did you mean?  Mail::ResentMessageIdField::LF
 # uninitialized constant Mail::ResentMessageIdField::LF_ENCODED
-# Did you mean?  Mail::ResentMessageIdField::LF_ENCODED
-#                Mail::ResentMessageIdField::CR_ENCODED
+# Did you mean?  Mail::ResentMessageIdField::CR_ENCODED
+#                Mail::ResentMessageIdField::LF_ENCODED
 # uninitialized constant Mail::ResentMessageIdField::NULL_SENDER
 # Did you mean?  Mail::ResentMessageIdField::NULL_SENDER
 # uninitialized constant Mail::ResentMessageIdField::PHRASE_UNSAFE
@@ -12307,8 +12182,8 @@
 # uninitialized constant Mail::ResentSenderField::CRLF
 # Did you mean?  Mail::ResentSenderField::CRLF
 # uninitialized constant Mail::ResentSenderField::CR_ENCODED
-# Did you mean?  Mail::ResentSenderField::LF_ENCODED
-#                Mail::ResentSenderField::CR_ENCODED
+# Did you mean?  Mail::ResentSenderField::CR_ENCODED
+#                Mail::ResentSenderField::LF_ENCODED
 # uninitialized constant Mail::ResentSenderField::EMPTY
 # Did you mean?  Mail::ResentSenderField::EMPTY
 # uninitialized constant Mail::ResentSenderField::ENCODED_VALUE
@@ -12340,8 +12215,8 @@
 # uninitialized constant Mail::ResentSenderField::LF
 # Did you mean?  Mail::ResentSenderField::LF
 # uninitialized constant Mail::ResentSenderField::LF_ENCODED
-# Did you mean?  Mail::ResentSenderField::LF_ENCODED
-#                Mail::ResentSenderField::CR_ENCODED
+# Did you mean?  Mail::ResentSenderField::CR_ENCODED
+#                Mail::ResentSenderField::LF_ENCODED
 # uninitialized constant Mail::ResentSenderField::NULL_SENDER
 # Did you mean?  Mail::ResentSenderField::NULL_SENDER
 # uninitialized constant Mail::ResentSenderField::PHRASE_UNSAFE
@@ -12385,8 +12260,8 @@
 # uninitialized constant Mail::ResentToField::CRLF
 # Did you mean?  Mail::ResentToField::CRLF
 # uninitialized constant Mail::ResentToField::CR_ENCODED
-# Did you mean?  Mail::ResentToField::LF_ENCODED
-#                Mail::ResentToField::CR_ENCODED
+# Did you mean?  Mail::ResentToField::CR_ENCODED
+#                Mail::ResentToField::LF_ENCODED
 # uninitialized constant Mail::ResentToField::EMPTY
 # Did you mean?  Mail::ResentToField::EMPTY
 # uninitialized constant Mail::ResentToField::ENCODED_VALUE
@@ -12418,8 +12293,8 @@
 # uninitialized constant Mail::ResentToField::LF
 # Did you mean?  Mail::ResentToField::LF
 # uninitialized constant Mail::ResentToField::LF_ENCODED
-# Did you mean?  Mail::ResentToField::LF_ENCODED
-#                Mail::ResentToField::CR_ENCODED
+# Did you mean?  Mail::ResentToField::CR_ENCODED
+#                Mail::ResentToField::LF_ENCODED
 # uninitialized constant Mail::ResentToField::NULL_SENDER
 # Did you mean?  Mail::ResentToField::NULL_SENDER
 # uninitialized constant Mail::ResentToField::PHRASE_UNSAFE
@@ -12463,8 +12338,8 @@
 # uninitialized constant Mail::ReturnPathField::CRLF
 # Did you mean?  Mail::ReturnPathField::CRLF
 # uninitialized constant Mail::ReturnPathField::CR_ENCODED
-# Did you mean?  Mail::ReturnPathField::LF_ENCODED
-#                Mail::ReturnPathField::CR_ENCODED
+# Did you mean?  Mail::ReturnPathField::CR_ENCODED
+#                Mail::ReturnPathField::LF_ENCODED
 # uninitialized constant Mail::ReturnPathField::EMPTY
 # Did you mean?  Mail::ReturnPathField::EMPTY
 # uninitialized constant Mail::ReturnPathField::ENCODED_VALUE
@@ -12496,8 +12371,8 @@
 # uninitialized constant Mail::ReturnPathField::LF
 # Did you mean?  Mail::ReturnPathField::LF
 # uninitialized constant Mail::ReturnPathField::LF_ENCODED
-# Did you mean?  Mail::ReturnPathField::LF_ENCODED
-#                Mail::ReturnPathField::CR_ENCODED
+# Did you mean?  Mail::ReturnPathField::CR_ENCODED
+#                Mail::ReturnPathField::LF_ENCODED
 # uninitialized constant Mail::ReturnPathField::NULL_SENDER
 # Did you mean?  Mail::ReturnPathField::NULL_SENDER
 # uninitialized constant Mail::ReturnPathField::PHRASE_UNSAFE
@@ -12553,8 +12428,8 @@
 # uninitialized constant Mail::SenderField::CRLF
 # Did you mean?  Mail::SenderField::CRLF
 # uninitialized constant Mail::SenderField::CR_ENCODED
-# Did you mean?  Mail::SenderField::LF_ENCODED
-#                Mail::SenderField::CR_ENCODED
+# Did you mean?  Mail::SenderField::CR_ENCODED
+#                Mail::SenderField::LF_ENCODED
 # uninitialized constant Mail::SenderField::EMPTY
 # Did you mean?  Mail::SenderField::EMPTY
 # uninitialized constant Mail::SenderField::ENCODED_VALUE
@@ -12586,8 +12461,8 @@
 # uninitialized constant Mail::SenderField::LF
 # Did you mean?  Mail::SenderField::LF
 # uninitialized constant Mail::SenderField::LF_ENCODED
-# Did you mean?  Mail::SenderField::LF_ENCODED
-#                Mail::SenderField::CR_ENCODED
+# Did you mean?  Mail::SenderField::CR_ENCODED
+#                Mail::SenderField::LF_ENCODED
 # uninitialized constant Mail::SenderField::NULL_SENDER
 # Did you mean?  Mail::SenderField::NULL_SENDER
 # uninitialized constant Mail::SenderField::PHRASE_UNSAFE
@@ -12639,8 +12514,8 @@
 # uninitialized constant Mail::SubjectField::CRLF
 # Did you mean?  Mail::SubjectField::CRLF
 # uninitialized constant Mail::SubjectField::CR_ENCODED
-# Did you mean?  Mail::SubjectField::LF_ENCODED
-#                Mail::SubjectField::CR_ENCODED
+# Did you mean?  Mail::SubjectField::CR_ENCODED
+#                Mail::SubjectField::LF_ENCODED
 # uninitialized constant Mail::SubjectField::EMPTY
 # Did you mean?  Mail::SubjectField::EMPTY
 # uninitialized constant Mail::SubjectField::ENCODED_VALUE
@@ -12672,8 +12547,8 @@
 # uninitialized constant Mail::SubjectField::LF
 # Did you mean?  Mail::SubjectField::LF
 # uninitialized constant Mail::SubjectField::LF_ENCODED
-# Did you mean?  Mail::SubjectField::LF_ENCODED
-#                Mail::SubjectField::CR_ENCODED
+# Did you mean?  Mail::SubjectField::CR_ENCODED
+#                Mail::SubjectField::LF_ENCODED
 # uninitialized constant Mail::SubjectField::NULL_SENDER
 # Did you mean?  Mail::SubjectField::NULL_SENDER
 # uninitialized constant Mail::SubjectField::PHRASE_UNSAFE
@@ -12729,8 +12604,8 @@
 # uninitialized constant Mail::ToField::CRLF
 # Did you mean?  Mail::ToField::CRLF
 # uninitialized constant Mail::ToField::CR_ENCODED
-# Did you mean?  Mail::ToField::LF_ENCODED
-#                Mail::ToField::CR_ENCODED
+# Did you mean?  Mail::ToField::CR_ENCODED
+#                Mail::ToField::LF_ENCODED
 # uninitialized constant Mail::ToField::EMPTY
 # Did you mean?  Mail::ToField::EMPTY
 # uninitialized constant Mail::ToField::ENCODED_VALUE
@@ -12762,8 +12637,8 @@
 # uninitialized constant Mail::ToField::LF
 # Did you mean?  Mail::ToField::LF
 # uninitialized constant Mail::ToField::LF_ENCODED
-# Did you mean?  Mail::ToField::LF_ENCODED
-#                Mail::ToField::CR_ENCODED
+# Did you mean?  Mail::ToField::CR_ENCODED
+#                Mail::ToField::LF_ENCODED
 # uninitialized constant Mail::ToField::NULL_SENDER
 # Did you mean?  Mail::ToField::NULL_SENDER
 # uninitialized constant Mail::ToField::PHRASE_UNSAFE
@@ -12805,8 +12680,8 @@
 # uninitialized constant Mail::Utilities::CR
 # Did you mean?  Mail::Utilities::CR
 # uninitialized constant Mail::Utilities::CR_ENCODED
-# Did you mean?  Mail::Utilities::LF_ENCODED
-#                Mail::Utilities::CR_ENCODED
+# Did you mean?  Mail::Utilities::CR_ENCODED
+#                Mail::Utilities::LF_ENCODED
 # uninitialized constant Mail::Utilities::EMPTY
 # Did you mean?  Mail::Utilities::EMPTY
 # uninitialized constant Mail::Utilities::ENCODED_VALUE
@@ -12837,8 +12712,8 @@
 # uninitialized constant Mail::Utilities::HYPHEN
 # Did you mean?  Mail::Utilities::HYPHEN
 # uninitialized constant Mail::Utilities::LF_ENCODED
-# Did you mean?  Mail::Utilities::LF_ENCODED
-#                Mail::Utilities::CR_ENCODED
+# Did you mean?  Mail::Utilities::CR_ENCODED
+#                Mail::Utilities::LF_ENCODED
 # uninitialized constant Mail::Utilities::NULL_SENDER
 # Did you mean?  Mail::Utilities::NULL_SENDER
 # uninitialized constant Mail::Utilities::PHRASE_UNSAFE
@@ -13273,13 +13148,13 @@
 # Did you mean?  Net::IMAP::OP_NO_TICKET
 # uninitialized constant Net::IMAP::OP_NO_TLSv1
 # Did you mean?  Net::IMAP::OP_NO_TLSv1
+#                Net::IMAP::OP_NO_TLSv1_2
 #                Net::IMAP::OP_NO_TLSv1_1
 #                Net::IMAP::OP_NO_TLSv1_3
-#                Net::IMAP::OP_NO_TLSv1_2
 # uninitialized constant Net::IMAP::OP_NO_TLSv1_1
 # Did you mean?  Net::IMAP::OP_NO_TLSv1_1
-#                Net::IMAP::OP_NO_TLSv1_3
 #                Net::IMAP::OP_NO_TLSv1_2
+#                Net::IMAP::OP_NO_TLSv1_3
 #                Net::IMAP::OP_NO_TLSv1
 # uninitialized constant Net::IMAP::OP_NO_TLSv1_2
 # Did you mean?  Net::IMAP::OP_NO_TLSv1_2
@@ -13398,8 +13273,8 @@
 # wrong constant name use_ssl?
 # wrong constant name <static-init>
 # uninitialized constant Net::POP3::APOP
-# Did you mean?  Net::POP
-#                Net::APOP
+# Did you mean?  Net::APOP
+#                Net::POP
 # wrong constant name auth_only
 # wrong constant name certs
 # wrong constant name create_ssl_params
@@ -16529,10 +16404,10 @@
 # wrong constant name disable_tracepoints
 # wrong constant name finish
 # wrong constant name install_tracepoints
-# wrong constant name method_added
-# wrong constant name module_created
-# wrong constant name module_extended
-# wrong constant name module_included
+# wrong constant name on_method_added
+# wrong constant name on_module_created
+# wrong constant name on_module_extended
+# wrong constant name on_module_included
 # wrong constant name pre_cache_module_methods
 # wrong constant name register_delegate_class
 # wrong constant name start
@@ -17028,11 +16903,8 @@
 # undefined method `upcase$1' for class `Symbol'
 # wrong constant name []$2
 # wrong constant name capitalize$1
-# wrong constant name casecmp?
 # wrong constant name downcase$1
 # wrong constant name match$1
-# wrong constant name match?
-# wrong constant name next
 # wrong constant name slice$2
 # wrong constant name swapcase$1
 # wrong constant name upcase$1
