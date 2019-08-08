@@ -1092,13 +1092,13 @@
 # wrong constant name <Class:NullSessionHash>
 # wrong constant name handle_unverified_request
 # wrong constant name initialize
-# uninitialized constant #<Class:0x00007f9051131e40>::DOMAIN_REGEXP
+# uninitialized constant #<Class:0x00007f8437389740>::DOMAIN_REGEXP
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullCookieJar::DOMAIN_REGEXP
-# uninitialized constant #<Class:0x00007f9051131e40>::Elem
+# uninitialized constant #<Class:0x00007f8437389740>::Elem
 # wrong constant name write
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007f9051132070>::Elem
-# uninitialized constant #<Class:0x00007f9051132070>::Unspecified
+# uninitialized constant #<Class:0x00007f84373898f8>::Elem
+# uninitialized constant #<Class:0x00007f84373898f8>::Unspecified
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullSessionHash::Unspecified
 # wrong constant name initialize
 # wrong constant name <static-init>
@@ -4649,26 +4649,26 @@
 # wrong constant name cache_version
 # wrong constant name to_param
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007f904cd40358>::ACTIONS
+# uninitialized constant #<Class:0x00007f843f4202f0>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007f904cd40358>::CALLBACKS
+# uninitialized constant #<Class:0x00007f843f4202f0>::CALLBACKS
 # Did you mean?  ActiveRecord::Callbacks
 #                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007f904cd40358>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007f843f4202f0>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f904cd40358>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f843f4202f0>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f904cd40358>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007f843f4202f0>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f904cd40358>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007f843f4202f0>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f904cd40358>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007f843f4202f0>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f904cd40358>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007f843f4202f0>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
