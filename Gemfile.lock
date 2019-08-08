@@ -138,11 +138,11 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sorbet (0.4.4593)
-      sorbet-static (= 0.4.4593)
+    sorbet (0.4.4596)
+      sorbet-static (= 0.4.4596)
     sorbet-rails (0.4.0)
-    sorbet-runtime (0.4.4593)
-    sorbet-static (0.4.4593-universal-darwin-14)
+    sorbet-runtime (0.4.4596)
+    sorbet-static (0.4.4596-universal-darwin-14)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
