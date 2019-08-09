@@ -1092,13 +1092,13 @@
 # wrong constant name <Class:NullSessionHash>
 # wrong constant name handle_unverified_request
 # wrong constant name initialize
-# uninitialized constant #<Class:0x00007f8437389740>::DOMAIN_REGEXP
+# uninitialized constant #<Class:0x00007ffdc639d8e0>::DOMAIN_REGEXP
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullCookieJar::DOMAIN_REGEXP
-# uninitialized constant #<Class:0x00007f8437389740>::Elem
+# uninitialized constant #<Class:0x00007ffdc639d8e0>::Elem
 # wrong constant name write
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007f84373898f8>::Elem
-# uninitialized constant #<Class:0x00007f84373898f8>::Unspecified
+# uninitialized constant #<Class:0x00007ffdc639dac0>::Elem
+# uninitialized constant #<Class:0x00007ffdc639dac0>::Unspecified
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullSessionHash::Unspecified
 # wrong constant name initialize
 # wrong constant name <static-init>
@@ -4649,26 +4649,26 @@
 # wrong constant name cache_version
 # wrong constant name to_param
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007f843f4202f0>::ACTIONS
+# uninitialized constant #<Class:0x00007ffdc63d6028>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007f843f4202f0>::CALLBACKS
+# uninitialized constant #<Class:0x00007ffdc63d6028>::CALLBACKS
 # Did you mean?  ActiveRecord::Callbacks
 #                ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007f843f4202f0>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007ffdc63d6028>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007f843f4202f0>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffdc63d6028>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
-# uninitialized constant #<Class:0x00007f843f4202f0>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007ffdc63d6028>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007f843f4202f0>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007ffdc63d6028>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007f843f4202f0>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007ffdc63d6028>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007f843f4202f0>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007ffdc63d6028>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -14436,6 +14436,23 @@
 # Did you mean?  Puma::Binder::HTTP_VERSION
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_FOR
 # Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
+#                Puma::Binder::HTTP_X_FORWARDED_PROTO
+# uninitialized constant Puma::Binder::HTTP_X_FORWARDED_PROTO
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
+#                Puma::Binder::HTTP_X_FORWARDED_PROTO
+#                Puma::Binder::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Binder::HTTP_X_FORWARDED_SCHEME
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
+#                Puma::Binder::HTTP_X_FORWARDED_PROTO
+#                Puma::Binder::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Binder::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
+#                Puma::Binder::HTTP_X_FORWARDED_PROTO
+#                Puma::Binder::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Binder::KEEP_ALIVE
 # Did you mean?  Puma::Binder::KEEP_ALIVE
 # uninitialized constant Puma::Binder::LINE_END
@@ -14635,6 +14652,23 @@
 # Did you mean?  Puma::Client::HTTP_VERSION
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_FOR
 # Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
+#                Puma::Client::HTTP_X_FORWARDED_PROTO
+# uninitialized constant Puma::Client::HTTP_X_FORWARDED_PROTO
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
+#                Puma::Client::HTTP_X_FORWARDED_PROTO
+#                Puma::Client::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Client::HTTP_X_FORWARDED_SCHEME
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
+#                Puma::Client::HTTP_X_FORWARDED_PROTO
+#                Puma::Client::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Client::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
+#                Puma::Client::HTTP_X_FORWARDED_PROTO
+#                Puma::Client::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Client::KEEP_ALIVE
 # Did you mean?  Puma::Client::KEEP_ALIVE
 # uninitialized constant Puma::Client::LINE_END
@@ -14834,6 +14868,23 @@
 # Did you mean?  Puma::Events::HTTP_VERSION
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_FOR
 # Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
+#                Puma::Events::HTTP_X_FORWARDED_PROTO
+# uninitialized constant Puma::Events::HTTP_X_FORWARDED_PROTO
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
+#                Puma::Events::HTTP_X_FORWARDED_PROTO
+#                Puma::Events::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Events::HTTP_X_FORWARDED_SCHEME
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
+#                Puma::Events::HTTP_X_FORWARDED_PROTO
+#                Puma::Events::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Events::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
+#                Puma::Events::HTTP_X_FORWARDED_PROTO
+#                Puma::Events::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Events::KEEP_ALIVE
 # Did you mean?  Puma::Events::KEEP_ALIVE
 # uninitialized constant Puma::Events::LINE_END
@@ -15036,6 +15087,23 @@
 # Did you mean?  Puma::Server::HTTP_VERSION
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_FOR
 # Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
+#                Puma::Server::HTTP_X_FORWARDED_PROTO
+# uninitialized constant Puma::Server::HTTP_X_FORWARDED_PROTO
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
+#                Puma::Server::HTTP_X_FORWARDED_PROTO
+#                Puma::Server::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Server::HTTP_X_FORWARDED_SCHEME
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
+#                Puma::Server::HTTP_X_FORWARDED_PROTO
+#                Puma::Server::HTTP_X_FORWARDED_SCHEME
+# uninitialized constant Puma::Server::HTTP_X_FORWARDED_SSL
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
+#                Puma::Server::HTTP_X_FORWARDED_PROTO
+#                Puma::Server::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Server::KEEP_ALIVE
 # Did you mean?  Puma::Server::KEEP_ALIVE
 # uninitialized constant Puma::Server::LINE_END
