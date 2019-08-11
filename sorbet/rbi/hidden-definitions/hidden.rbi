@@ -3116,7 +3116,6 @@ end
 
 class ActionMailbox::InboundEmail
   include ::ActionMailbox::InboundEmail::GeneratedAttributeMethods
-  include ::ActionMailbox::InboundEmail::GeneratedAssociationMethods
   include ::ActionMailbox::InboundEmail::Routable
   include ::ActionMailbox::InboundEmail::MessageId
   include ::ActionMailbox::InboundEmail::Incineratable
@@ -3142,20 +3141,9 @@ module ActionMailbox::InboundEmail::GeneratedAssociationMethods
 
   def raw_email=(attachable); end
 
-  def raw_email_attachment(); end
-
-  def raw_email_attachment=(value); end
-
-  def raw_email_blob(); end
-
-  def raw_email_blob=(value); end
-
   def reload_raw_email_attachment(); end
 
   def reload_raw_email_blob(); end
-end
-
-module ActionMailbox::InboundEmail::GeneratedAssociationMethods
 end
 
 module ActionMailbox::InboundEmail::GeneratedAttributeMethods
@@ -3210,12 +3198,6 @@ end
 
 class ActionMailbox::InboundEmail
   extend ::ActionMailbox::InboundEmail::MessageId::ClassMethods
-  def self.bounced(*args); end
-
-  def self.delivered(*args); end
-
-  def self.failed(*args); end
-
   def self.not_bounced(*args); end
 
   def self.not_delivered(*args); end
@@ -3225,12 +3207,6 @@ class ActionMailbox::InboundEmail
   def self.not_pending(*args); end
 
   def self.not_processing(*args); end
-
-  def self.pending(*args); end
-
-  def self.processing(*args); end
-
-  def self.statuses(); end
 
   def self.with_attached_raw_email(*args); end
 end
@@ -4534,7 +4510,6 @@ end
 
 class ActionText::RichText
   include ::ActionText::RichText::GeneratedAttributeMethods
-  include ::ActionText::RichText::GeneratedAssociationMethods
   def after_add_for_embeds_attachments(); end
 
   def after_add_for_embeds_attachments=(val); end
@@ -4624,26 +4599,11 @@ module ActionText::RichText::GeneratedAssociationMethods
 
   def embeds_attachment_ids=(ids); end
 
-  def embeds_attachments(); end
-
-  def embeds_attachments=(value); end
-
   def embeds_blob_ids(); end
 
   def embeds_blob_ids=(ids); end
 
-  def embeds_blobs(); end
-
-  def embeds_blobs=(value); end
-
-  def record(); end
-
-  def record=(value); end
-
   def reload_record(); end
-end
-
-module ActionText::RichText::GeneratedAssociationMethods
 end
 
 module ActionText::RichText::GeneratedAttributeMethods
@@ -5241,9 +5201,6 @@ class ActionView::Template::Inline
 end
 
 class ActionView::Template::Inline
-end
-
-class ActionView::Template::LegacyTemplate
 end
 
 class ActionView::Template::RawFile
@@ -8910,7 +8867,6 @@ module ActiveRecord::Integration
 end
 
 class ActiveRecord::InternalMetadata
-  include ::ActiveRecord::InternalMetadata::GeneratedAttributeMethods
   include ::ActiveRecord::InternalMetadata::GeneratedAssociationMethods
 end
 
@@ -8918,9 +8874,6 @@ module ActiveRecord::InternalMetadata::GeneratedAssociationMethods
 end
 
 module ActiveRecord::InternalMetadata::GeneratedAssociationMethods
-end
-
-module ActiveRecord::InternalMetadata::GeneratedAttributeMethods
 end
 
 module ActiveRecord::InternalMetadata::GeneratedAttributeMethods
@@ -10228,7 +10181,6 @@ class ActiveRecord::Schema
 end
 
 class ActiveRecord::SchemaMigration
-  include ::ActiveRecord::SchemaMigration::GeneratedAttributeMethods
   include ::ActiveRecord::SchemaMigration::GeneratedAssociationMethods
   def version(); end
 end
@@ -10237,9 +10189,6 @@ module ActiveRecord::SchemaMigration::GeneratedAssociationMethods
 end
 
 module ActiveRecord::SchemaMigration::GeneratedAssociationMethods
-end
-
-module ActiveRecord::SchemaMigration::GeneratedAttributeMethods
 end
 
 module ActiveRecord::SchemaMigration::GeneratedAttributeMethods
@@ -11053,7 +11002,6 @@ end
 
 class ActiveStorage::Attachment
   include ::ActiveStorage::Attachment::GeneratedAttributeMethods
-  include ::ActiveStorage::Attachment::GeneratedAssociationMethods
   def autosave_associated_records_for_blob(*args); end
 
   def autosave_associated_records_for_record(*args); end
@@ -11064,26 +11012,15 @@ class ActiveStorage::Attachment
 end
 
 module ActiveStorage::Attachment::GeneratedAssociationMethods
-  def blob(); end
-
-  def blob=(value); end
-
   def build_blob(*args, &block); end
 
   def create_blob(*args, &block); end
 
   def create_blob!(*args, &block); end
 
-  def record(); end
-
-  def record=(value); end
-
   def reload_blob(); end
 
   def reload_record(); end
-end
-
-module ActiveStorage::Attachment::GeneratedAssociationMethods
 end
 
 module ActiveStorage::Attachment::GeneratedAttributeMethods
@@ -11091,9 +11028,6 @@ end
 
 module ActiveStorage::Attachment::GeneratedAttributeMethods
   extend ::Mutex_m
-end
-
-class ActiveStorage::Attachment
 end
 
 class ActiveStorage::BaseController
@@ -11111,7 +11045,6 @@ end
 
 class ActiveStorage::Blob
   include ::ActiveStorage::Blob::GeneratedAttributeMethods
-  include ::ActiveStorage::Blob::GeneratedAssociationMethods
   include ::ActiveStorage::Blob::Analyzable
   include ::ActiveStorage::Blob::Identifiable
   include ::ActiveStorage::Blob::Representable
@@ -11209,10 +11142,6 @@ module ActiveStorage::Blob::GeneratedAssociationMethods
 
   def attachment_ids=(ids); end
 
-  def attachments(); end
-
-  def attachments=(value); end
-
   def build_preview_image_attachment(*args, &block); end
 
   def create_preview_image_attachment(*args, &block); end
@@ -11223,20 +11152,9 @@ module ActiveStorage::Blob::GeneratedAssociationMethods
 
   def preview_image=(attachable); end
 
-  def preview_image_attachment(); end
-
-  def preview_image_attachment=(value); end
-
-  def preview_image_blob(); end
-
-  def preview_image_blob=(value); end
-
   def reload_preview_image_attachment(); end
 
   def reload_preview_image_blob(); end
-end
-
-module ActiveStorage::Blob::GeneratedAssociationMethods
 end
 
 module ActiveStorage::Blob::GeneratedAttributeMethods
@@ -19788,9 +19706,6 @@ end
 class Mail::POP3
 end
 
-class Mail::PartsList
-end
-
 class Mail::PhraseList
   def initialize(string); end
 
@@ -21574,6 +21489,14 @@ end
 
 class OpenStruct
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
+end
+
+module Parlour
+  VERSION = ::T.let(nil, ::T.untyped)
+end
+
+class Parlour::RbiGenerator::Parameter
+  PREFIXES = ::T.let(nil, ::T.untyped)
 end
 
 ParseError = Racc::ParseError
@@ -25325,6 +25248,8 @@ class Sorbet::Private::TodoRBI
 
   def self.output_file(); end
 end
+
+SorbetRails::ModelPlugins::Base::Parameter = Parlour::RbiGenerator::Parameter
 
 class SortedSet
   def initialize(*args, &block); end
