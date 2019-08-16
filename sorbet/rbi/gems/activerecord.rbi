@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/activerecord/all/activerecord.rbi
 #
-# activerecord-6.0.0.rc2
+# activerecord-6.0.0
 module Arel
   def self.arel_node?(value); end
   def self.fetch_attribute(value); end
