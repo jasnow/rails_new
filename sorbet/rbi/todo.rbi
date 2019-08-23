@@ -6,6 +6,7 @@ module ::Anonymous_Delegator_2; end
 module ::Anonymous_Delegator_5; end
 module ::Anonymous_Delegator_6; end
 module ActiveRecord::CollectionCacheKey; end
+module ActiveRecord::Delegation::DelegateCache; end
 module T::InterfaceWrapper::Helpers; end
 module T::InterfaceWrapper::Helpers; end
 module T::InterfaceWrapper::Helpers; end
