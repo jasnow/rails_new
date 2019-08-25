@@ -20,8 +20,6 @@ end
 gem 'sorbet', :group => :development
 gem 'sorbet-runtime'
 gem 'sorbet-rails'
-gem 'dalli' # 7/21/2019: Required by Sorbet
-gem 'redis' # 7/21/2019: Required by Sorbet
 
 #HID: group :development, :test do
 #HID:  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
