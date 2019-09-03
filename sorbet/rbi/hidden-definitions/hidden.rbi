@@ -7826,10 +7826,6 @@ class ActiveRecord::ConnectionAdapters::ColumnDefinition
   def self.members(); end
 end
 
-module ActiveRecord::ConnectionAdapters::ColumnMethods
-  def primary_key(name, type=T.unsafe(nil), **options); end
-end
-
 module ActiveRecord::ConnectionAdapters::ColumnMethods::ClassMethods
 end
 
@@ -8335,22 +8331,11 @@ class ActiveRecord::ConnectionAdapters::StatementPool
 end
 
 class ActiveRecord::ConnectionAdapters::Table
-  include ::ActiveRecord::ConnectionAdapters::ColumnMethods
-  def belongs_to(*args, **options); end
-
   def bigint(*names, **options); end
 
   def binary(*names, **options); end
 
   def boolean(*names, **options); end
-
-  def change(column_name, type, options=T.unsafe(nil)); end
-
-  def change_default(column_name, default_or_changes); end
-
-  def column(column_name, type, **options); end
-
-  def column_exists?(column_name, type=T.unsafe(nil), options=T.unsafe(nil)); end
 
   def date(*names, **options); end
 
@@ -8359,14 +8344,6 @@ class ActiveRecord::ConnectionAdapters::Table
   def decimal(*names, **options); end
 
   def float(*names, **options); end
-
-  def foreign_key(*args); end
-
-  def foreign_key_exists?(*args); end
-
-  def index(column_name, options=T.unsafe(nil)); end
-
-  def index_exists?(column_name, options=T.unsafe(nil)); end
 
   def initialize(table_name, base); end
 
@@ -8378,24 +8355,6 @@ class ActiveRecord::ConnectionAdapters::Table
 
   def numeric(*names, **options); end
 
-  def references(*args, **options); end
-
-  def remove(*column_names); end
-
-  def remove_belongs_to(*args, **options); end
-
-  def remove_foreign_key(*args); end
-
-  def remove_index(options=T.unsafe(nil)); end
-
-  def remove_references(*args, **options); end
-
-  def remove_timestamps(options=T.unsafe(nil)); end
-
-  def rename(column_name, new_column_name); end
-
-  def rename_index(index_name, new_index_name); end
-
   def string(*names, **options); end
 
   def text(*names, **options); end
@@ -8403,8 +8362,6 @@ class ActiveRecord::ConnectionAdapters::Table
   def time(*names, **options); end
 
   def timestamp(*names, **options); end
-
-  def timestamps(options=T.unsafe(nil)); end
 
   def virtual(*names, **options); end
 end
@@ -8414,22 +8371,13 @@ class ActiveRecord::ConnectionAdapters::Table
 end
 
 class ActiveRecord::ConnectionAdapters::TableDefinition
-  include ::ActiveRecord::ConnectionAdapters::ColumnMethods
-  def [](name); end
-
   def as(); end
-
-  def belongs_to(*args, **options); end
 
   def bigint(*names, **options); end
 
   def binary(*names, **options); end
 
   def boolean(*names, **options); end
-
-  def column(name, type, **options); end
-
-  def columns(); end
 
   def comment(); end
 
@@ -8446,8 +8394,6 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
   def foreign_keys(); end
 
   def if_not_exists(); end
-
-  def index(column_name, options=T.unsafe(nil)); end
 
   def indexes(); end
 
@@ -8467,10 +8413,6 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
 
   def primary_keys(name=T.unsafe(nil)); end
 
-  def references(*args, **options); end
-
-  def remove_column(name); end
-
   def string(*names, **options); end
 
   def temporary(); end
@@ -8480,8 +8422,6 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
   def time(*names, **options); end
 
   def timestamp(*names, **options); end
-
-  def timestamps(**options); end
 
   def virtual(*names, **options); end
 end
@@ -12725,14 +12665,8 @@ class Bundler::Fetcher::AuthenticationRequiredError
   def initialize(remote_uri); end
 end
 
-class Bundler::Fetcher::AuthenticationRequiredError
-end
-
 class Bundler::Fetcher::BadAuthenticationError
   def initialize(remote_uri); end
-end
-
-class Bundler::Fetcher::BadAuthenticationError
 end
 
 class Bundler::Fetcher::Base
@@ -12758,9 +12692,6 @@ end
 
 class Bundler::Fetcher::CertificateFailureError
   def initialize(remote_uri); end
-end
-
-class Bundler::Fetcher::CertificateFailureError
 end
 
 class Bundler::Fetcher::CompactIndex
@@ -12825,12 +12756,6 @@ end
 class Bundler::Fetcher::Downloader
 end
 
-class Bundler::Fetcher::FallbackError
-end
-
-class Bundler::Fetcher::FallbackError
-end
-
 class Bundler::Fetcher::Index
   def fetch_spec(spec); end
 
@@ -12840,17 +12765,8 @@ end
 class Bundler::Fetcher::Index
 end
 
-class Bundler::Fetcher::NetworkDownError
-end
-
-class Bundler::Fetcher::NetworkDownError
-end
-
 class Bundler::Fetcher::SSLError
   def initialize(msg=T.unsafe(nil)); end
-end
-
-class Bundler::Fetcher::SSLError
 end
 
 class Bundler::Fetcher
@@ -13118,58 +13034,11 @@ end
 module Bundler::Plugin::API::Source
 end
 
-class Bundler::Plugin::DSL
-  def _gem(name, *args); end
-
-  def inferred_plugins(); end
-
-  def plugin(name, *args); end
-end
-
-class Bundler::Plugin::DSL::PluginGemfileError
-end
-
-class Bundler::Plugin::DSL::PluginGemfileError
-end
-
-class Bundler::Plugin::DSL
-end
-
 module Bundler::Plugin::Events
   GEM_AFTER_INSTALL = ::T.let(nil, ::T.untyped)
   GEM_AFTER_INSTALL_ALL = ::T.let(nil, ::T.untyped)
   GEM_BEFORE_INSTALL = ::T.let(nil, ::T.untyped)
   GEM_BEFORE_INSTALL_ALL = ::T.let(nil, ::T.untyped)
-end
-
-module Bundler::Plugin::Events
-  def self.defined_event?(event); end
-end
-
-class Bundler::Plugin::Index
-  def command_plugin(command); end
-
-  def commands(); end
-
-  def global_index_file(); end
-
-  def hook_plugins(event); end
-
-  def index_file(); end
-
-  def installed?(name); end
-
-  def load_paths(name); end
-
-  def local_index_file(); end
-
-  def plugin_path(name); end
-
-  def register_plugin(name, path, load_paths, commands, sources, hooks); end
-
-  def source?(source); end
-
-  def source_plugin(name); end
 end
 
 class Bundler::Plugin::Index::CommandConflict
@@ -13184,9 +13053,6 @@ class Bundler::Plugin::Index::SourceConflict
 end
 
 class Bundler::Plugin::Index::SourceConflict
-end
-
-class Bundler::Plugin::Index
 end
 
 class Bundler::Plugin::Installer
@@ -14462,8 +14328,6 @@ class File
   def self.lutime(*_); end
 
   def self.mkfifo(*_); end
-
-  def self.probe_stat_in(dir); end
 
 end
 
@@ -21267,6 +21131,10 @@ class Sorbet::Private::TodoRBI
 end
 
 SorbetRails::ModelPlugins::Base::Parameter = Parlour::RbiGenerator::Parameter
+
+module SorbetRails
+  extend ::T::Private::Methods::SingletonMethodHooks
+end
 
 class SortedSet
   def initialize(*args, &block); end
