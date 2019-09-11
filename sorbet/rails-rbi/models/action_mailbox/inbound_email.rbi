@@ -41,22 +41,6 @@ module ActionMailbox::InboundEmail::ActiveRelation_WhereNot
   def not(opts, *rest); end
 end
 
-module ActionMailbox::InboundEmail::GeneratedAssociationMethods
-  extend T::Sig
-
-  sig { returns(T.nilable(::ActiveStorage::Attachment)) }
-  def raw_email_attachment; end
-
-  sig { params(value: T.nilable(::ActiveStorage::Attachment)).void }
-  def raw_email_attachment=(value); end
-
-  sig { returns(T.nilable(::ActiveStorage::Blob)) }
-  def raw_email_blob; end
-
-  sig { params(value: T.nilable(::ActiveStorage::Blob)).void }
-  def raw_email_blob=(value); end
-end
-
 module ActionMailbox::InboundEmail::CustomFinderMethods
   sig { params(limit: Integer).returns(T::Array[ActionMailbox::InboundEmail]) }
   def first_n(limit); end
@@ -940,4 +924,26 @@ class ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy < A
 
   sig { params(records: T.any(ActionMailbox::InboundEmail, T::Array[ActionMailbox::InboundEmail])).returns(T.self_type) }
   def concat(*records); end
+end
+
+module ActionMailbox::InboundEmail::GeneratedAssociationMethods
+  extend T::Sig
+
+  sig { returns(T.nilable(::ActiveStorage::Attachment)) }
+  def raw_email_attachment; end
+
+  sig { params(value: T.nilable(::ActiveStorage::Attachment)).void }
+  def raw_email_attachment=(value); end
+
+  sig { returns(T.nilable(::ActiveStorage::Blob)) }
+  def raw_email_blob; end
+
+  sig { params(value: T.nilable(::ActiveStorage::Blob)).void }
+  def raw_email_blob=(value); end
+
+  sig { returns(T.nilable(ActiveStorage::Attached::One)) }
+  def raw_email; end
+
+  sig { params(attachable: T.untyped).returns(T.untyped) }
+  def raw_email=(attachable); end
 end

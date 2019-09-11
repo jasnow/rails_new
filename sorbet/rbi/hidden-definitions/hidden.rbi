@@ -3106,10 +3106,6 @@ module ActionMailbox::InboundEmail::GeneratedAssociationMethods
 
   def create_raw_email_attachment!(*args, &block); end
 
-  def raw_email(); end
-
-  def raw_email=(attachable); end
-
   def reload_raw_email_attachment(); end
 
   def reload_raw_email_blob(); end
@@ -4592,10 +4588,6 @@ module ActionText::RichText::EmbedsAttachmentsAssociationExtension
 end
 
 module ActionText::RichText::GeneratedAssociationMethods
-  def embeds(); end
-
-  def embeds=(attachables); end
-
   def embeds_attachment_ids(); end
 
   def embeds_attachment_ids=(ids); end
@@ -6237,223 +6229,24 @@ end
 module ActiveModel::Translation
 end
 
-class ActiveModel::Type::BigInteger
-end
-
-class ActiveModel::Type::BigInteger
-end
-
-class ActiveModel::Type::Binary
-  def changed_in_place?(raw_old_value, value); end
-end
-
-class ActiveModel::Type::Binary::Data
-  def ==(other); end
-
-  def hex(); end
-
-  def initialize(value); end
-
-  def to_str(); end
-end
-
-class ActiveModel::Type::Binary::Data
-end
-
-class ActiveModel::Type::Binary
-end
-
 class ActiveModel::Type::Boolean
   FALSE_VALUES = ::T.let(nil, ::T.untyped)
 end
 
 class ActiveModel::Type::Date
-  include ::ActiveModel::Type::Helpers::Timezone
   ISO_DATE = ::T.let(nil, ::T.untyped)
 end
 
-class ActiveModel::Type::Date
-end
-
-class ActiveModel::Type::DateTime
-  include ::ActiveModel::Type::Helpers::Timezone
-  include ::ActiveModel::Type::Helpers::TimeValue
-end
-
-class ActiveModel::Type::DateTime
-end
-
 class ActiveModel::Type::Decimal
-  include ::ActiveModel::Type::Helpers::Numeric
   BIGDECIMAL_PRECISION = ::T.let(nil, ::T.untyped)
 end
 
-class ActiveModel::Type::Decimal
-end
-
-class ActiveModel::Type::Float
-  include ::ActiveModel::Type::Helpers::Numeric
-end
-
-class ActiveModel::Type::Float
-end
-
-module ActiveModel::Type::Helpers
-end
-
-class ActiveModel::Type::Helpers::AcceptsMultiparameterTime
-  def initialize(defaults: T.unsafe(nil)); end
-end
-
-class ActiveModel::Type::Helpers::AcceptsMultiparameterTime
-end
-
-module ActiveModel::Type::Helpers::Mutable
-  def cast(value); end
-
-  def changed_in_place?(raw_old_value, new_value); end
-end
-
-module ActiveModel::Type::Helpers::Mutable
-end
-
-module ActiveModel::Type::Helpers::Numeric
-  def cast(value); end
-
-  def changed?(old_value, _new_value, new_value_before_type_cast); end
-
-  def serialize(value); end
-end
-
-module ActiveModel::Type::Helpers::Numeric
-end
-
 module ActiveModel::Type::Helpers::TimeValue
-  def apply_seconds_precision(value); end
-
-  def serialize(value); end
-
-  def type_cast_for_schema(value); end
-
-  def user_input_in_time_zone(value); end
   ISO_DATETIME = ::T.let(nil, ::T.untyped)
 end
 
-module ActiveModel::Type::Helpers::TimeValue
-end
-
-module ActiveModel::Type::Helpers::Timezone
-  def default_timezone(); end
-
-  def is_utc?(); end
-end
-
-module ActiveModel::Type::Helpers::Timezone
-end
-
-module ActiveModel::Type::Helpers
-end
-
-class ActiveModel::Type::ImmutableString
-end
-
-class ActiveModel::Type::ImmutableString
-end
-
 class ActiveModel::Type::Integer
-  include ::ActiveModel::Type::Helpers::Numeric
-  def initialize(*_); end
   DEFAULT_LIMIT = ::T.let(nil, ::T.untyped)
-end
-
-class ActiveModel::Type::Integer
-end
-
-class ActiveModel::Type::Registration
-  def call(_registry, *args, **kwargs); end
-
-  def initialize(name, block, **_); end
-
-  def matches?(type_name, *args, **kwargs); end
-end
-
-class ActiveModel::Type::Registration
-end
-
-class ActiveModel::Type::Registry
-  def lookup(symbol, *args); end
-
-  def register(type_name, klass=T.unsafe(nil), **options, &block); end
-end
-
-class ActiveModel::Type::Registry
-end
-
-class ActiveModel::Type::String
-end
-
-class ActiveModel::Type::String
-end
-
-class ActiveModel::Type::Time
-  include ::ActiveModel::Type::Helpers::Timezone
-  include ::ActiveModel::Type::Helpers::TimeValue
-end
-
-class ActiveModel::Type::Time
-end
-
-class ActiveModel::Type::Value
-  def ==(other); end
-
-  def assert_valid_value(*_); end
-
-  def binary?(); end
-
-  def cast(value); end
-
-  def changed?(old_value, new_value, _new_value_before_type_cast); end
-
-  def changed_in_place?(raw_old_value, new_value); end
-
-  def deserialize(value); end
-
-  def eql?(other); end
-
-  def force_equality?(_value); end
-
-  def initialize(precision: T.unsafe(nil), limit: T.unsafe(nil), scale: T.unsafe(nil)); end
-
-  def limit(); end
-
-  def map(value); end
-
-  def precision(); end
-
-  def scale(); end
-
-  def serialize(value); end
-
-  def type(); end
-
-  def type_cast_for_schema(value); end
-
-  def value_constructed_by_mass_assignment?(_value); end
-end
-
-class ActiveModel::Type::Value
-end
-
-module ActiveModel::Type
-  def self.default_value(); end
-
-  def self.lookup(*args, **kwargs); end
-
-  def self.register(type_name, klass=T.unsafe(nil), **options, &block); end
-
-  def self.registry(); end
-
-  def self.registry=(registry); end
 end
 
 module ActiveModel::VERSION
@@ -7241,7 +7034,6 @@ class ActiveRecord::Base
   extend ::ActiveModel::Naming
   extend ::ActiveRecord::DynamicMatchers
   extend ::ActiveRecord::Explain
-  extend ::ActiveRecord::Enum
   extend ::ActiveRecord::Aggregations::ClassMethods
   extend ::ActiveModel::Callbacks
   extend ::ActiveModel::Validations::HelperMethods
@@ -8825,27 +8617,6 @@ end
 
 class ActiveRecord::EagerLoadPolymorphicError
   def initialize(reflection=T.unsafe(nil)); end
-end
-
-module ActiveRecord::Enum
-  def enum(definitions); end
-
-  def inherited(base); end
-end
-
-class ActiveRecord::Enum::EnumType
-  def assert_valid_value(value); end
-
-  def initialize(name, mapping, subtype); end
-
-  def type(*args, &block); end
-end
-
-class ActiveRecord::Enum::EnumType
-end
-
-module ActiveRecord::Enum
-  def self.extended(base); end
 end
 
 module ActiveRecord::Explain
@@ -10779,192 +10550,17 @@ end
 module ActiveRecord::Translation
 end
 
-class ActiveRecord::Type::AdapterSpecificRegistry
-  def add_modifier(options, klass, **args); end
-end
-
-class ActiveRecord::Type::AdapterSpecificRegistry
-end
-
 ActiveRecord::Type::BigInteger = ActiveModel::Type::BigInteger
 
 ActiveRecord::Type::Binary = ActiveModel::Type::Binary
 
-class ActiveRecord::Type::Date
-  include ::ActiveRecord::Type::Internal::Timezone
-end
-
-class ActiveRecord::Type::Date
-end
-
-class ActiveRecord::Type::DateTime
-  include ::ActiveRecord::Type::Internal::Timezone
-end
-
-class ActiveRecord::Type::DateTime
-end
-
 ActiveRecord::Type::Decimal = ActiveModel::Type::Decimal
-
-class ActiveRecord::Type::DecimalWithoutScale
-end
-
-class ActiveRecord::Type::DecimalWithoutScale
-end
-
-class ActiveRecord::Type::DecorationRegistration
-  def call(registry, *args, **kwargs); end
-
-  def initialize(options, klass, adapter: T.unsafe(nil)); end
-
-  def matches?(*args, **kwargs); end
-end
-
-class ActiveRecord::Type::DecorationRegistration
-end
 
 ActiveRecord::Type::Float = ActiveModel::Type::Float
 
-class ActiveRecord::Type::HashLookupTypeMap
-  def alias_type(type, alias_type); end
-
-  def key?(key); end
-
-  def keys(); end
-end
-
-class ActiveRecord::Type::HashLookupTypeMap
-end
-
 ActiveRecord::Type::Integer = ActiveModel::Type::Integer
 
-module ActiveRecord::Type::Internal
-end
-
-module ActiveRecord::Type::Internal::Timezone
-  def default_timezone(); end
-
-  def is_utc?(); end
-end
-
-module ActiveRecord::Type::Internal::Timezone
-end
-
-module ActiveRecord::Type::Internal
-end
-
-class ActiveRecord::Type::Json
-  include ::ActiveModel::Type::Helpers::Mutable
-  def accessor(); end
-end
-
-class ActiveRecord::Type::Json
-end
-
-class ActiveRecord::Type::Registration
-  def adapter(); end
-
-  def block(); end
-
-  def call(_registry, *args, adapter: T.unsafe(nil), **kwargs); end
-
-  def initialize(name, block, adapter: T.unsafe(nil), override: T.unsafe(nil)); end
-
-  def matches?(type_name, *args, **kwargs); end
-
-  def name(); end
-
-  def override(); end
-
-  def priority(); end
-
-  def priority_except_adapter(); end
-end
-
-class ActiveRecord::Type::Registration
-end
-
-class ActiveRecord::Type::Serialized
-  include ::ActiveModel::Type::Helpers::Mutable
-  def accessor(); end
-
-  def assert_valid_value(value); end
-
-  def changed_in_place?(raw_old_value, value); end
-
-  def coder(); end
-
-  def deserialize(value); end
-
-  def force_equality?(value); end
-
-  def initialize(subtype, coder); end
-
-  def inspect(); end
-
-  def serialize(value); end
-
-  def subtype(); end
-end
-
-class ActiveRecord::Type::Serialized
-end
-
 ActiveRecord::Type::String = ActiveModel::Type::String
-
-class ActiveRecord::Type::Text
-end
-
-class ActiveRecord::Type::Text
-end
-
-class ActiveRecord::Type::Time
-  include ::ActiveRecord::Type::Internal::Timezone
-end
-
-class ActiveRecord::Type::Time::Value
-end
-
-class ActiveRecord::Type::Time::Value
-end
-
-class ActiveRecord::Type::Time
-end
-
-class ActiveRecord::Type::TypeMap
-  def alias_type(key, target_key); end
-
-  def clear(); end
-
-  def fetch(lookup_key, *args, &block); end
-
-  def lookup(lookup_key, *args); end
-
-  def register_type(key, value=T.unsafe(nil), &block); end
-end
-
-class ActiveRecord::Type::TypeMap
-end
-
-class ActiveRecord::Type::UnsignedInteger
-end
-
-class ActiveRecord::Type::UnsignedInteger
-end
-
-module ActiveRecord::Type
-  def self.add_modifier(*args, &block); end
-
-  def self.default_value(); end
-
-  def self.lookup(*args, adapter: T.unsafe(nil), **kwargs); end
-
-  def self.register(type_name, klass=T.unsafe(nil), **options, &block); end
-
-  def self.registry(); end
-
-  def self.registry=(registry); end
-end
 
 module ActiveRecord::TypeCaster
 end
@@ -11178,7 +10774,6 @@ class ActiveStorage::Blob
   include ::ActiveStorage::Blob::GeneratedAttributeMethods
   include ::ActiveStorage::Blob::Analyzable
   include ::ActiveStorage::Blob::Identifiable
-  include ::ActiveStorage::Blob::Representable
   include ::ActionText::Attachable
   def after_add_for_attachments(); end
 
@@ -11294,10 +10889,6 @@ module ActiveStorage::Blob::GeneratedAssociationMethods
 
   def create_preview_image_attachment!(*args, &block); end
 
-  def preview_image(); end
-
-  def preview_image=(attachable); end
-
   def reload_preview_image_attachment(); end
 
   def reload_preview_image_blob(); end
@@ -11339,8 +10930,6 @@ module ActiveStorage::Blob::Representable
   def representation(transformations); end
 
   def variable?(); end
-
-  def variant(transformations); end
 end
 
 module ActiveStorage::Blob::Representable
@@ -12364,12 +11953,6 @@ end
 class ApplicationJob
 end
 
-class ApplicationMailer
-end
-
-class ApplicationMailer
-end
-
 class ApplicationRecord
   include ::ApplicationRecord::GeneratedAttributeMethods
   include ::ApplicationRecord::GeneratedAssociationMethods
@@ -12461,6 +12044,7 @@ class Array
   def to_csv(**options); end
 
   def to_h(); end
+
 end
 
 class Array
@@ -13808,6 +13392,7 @@ class Enumerator
   include ::ActiveSupport::Dependencies::ZeitwerkIntegration::RequireDependency
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
   def each_with_index(); end
+
 end
 
 class Enumerator::Generator
@@ -14050,6 +13635,7 @@ class Exception
   include ::ActiveSupport::Dependencies::ZeitwerkIntegration::RequireDependency
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
   def full_message(*_); end
+
 end
 
 class Exception
@@ -14311,6 +13897,9 @@ class File
   def self.lutime(*_); end
 
   def self.mkfifo(*_); end
+
+  def self.probe_stat_in(dir); end
+
 end
 
 module FileUtils
@@ -15200,6 +14789,7 @@ class IO
   def self.foreach(*_); end
 
   def self.pipe(*_); end
+
 end
 
 class IPAddr
@@ -16842,8 +16432,6 @@ end
 
 Net::HTTPInformationCode::EXCEPTION_TYPE = Net::HTTPError
 
-Net::HTTPInformationCode = Net::HTTPInformation
-
 class Net::HTTPInformation
 end
 
@@ -16910,8 +16498,6 @@ Net::HTTPSession::ProxyDelta = Net::HTTP::ProxyDelta
 
 Net::HTTPSession::ProxyMod = Net::HTTP::ProxyDelta
 
-Net::HTTPSession = Net::HTTP
-
 class Net::HTTP
 end
 
@@ -16930,6 +16516,7 @@ end
 
 class Net::IMAP
   def open_timeout(); end
+
   RESPONSE_ERRORS = ::T.let(nil, ::T.untyped)
 end
 
@@ -17799,6 +17386,7 @@ class Pathname
   def glob(*_); end
 
   def make_symlink(_); end
+
 end
 
 class Proc
@@ -17824,6 +17412,7 @@ end
 
 module Process::Sys
   def self.getegid(); end
+
 end
 
 class Process::Tms
@@ -17854,6 +17443,7 @@ module Process
   def self.last_status(); end
 
   def self.setpgrp(); end
+
 end
 
 module Psych
@@ -20139,6 +19729,7 @@ end
 
 module Random::Formatter
   def alphanumeric(n=T.unsafe(nil)); end
+
   ALPHANUMERIC = ::T.let(nil, ::T.untyped)
 end
 
@@ -21442,6 +21033,7 @@ class String
   def unpack1(_); end
 
   def unspace(); end
+
   BLANK_RE = ::T.let(nil, ::T.untyped)
   ENCODED_BLANKS = ::T.let(nil, ::T.untyped)
 end
@@ -21450,6 +21042,7 @@ class StringIO
   def length(); end
 
   def truncate(_); end
+
 end
 
 class StringScanner

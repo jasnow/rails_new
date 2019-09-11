@@ -7,28 +7,6 @@ module ActionText::RichText::ActiveRelation_WhereNot
   def not(opts, *rest); end
 end
 
-module ActionText::RichText::GeneratedAssociationMethods
-  extend T::Sig
-
-  sig { returns(::ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy) }
-  def embeds_attachments; end
-
-  sig { params(value: T.any(T::Array[::ActiveStorage::Attachment], ::ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy)).void }
-  def embeds_attachments=(value); end
-
-  sig { returns(::ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy) }
-  def embeds_blobs; end
-
-  sig { params(value: T.any(T::Array[::ActiveStorage::Blob], ::ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy)).void }
-  def embeds_blobs=(value); end
-
-  sig { returns(T.nilable(T.untyped)) }
-  def record; end
-
-  sig { params(value: T.nilable(T.untyped)).void }
-  def record=(value); end
-end
-
 module ActionText::RichText::CustomFinderMethods
   sig { params(limit: Integer).returns(T::Array[ActionText::RichText]) }
   def first_n(limit); end
@@ -788,4 +766,32 @@ class ActionText::RichText::ActiveRecord_Associations_CollectionProxy < ActiveRe
 
   sig { params(records: T.any(ActionText::RichText, T::Array[ActionText::RichText])).returns(T.self_type) }
   def concat(*records); end
+end
+
+module ActionText::RichText::GeneratedAssociationMethods
+  extend T::Sig
+
+  sig { returns(::ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy) }
+  def embeds_attachments; end
+
+  sig { params(value: T.any(T::Array[::ActiveStorage::Attachment], ::ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy)).void }
+  def embeds_attachments=(value); end
+
+  sig { returns(::ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy) }
+  def embeds_blobs; end
+
+  sig { params(value: T.any(T::Array[::ActiveStorage::Blob], ::ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy)).void }
+  def embeds_blobs=(value); end
+
+  sig { returns(T.untyped) }
+  def record; end
+
+  sig { params(value: T.untyped).void }
+  def record=(value); end
+
+  sig { returns(T.nilable(ActiveStorage::Attached::Many)) }
+  def embeds; end
+
+  sig { params(attachables: T.untyped).returns(T.untyped) }
+  def embeds=(*attachables); end
 end

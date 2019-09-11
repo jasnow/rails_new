@@ -146,7 +146,7 @@ end
 module Arel::Attributes
   def self.for(column); end
 end
-class Anonymous_Struct_3 < Struct
+class Anonymous_Struct_6 < Struct
   def name; end
   def name=(_); end
   def relation; end
@@ -156,7 +156,7 @@ class Anonymous_Struct_3 < Struct
   def self.members; end
   def self.new(*arg0); end
 end
-class Arel::Attributes::Attribute < Anonymous_Struct_3
+class Arel::Attributes::Attribute < Anonymous_Struct_6
   def able_to_type_cast?; end
   def lower; end
   def type_cast_for_database(value); end
@@ -635,7 +635,7 @@ class Arel::Visitors::Dot::Node
   def name; end
   def name=(arg0); end
 end
-class Anonymous_Struct_4 < Struct
+class Anonymous_Struct_7 < Struct
   def from; end
   def from=(_); end
   def name; end
@@ -647,7 +647,7 @@ class Anonymous_Struct_4 < Struct
   def to; end
   def to=(_); end
 end
-class Arel::Visitors::Dot::Edge < Anonymous_Struct_4
+class Arel::Visitors::Dot::Edge < Anonymous_Struct_7
 end
 class Arel::Visitors::IBM_DB < Arel::Visitors::ToSql
   def collect_optimizer_hints(o, collector); end
@@ -2380,6 +2380,135 @@ class ActiveRecord::Reflection::RuntimeReflection < ActiveRecord::Reflection::Ab
   def initialize(reflection, association); end
   def klass; end
   def scope(*args, &block); end
+  def type(*args, &block); end
+end
+module ActiveRecord::Type
+  def self.add_modifier(*args, &block); end
+  def self.current_adapter_name; end
+  def self.default_value; end
+  def self.lookup(*args, adapter: nil, **kwargs); end
+  def self.register(type_name, klass = nil, **options, &block); end
+  def self.registry; end
+  def self.registry=(arg0); end
+end
+module ActiveRecord::Type::Internal
+end
+module ActiveRecord::Type::Internal::Timezone
+  def default_timezone; end
+  def is_utc?; end
+end
+class ActiveRecord::Type::Date < ActiveModel::Type::Date
+  include ActiveRecord::Type::Internal::Timezone
+end
+class ActiveRecord::Type::DateTime < ActiveModel::Type::DateTime
+  include ActiveRecord::Type::Internal::Timezone
+end
+class ActiveRecord::Type::DecimalWithoutScale < ActiveModel::Type::BigInteger
+  def type; end
+  def type_cast_for_schema(value); end
+end
+class ActiveRecord::Type::Json < ActiveModel::Type::Value
+  def accessor; end
+  def changed_in_place?(raw_old_value, new_value); end
+  def deserialize(value); end
+  def serialize(value); end
+  def type; end
+  include ActiveModel::Type::Helpers::Mutable
+end
+class ActiveRecord::Type::Time < ActiveModel::Type::Time
+  def serialize(value); end
+  include ActiveRecord::Type::Internal::Timezone
+end
+class ActiveRecord::Type::Time::Value < Anonymous_Delegator_8
+end
+class ActiveRecord::Type::Text < ActiveModel::Type::String
+  def type; end
+end
+class ActiveRecord::Type::UnsignedInteger < ActiveModel::Type::Integer
+  def max_value; end
+  def min_value; end
+end
+class ActiveRecord::Type::Serialized < Anonymous_Delegator_9
+  def accessor; end
+  def assert_valid_value(value); end
+  def changed_in_place?(raw_old_value, value); end
+  def coder; end
+  def default_value?(value); end
+  def deserialize(value); end
+  def encoded(value); end
+  def force_equality?(value); end
+  def initialize(subtype, coder); end
+  def inspect; end
+  def serialize(value); end
+  def subtype; end
+  include ActiveModel::Type::Helpers::Mutable
+end
+class ActiveRecord::Type::AdapterSpecificRegistry < ActiveModel::Type::Registry
+  def add_modifier(options, klass, **args); end
+  def find_registration(symbol, *args); end
+  def registration_klass; end
+end
+class ActiveRecord::Type::Registration
+  def <=>(other); end
+  def adapter; end
+  def block; end
+  def call(_registry, *args, adapter: nil, **kwargs); end
+  def conflicts_with?(other); end
+  def has_adapter_conflict?(other); end
+  def initialize(name, block, adapter: nil, override: nil); end
+  def matches?(type_name, *args, **kwargs); end
+  def matches_adapter?(adapter: nil, **arg1); end
+  def name; end
+  def override; end
+  def priority; end
+  def priority_except_adapter; end
+  def same_priority_except_adapter?(other); end
+end
+class ActiveRecord::Type::DecorationRegistration < ActiveRecord::Type::Registration
+  def call(registry, *args, **kwargs); end
+  def initialize(options, klass, adapter: nil); end
+  def klass; end
+  def matches?(*args, **kwargs); end
+  def matches_options?(**kwargs); end
+  def options; end
+  def priority; end
+end
+class ActiveRecord::TypeConflictError < StandardError
+end
+class ActiveRecord::Type::TypeMap
+  def alias_type(key, target_key); end
+  def clear; end
+  def fetch(lookup_key, *args, &block); end
+  def initialize; end
+  def lookup(lookup_key, *args); end
+  def perform_fetch(lookup_key, *args); end
+  def register_type(key, value = nil, &block); end
+end
+class ActiveRecord::Type::HashLookupTypeMap < ActiveRecord::Type::TypeMap
+  def alias_type(type, alias_type); end
+  def key?(key); end
+  def keys; end
+  def perform_fetch(type, *args, &block); end
+end
+module ActiveRecord::Enum
+  def _enum_methods_module; end
+  def assert_valid_enum_definition_values(values); end
+  def detect_enum_conflict!(enum_name, method_name, klass_method = nil); end
+  def detect_negative_condition!(method_name); end
+  def enum(*args, **kwargs); end
+  def inherited(base); end
+  def raise_conflict_error(enum_name, method_name, type: nil, source: nil); end
+  def self.extended(base); end
+end
+class ActiveRecord::Enum::EnumType < ActiveModel::Type::Value
+  def assert_valid_value(value); end
+  def cast(value); end
+  def deserialize(value); end
+  def initialize(name, mapping, subtype); end
+  def mapping; end
+  def name; end
+  def serialize(value); end
+  def subtype; end
   def type(*args, &block); end
 end
 class ActiveRecord::LogSubscriber < ActiveSupport::LogSubscriber
