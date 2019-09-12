@@ -17,10 +17,6 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
 end
 
-gem 'sorbet', :group => :development
-gem 'sorbet-runtime'
-gem 'sorbet-rails'
-
 #HID: group :development, :test do
 #HID:  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 #HID: end
@@ -39,3 +35,9 @@ gem 'sorbet-rails'
 #HID:end
 #HID:
 #HID:gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'sorbet', :group => :development
+gem 'sorbet-runtime'
+gem 'sorbet-rails'
+gem 'dalli' # Needed by sorbet.
+gem 'redis' # Needed by sorbet.
