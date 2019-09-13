@@ -1,4 +1,4 @@
-# typed: ignore
+# typed: false
 #HID: require "test_helper"
 
 #HID: class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCase
