@@ -815,7 +815,7 @@ class ActionView::Template::Handlers::Builder
   def self.default_format=(val); end
   def self.default_format?; end
 end
-class ActionView::Template::LegacyTemplate < Anonymous_Delegator_10
+class ActionView::Template::LegacyTemplate < Anonymous_Delegator_5
   def initialize(template, source); end
   def source; end
 end

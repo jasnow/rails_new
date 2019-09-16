@@ -1917,6 +1917,7 @@ module ActionController::ParameterEncoding
 end
 
 class ActionController::Parameters
+  include ::SorbetRails::CustomParamsMethods
   EMPTY_ARRAY = ::T.let(nil, ::T.untyped)
   EMPTY_HASH = ::T.let(nil, ::T.untyped)
   PERMITTED_SCALAR_TYPES = ::T.let(nil, ::T.untyped)
@@ -6238,24 +6239,223 @@ end
 module ActiveModel::Translation
 end
 
+class ActiveModel::Type::BigInteger
+end
+
+class ActiveModel::Type::BigInteger
+end
+
+class ActiveModel::Type::Binary
+  def changed_in_place?(raw_old_value, value); end
+end
+
+class ActiveModel::Type::Binary::Data
+  def ==(other); end
+
+  def hex(); end
+
+  def initialize(value); end
+
+  def to_str(); end
+end
+
+class ActiveModel::Type::Binary::Data
+end
+
+class ActiveModel::Type::Binary
+end
+
 class ActiveModel::Type::Boolean
   FALSE_VALUES = ::T.let(nil, ::T.untyped)
 end
 
 class ActiveModel::Type::Date
+  include ::ActiveModel::Type::Helpers::Timezone
   ISO_DATE = ::T.let(nil, ::T.untyped)
 end
 
+class ActiveModel::Type::Date
+end
+
+class ActiveModel::Type::DateTime
+  include ::ActiveModel::Type::Helpers::Timezone
+  include ::ActiveModel::Type::Helpers::TimeValue
+end
+
+class ActiveModel::Type::DateTime
+end
+
 class ActiveModel::Type::Decimal
+  include ::ActiveModel::Type::Helpers::Numeric
   BIGDECIMAL_PRECISION = ::T.let(nil, ::T.untyped)
 end
 
+class ActiveModel::Type::Decimal
+end
+
+class ActiveModel::Type::Float
+  include ::ActiveModel::Type::Helpers::Numeric
+end
+
+class ActiveModel::Type::Float
+end
+
+module ActiveModel::Type::Helpers
+end
+
+class ActiveModel::Type::Helpers::AcceptsMultiparameterTime
+  def initialize(defaults: T.unsafe(nil)); end
+end
+
+class ActiveModel::Type::Helpers::AcceptsMultiparameterTime
+end
+
+module ActiveModel::Type::Helpers::Mutable
+  def cast(value); end
+
+  def changed_in_place?(raw_old_value, new_value); end
+end
+
+module ActiveModel::Type::Helpers::Mutable
+end
+
+module ActiveModel::Type::Helpers::Numeric
+  def cast(value); end
+
+  def changed?(old_value, _new_value, new_value_before_type_cast); end
+
+  def serialize(value); end
+end
+
+module ActiveModel::Type::Helpers::Numeric
+end
+
 module ActiveModel::Type::Helpers::TimeValue
+  def apply_seconds_precision(value); end
+
+  def serialize(value); end
+
+  def type_cast_for_schema(value); end
+
+  def user_input_in_time_zone(value); end
   ISO_DATETIME = ::T.let(nil, ::T.untyped)
 end
 
+module ActiveModel::Type::Helpers::TimeValue
+end
+
+module ActiveModel::Type::Helpers::Timezone
+  def default_timezone(); end
+
+  def is_utc?(); end
+end
+
+module ActiveModel::Type::Helpers::Timezone
+end
+
+module ActiveModel::Type::Helpers
+end
+
+class ActiveModel::Type::ImmutableString
+end
+
+class ActiveModel::Type::ImmutableString
+end
+
 class ActiveModel::Type::Integer
+  include ::ActiveModel::Type::Helpers::Numeric
+  def initialize(*_); end
   DEFAULT_LIMIT = ::T.let(nil, ::T.untyped)
+end
+
+class ActiveModel::Type::Integer
+end
+
+class ActiveModel::Type::Registration
+  def call(_registry, *args, **kwargs); end
+
+  def initialize(name, block, **_); end
+
+  def matches?(type_name, *args, **kwargs); end
+end
+
+class ActiveModel::Type::Registration
+end
+
+class ActiveModel::Type::Registry
+  def lookup(symbol, *args); end
+
+  def register(type_name, klass=T.unsafe(nil), **options, &block); end
+end
+
+class ActiveModel::Type::Registry
+end
+
+class ActiveModel::Type::String
+end
+
+class ActiveModel::Type::String
+end
+
+class ActiveModel::Type::Time
+  include ::ActiveModel::Type::Helpers::Timezone
+  include ::ActiveModel::Type::Helpers::TimeValue
+end
+
+class ActiveModel::Type::Time
+end
+
+class ActiveModel::Type::Value
+  def ==(other); end
+
+  def assert_valid_value(*_); end
+
+  def binary?(); end
+
+  def cast(value); end
+
+  def changed?(old_value, new_value, _new_value_before_type_cast); end
+
+  def changed_in_place?(raw_old_value, new_value); end
+
+  def deserialize(value); end
+
+  def eql?(other); end
+
+  def force_equality?(_value); end
+
+  def initialize(precision: T.unsafe(nil), limit: T.unsafe(nil), scale: T.unsafe(nil)); end
+
+  def limit(); end
+
+  def map(value); end
+
+  def precision(); end
+
+  def scale(); end
+
+  def serialize(value); end
+
+  def type(); end
+
+  def type_cast_for_schema(value); end
+
+  def value_constructed_by_mass_assignment?(_value); end
+end
+
+class ActiveModel::Type::Value
+end
+
+module ActiveModel::Type
+  def self.default_value(); end
+
+  def self.lookup(*args, **kwargs); end
+
+  def self.register(type_name, klass=T.unsafe(nil), **options, &block); end
+
+  def self.registry(); end
+
+  def self.registry=(registry); end
 end
 
 module ActiveModel::VERSION
@@ -7043,6 +7243,7 @@ class ActiveRecord::Base
   extend ::ActiveModel::Naming
   extend ::ActiveRecord::DynamicMatchers
   extend ::ActiveRecord::Explain
+  extend ::ActiveRecord::Enum
   extend ::ActiveRecord::Aggregations::ClassMethods
   extend ::ActiveModel::Callbacks
   extend ::ActiveModel::Validations::HelperMethods
@@ -8561,6 +8762,29 @@ end
 
 class ActiveRecord::EagerLoadPolymorphicError
   def initialize(reflection=T.unsafe(nil)); end
+end
+
+module ActiveRecord::Enum
+  def enum(*args, **kwargs); end
+
+  def inherited(base); end
+
+  def old_enum(definitions); end
+end
+
+class ActiveRecord::Enum::EnumType
+  def assert_valid_value(value); end
+
+  def initialize(name, mapping, subtype); end
+
+  def type(*args, &block); end
+end
+
+class ActiveRecord::Enum::EnumType
+end
+
+module ActiveRecord::Enum
+  def self.extended(base); end
 end
 
 module ActiveRecord::Explain
@@ -10494,17 +10718,192 @@ end
 module ActiveRecord::Translation
 end
 
+class ActiveRecord::Type::AdapterSpecificRegistry
+  def add_modifier(options, klass, **args); end
+end
+
+class ActiveRecord::Type::AdapterSpecificRegistry
+end
+
 ActiveRecord::Type::BigInteger = ActiveModel::Type::BigInteger
 
 ActiveRecord::Type::Binary = ActiveModel::Type::Binary
 
+class ActiveRecord::Type::Date
+  include ::ActiveRecord::Type::Internal::Timezone
+end
+
+class ActiveRecord::Type::Date
+end
+
+class ActiveRecord::Type::DateTime
+  include ::ActiveRecord::Type::Internal::Timezone
+end
+
+class ActiveRecord::Type::DateTime
+end
+
 ActiveRecord::Type::Decimal = ActiveModel::Type::Decimal
+
+class ActiveRecord::Type::DecimalWithoutScale
+end
+
+class ActiveRecord::Type::DecimalWithoutScale
+end
+
+class ActiveRecord::Type::DecorationRegistration
+  def call(registry, *args, **kwargs); end
+
+  def initialize(options, klass, adapter: T.unsafe(nil)); end
+
+  def matches?(*args, **kwargs); end
+end
+
+class ActiveRecord::Type::DecorationRegistration
+end
 
 ActiveRecord::Type::Float = ActiveModel::Type::Float
 
+class ActiveRecord::Type::HashLookupTypeMap
+  def alias_type(type, alias_type); end
+
+  def key?(key); end
+
+  def keys(); end
+end
+
+class ActiveRecord::Type::HashLookupTypeMap
+end
+
 ActiveRecord::Type::Integer = ActiveModel::Type::Integer
 
+module ActiveRecord::Type::Internal
+end
+
+module ActiveRecord::Type::Internal::Timezone
+  def default_timezone(); end
+
+  def is_utc?(); end
+end
+
+module ActiveRecord::Type::Internal::Timezone
+end
+
+module ActiveRecord::Type::Internal
+end
+
+class ActiveRecord::Type::Json
+  include ::ActiveModel::Type::Helpers::Mutable
+  def accessor(); end
+end
+
+class ActiveRecord::Type::Json
+end
+
+class ActiveRecord::Type::Registration
+  def adapter(); end
+
+  def block(); end
+
+  def call(_registry, *args, adapter: T.unsafe(nil), **kwargs); end
+
+  def initialize(name, block, adapter: T.unsafe(nil), override: T.unsafe(nil)); end
+
+  def matches?(type_name, *args, **kwargs); end
+
+  def name(); end
+
+  def override(); end
+
+  def priority(); end
+
+  def priority_except_adapter(); end
+end
+
+class ActiveRecord::Type::Registration
+end
+
+class ActiveRecord::Type::Serialized
+  include ::ActiveModel::Type::Helpers::Mutable
+  def accessor(); end
+
+  def assert_valid_value(value); end
+
+  def changed_in_place?(raw_old_value, value); end
+
+  def coder(); end
+
+  def deserialize(value); end
+
+  def force_equality?(value); end
+
+  def initialize(subtype, coder); end
+
+  def inspect(); end
+
+  def serialize(value); end
+
+  def subtype(); end
+end
+
+class ActiveRecord::Type::Serialized
+end
+
 ActiveRecord::Type::String = ActiveModel::Type::String
+
+class ActiveRecord::Type::Text
+end
+
+class ActiveRecord::Type::Text
+end
+
+class ActiveRecord::Type::Time
+  include ::ActiveRecord::Type::Internal::Timezone
+end
+
+class ActiveRecord::Type::Time::Value
+end
+
+class ActiveRecord::Type::Time::Value
+end
+
+class ActiveRecord::Type::Time
+end
+
+class ActiveRecord::Type::TypeMap
+  def alias_type(key, target_key); end
+
+  def clear(); end
+
+  def fetch(lookup_key, *args, &block); end
+
+  def lookup(lookup_key, *args); end
+
+  def register_type(key, value=T.unsafe(nil), &block); end
+end
+
+class ActiveRecord::Type::TypeMap
+end
+
+class ActiveRecord::Type::UnsignedInteger
+end
+
+class ActiveRecord::Type::UnsignedInteger
+end
+
+module ActiveRecord::Type
+  def self.add_modifier(*args, &block); end
+
+  def self.default_value(); end
+
+  def self.lookup(*args, adapter: T.unsafe(nil), **kwargs); end
+
+  def self.register(type_name, klass=T.unsafe(nil), **options, &block); end
+
+  def self.registry(); end
+
+  def self.registry=(registry); end
+end
 
 module ActiveRecord::TypeCaster
 end
@@ -11897,25 +12296,7 @@ module ActiveSupport::XmlMini_REXML
   CONTENT_KEY = ::T.let(nil, ::T.untyped)
 end
 
-module ApplicationCable
-end
-
-class ApplicationCable::Channel
-end
-
-class ApplicationCable::Channel
-end
-
 class ApplicationCable::Connection
-end
-
-class ApplicationCable::Connection
-end
-
-module ApplicationCable
-end
-
-class ApplicationJob
 end
 
 class ApplicationJob
@@ -19716,18 +20097,6 @@ end
 class Rails::WelcomeController
 end
 
-module Rails6New
-end
-
-class Rails6New::Application
-end
-
-class Rails6New::Application
-end
-
-module Rails6New
-end
-
 class Rake::FileList
   ARRAY_METHODS = ::T.let(nil, ::T.untyped)
   DEFAULT_IGNORE_PATTERNS = ::T.let(nil, ::T.untyped)
@@ -21140,6 +21509,31 @@ class Sorbet::Private::TodoRBI
   def self.output_file(); end
 end
 
+module SorbetRails::CustomFinderMethods
+  def find_by_id(id); end
+
+  def find_by_id!(id); end
+
+  def find_n(*ids); end
+
+  def first_n(n); end
+
+  def last_n(n); end
+end
+
+module SorbetRails::CustomFinderMethods
+end
+
+module SorbetRails::CustomParamsMethods
+  include ::Kernel
+end
+
+module SorbetRails::CustomParamsMethods
+  extend ::T::Helpers
+  extend ::T::Private::Methods::MethodHooks
+  extend ::T::Private::Methods::SingletonMethodHooks
+end
+
 SorbetRails::ModelPlugins::Base::Parameter = Parlour::RbiGenerator::Parameter
 
 module SorbetRails
@@ -21428,14 +21822,6 @@ class String
   def []=(*_); end
 
   def casecmp?(_); end
-
-  def delete_prefix(_); end
-
-  def delete_prefix!(_); end
-
-  def delete_suffix(_); end
-
-  def delete_suffix!(_); end
 
   def each_grapheme_cluster(); end
 

@@ -1074,13 +1074,13 @@
 # wrong constant name <Class:NullSessionHash>
 # wrong constant name handle_unverified_request
 # wrong constant name initialize
-# uninitialized constant #<Class:0x00007fcf627a3350>::DOMAIN_REGEXP
+# uninitialized constant #<Class:0x00007fc526174f88>::DOMAIN_REGEXP
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullCookieJar::DOMAIN_REGEXP
-# uninitialized constant #<Class:0x00007fcf627a3350>::Elem
+# uninitialized constant #<Class:0x00007fc526174f88>::Elem
 # wrong constant name write
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007fcf627a3800>::Elem
-# uninitialized constant #<Class:0x00007fcf627a3800>::Unspecified
+# uninitialized constant #<Class:0x00007fc526175168>::Elem
+# uninitialized constant #<Class:0x00007fc526175168>::Unspecified
 # Did you mean?  ActionController::RequestForgeryProtection::ProtectionMethods::NullSession::NullSessionHash::Unspecified
 # wrong constant name initialize
 # wrong constant name <static-init>
@@ -1886,36 +1886,36 @@
 # uninitialized constant ActionMailbox::InboundEmail::ActiveRecord_AssociationRelation::VALUE_METHODS
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_AssociationRelation::VALUE_METHODS
 #                ActionMailbox::InboundEmail::ActiveRecord_AssociationRelation::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007fc520360c58>::CLAUSE_METHODS
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::ClassMethods
 #                ActionMailbox::InboundEmail::ClassMethods
 #                ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::DEFAULT_VALUES
+# uninitialized constant #<Class:0x00007fc520360c58>::DEFAULT_VALUES
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007fc520360c58>::FROZEN_EMPTY_ARRAY
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::FROZEN_EMPTY_HASH
+# uninitialized constant #<Class:0x00007fc520360c58>::FROZEN_EMPTY_HASH
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant #<Class:0x00007fc520360c58>::INVALID_METHODS_FOR_DELETE_ALL
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::MULTI_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc520360c58>::MULTI_VALUE_METHODS
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::ONE_AS_ONE
+# uninitialized constant #<Class:0x00007fc520360c58>::ONE_AS_ONE
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::ORDER_IGNORE_MESSAGE
+# uninitialized constant #<Class:0x00007fc520360c58>::ORDER_IGNORE_MESSAGE
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::SINGLE_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc520360c58>::SINGLE_VALUE_METHODS
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::STRUCTURAL_OR_METHODS
+# uninitialized constant #<Class:0x00007fc520360c58>::STRUCTURAL_OR_METHODS
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::VALID_DIRECTIONS
+# uninitialized constant #<Class:0x00007fc520360c58>::VALID_DIRECTIONS
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::VALID_UNSCOPING_VALUES
+# uninitialized constant #<Class:0x00007fc520360c58>::VALID_UNSCOPING_VALUES
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
-# uninitialized constant #<Class:0x00007fcf63b1b1a8>::VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc520360c58>::VALUE_METHODS
 # Did you mean?  ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
 # uninitialized constant ActionMailbox::InboundEmail::ActiveRecord_Relation::CLAUSE_METHODS
@@ -3647,6 +3647,91 @@
 # wrong constant name i18n_scope
 # wrong constant name lookup_ancestors
 # wrong constant name <static-init>
+# uninitialized constant ActiveModel::Type::BigInteger::DEFAULT_LIMIT
+# Did you mean?  ActiveModel::Type::BigInteger::DEFAULT_LIMIT
+# wrong constant name <static-init>
+# wrong constant name <Class:Data>
+# wrong constant name changed_in_place?
+# wrong constant name ==
+# wrong constant name hex
+# wrong constant name initialize
+# wrong constant name to_str
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveModel::Type::DateTime::ISO_DATETIME
+# Did you mean?  ActiveModel::Type::DateTime::ISO_DATETIME
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <Class:AcceptsMultiparameterTime>
+# wrong constant name <Class:Mutable>
+# wrong constant name <Class:Numeric>
+# wrong constant name <Class:TimeValue>
+# wrong constant name <Class:Timezone>
+# uninitialized constant ActiveModel::Type::Helpers::AcceptsMultiparameterTime::DELEGATION_RESERVED_KEYWORDS
+# Did you mean?  ActiveModel::Type::Helpers::AcceptsMultiparameterTime::DELEGATION_RESERVED_KEYWORDS
+# uninitialized constant ActiveModel::Type::Helpers::AcceptsMultiparameterTime::DELEGATION_RESERVED_METHOD_NAMES
+# Did you mean?  ActiveModel::Type::Helpers::AcceptsMultiparameterTime::DELEGATION_RESERVED_METHOD_NAMES
+# uninitialized constant ActiveModel::Type::Helpers::AcceptsMultiparameterTime::RUBY_RESERVED_KEYWORDS
+# Did you mean?  ActiveModel::Type::Helpers::AcceptsMultiparameterTime::RUBY_RESERVED_KEYWORDS
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name cast
+# wrong constant name changed_in_place?
+# wrong constant name <static-init>
+# wrong constant name cast
+# wrong constant name changed?
+# wrong constant name serialize
+# wrong constant name <static-init>
+# wrong constant name apply_seconds_precision
+# wrong constant name serialize
+# wrong constant name type_cast_for_schema
+# wrong constant name user_input_in_time_zone
+# wrong constant name <static-init>
+# wrong constant name default_timezone
+# wrong constant name is_utc?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name matches?
+# wrong constant name <static-init>
+# wrong constant name lookup
+# wrong constant name register
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveModel::Type::Time::ISO_DATETIME
+# Did you mean?  ActiveModel::Type::Time::ISO_DATETIME
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name assert_valid_value
+# wrong constant name binary?
+# wrong constant name cast
+# wrong constant name changed?
+# wrong constant name changed_in_place?
+# wrong constant name deserialize
+# wrong constant name eql?
+# wrong constant name force_equality?
+# wrong constant name initialize
+# wrong constant name limit
+# wrong constant name map
+# wrong constant name precision
+# wrong constant name scale
+# wrong constant name serialize
+# wrong constant name type
+# wrong constant name type_cast_for_schema
+# wrong constant name value_constructed_by_mass_assignment?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name default_value
+# wrong constant name lookup
+# wrong constant name register
+# wrong constant name registry
+# wrong constant name registry=
 # wrong constant name initialize
 # wrong constant name model
 # wrong constant name <static-init>
@@ -4736,6 +4821,16 @@
 # wrong constant name suffix
 # wrong constant name <static-init>
 # wrong constant name initialize
+# wrong constant name <Class:EnumType>
+# wrong constant name enum
+# wrong constant name inherited
+# wrong constant name old_enum
+# wrong constant name assert_valid_value
+# wrong constant name initialize
+# wrong constant name type
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name extended
 # wrong constant name collecting_queries_for_explain
 # wrong constant name exec_explain
 # wrong constant name <static-init>
@@ -4817,26 +4912,26 @@
 # wrong constant name cache_version
 # wrong constant name to_param
 # wrong constant name <static-init>
-# uninitialized constant #<Class:0x00007fcf689ca128>::ACTIONS
+# uninitialized constant #<Class:0x00007fc520589318>::ACTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ACTIONS
-# uninitialized constant #<Class:0x00007fcf689ca128>::CALLBACKS
+# uninitialized constant #<Class:0x00007fc520589318>::CALLBACKS
 # Did you mean?  ActiveRecord::InternalMetadata::Callbacks
 #                ActiveRecord::Callbacks
 #                ActiveRecord::InternalMetadata::Callback
 #                ActiveRecord::InternalMetadata::CALLBACKS
-# uninitialized constant #<Class:0x00007fcf689ca128>::CALLBACK_FILTER_TYPES
+# uninitialized constant #<Class:0x00007fc520589318>::CALLBACK_FILTER_TYPES
 # Did you mean?  ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
-# uninitialized constant #<Class:0x00007fcf689ca128>::CALL_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fc520589318>::CALL_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedRelationMethods>
-# uninitialized constant #<Class:0x00007fcf689ca128>::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant #<Class:0x00007fc520589318>::MAX_PASSWORD_LENGTH_ALLOWED
 # Did you mean?  ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
-# uninitialized constant #<Class:0x00007fcf689ca128>::NAME_COMPILABLE_REGEXP
+# uninitialized constant #<Class:0x00007fc520589318>::NAME_COMPILABLE_REGEXP
 # Did you mean?  ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
-# uninitialized constant #<Class:0x00007fcf689ca128>::RESTRICTED_CLASS_METHODS
+# uninitialized constant #<Class:0x00007fc520589318>::RESTRICTED_CLASS_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
-# uninitialized constant #<Class:0x00007fcf689ca128>::UNASSIGNABLE_KEYS
+# uninitialized constant #<Class:0x00007fc520589318>::UNASSIGNABLE_KEYS
 # Did you mean?  ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
 # uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::CLAUSE_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::ClassMethods
@@ -4870,36 +4965,36 @@
 # uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::VALUE_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::VALUE_METHODS
 #                ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf689c90c0>::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007fc5205882b0>::CLAUSE_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::ClassMethods
 #                ActiveRecord::InternalMetadata::ClassMethods
 #                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf689c90c0>::DEFAULT_VALUES
+# uninitialized constant #<Class:0x00007fc5205882b0>::DEFAULT_VALUES
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
-# uninitialized constant #<Class:0x00007fcf689c90c0>::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007fc5205882b0>::FROZEN_EMPTY_ARRAY
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf689c90c0>::FROZEN_EMPTY_HASH
+# uninitialized constant #<Class:0x00007fc5205882b0>::FROZEN_EMPTY_HASH
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf689c90c0>::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant #<Class:0x00007fc5205882b0>::INVALID_METHODS_FOR_DELETE_ALL
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
-# uninitialized constant #<Class:0x00007fcf689c90c0>::MULTI_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc5205882b0>::MULTI_VALUE_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf689c90c0>::ONE_AS_ONE
+# uninitialized constant #<Class:0x00007fc5205882b0>::ONE_AS_ONE
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
-# uninitialized constant #<Class:0x00007fcf689c90c0>::ORDER_IGNORE_MESSAGE
+# uninitialized constant #<Class:0x00007fc5205882b0>::ORDER_IGNORE_MESSAGE
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
-# uninitialized constant #<Class:0x00007fcf689c90c0>::SINGLE_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc5205882b0>::SINGLE_VALUE_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf689c90c0>::STRUCTURAL_OR_METHODS
+# uninitialized constant #<Class:0x00007fc5205882b0>::STRUCTURAL_OR_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
-# uninitialized constant #<Class:0x00007fcf689c90c0>::VALID_DIRECTIONS
+# uninitialized constant #<Class:0x00007fc5205882b0>::VALID_DIRECTIONS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
-# uninitialized constant #<Class:0x00007fcf689c90c0>::VALID_UNSCOPING_VALUES
+# uninitialized constant #<Class:0x00007fc5205882b0>::VALID_UNSCOPING_VALUES
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
-# uninitialized constant #<Class:0x00007fcf689c90c0>::VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc5205882b0>::VALUE_METHODS
 # Did you mean?  ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
 # uninitialized constant ActiveRecord::InternalMetadata::ActiveRecord_Relation::CLAUSE_METHODS
@@ -5562,36 +5657,36 @@
 # uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::VALUE_METHODS
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::VALUE_METHODS
 #                ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf670240c0>::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007fc5205a3e70>::CLAUSE_METHODS
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::ClassMethods
 #                ActiveRecord::SchemaMigration::ClassMethods
 #                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf670240c0>::DEFAULT_VALUES
+# uninitialized constant #<Class:0x00007fc5205a3e70>::DEFAULT_VALUES
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
-# uninitialized constant #<Class:0x00007fcf670240c0>::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007fc5205a3e70>::FROZEN_EMPTY_ARRAY
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf670240c0>::FROZEN_EMPTY_HASH
+# uninitialized constant #<Class:0x00007fc5205a3e70>::FROZEN_EMPTY_HASH
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf670240c0>::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant #<Class:0x00007fc5205a3e70>::INVALID_METHODS_FOR_DELETE_ALL
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
-# uninitialized constant #<Class:0x00007fcf670240c0>::MULTI_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc5205a3e70>::MULTI_VALUE_METHODS
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf670240c0>::ONE_AS_ONE
+# uninitialized constant #<Class:0x00007fc5205a3e70>::ONE_AS_ONE
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
-# uninitialized constant #<Class:0x00007fcf670240c0>::ORDER_IGNORE_MESSAGE
+# uninitialized constant #<Class:0x00007fc5205a3e70>::ORDER_IGNORE_MESSAGE
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
-# uninitialized constant #<Class:0x00007fcf670240c0>::SINGLE_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc5205a3e70>::SINGLE_VALUE_METHODS
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf670240c0>::STRUCTURAL_OR_METHODS
+# uninitialized constant #<Class:0x00007fc5205a3e70>::STRUCTURAL_OR_METHODS
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
-# uninitialized constant #<Class:0x00007fcf670240c0>::VALID_DIRECTIONS
+# uninitialized constant #<Class:0x00007fc5205a3e70>::VALID_DIRECTIONS
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
-# uninitialized constant #<Class:0x00007fcf670240c0>::VALID_UNSCOPING_VALUES
+# uninitialized constant #<Class:0x00007fc5205a3e70>::VALID_UNSCOPING_VALUES
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
-# uninitialized constant #<Class:0x00007fcf670240c0>::VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc5205a3e70>::VALUE_METHODS
 # Did you mean?  ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
 # uninitialized constant ActiveRecord::SchemaMigration::ActiveRecord_Relation::CLAUSE_METHODS
@@ -5822,6 +5917,76 @@
 # wrong constant name i18n_scope
 # wrong constant name lookup_ancestors
 # wrong constant name <static-init>
+# wrong constant name add_modifier
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Type::Date::ISO_DATE
+# Did you mean?  ActiveRecord::Type::Date::ISO_DATE
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Type::DateTime::ISO_DATETIME
+# Did you mean?  ActiveRecord::Type::DateTime::ISO_DATETIME
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Type::DecimalWithoutScale::DEFAULT_LIMIT
+# Did you mean?  ActiveRecord::Type::DecimalWithoutScale::DEFAULT_LIMIT
+# wrong constant name <static-init>
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name matches?
+# wrong constant name <static-init>
+# wrong constant name alias_type
+# wrong constant name key?
+# wrong constant name keys
+# wrong constant name <static-init>
+# wrong constant name <Class:Timezone>
+# wrong constant name default_timezone
+# wrong constant name is_utc?
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name accessor
+# wrong constant name <static-init>
+# wrong constant name <=>
+# wrong constant name adapter
+# wrong constant name block
+# wrong constant name call
+# wrong constant name initialize
+# wrong constant name matches?
+# wrong constant name name
+# wrong constant name override
+# wrong constant name priority
+# wrong constant name priority_except_adapter
+# wrong constant name <static-init>
+# wrong constant name accessor
+# wrong constant name assert_valid_value
+# wrong constant name changed_in_place?
+# wrong constant name coder
+# wrong constant name deserialize
+# wrong constant name force_equality?
+# wrong constant name initialize
+# wrong constant name inspect
+# wrong constant name serialize
+# wrong constant name subtype
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Type::Time::ISO_DATETIME
+# Did you mean?  ActiveRecord::Type::Time::ISO_DATETIME
+# wrong constant name <Class:Value>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name alias_type
+# wrong constant name clear
+# wrong constant name fetch
+# wrong constant name lookup
+# wrong constant name register_type
+# wrong constant name <static-init>
+# uninitialized constant ActiveRecord::Type::UnsignedInteger::DEFAULT_LIMIT
+# Did you mean?  ActiveRecord::Type::UnsignedInteger::DEFAULT_LIMIT
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name add_modifier
+# wrong constant name default_value
+# wrong constant name lookup
+# wrong constant name register
+# wrong constant name registry
+# wrong constant name registry=
 # wrong constant name <Class:Connection>
 # wrong constant name <Class:Map>
 # wrong constant name initialize
@@ -5930,36 +6095,36 @@
 # uninitialized constant ActiveStorage::Attachment::ActiveRecord_AssociationRelation::VALUE_METHODS
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_AssociationRelation::VALUE_METHODS
 #                ActiveStorage::Attachment::ActiveRecord_AssociationRelation::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::CLAUSE_METHODS
+# uninitialized constant #<Class:0x00007fc52043a200>::CLAUSE_METHODS
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::ClassMethods
 #                ActiveStorage::Attachment::ClassMethods
 #                ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::DEFAULT_VALUES
+# uninitialized constant #<Class:0x00007fc52043a200>::DEFAULT_VALUES
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::DEFAULT_VALUES
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::FROZEN_EMPTY_ARRAY
+# uninitialized constant #<Class:0x00007fc52043a200>::FROZEN_EMPTY_ARRAY
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::FROZEN_EMPTY_HASH
+# uninitialized constant #<Class:0x00007fc52043a200>::FROZEN_EMPTY_HASH
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_HASH
 #                ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::FROZEN_EMPTY_ARRAY
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::INVALID_METHODS_FOR_DELETE_ALL
+# uninitialized constant #<Class:0x00007fc52043a200>::INVALID_METHODS_FOR_DELETE_ALL
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::INVALID_METHODS_FOR_DELETE_ALL
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::MULTI_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc52043a200>::MULTI_VALUE_METHODS
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::MULTI_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::ONE_AS_ONE
+# uninitialized constant #<Class:0x00007fc52043a200>::ONE_AS_ONE
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::ONE_AS_ONE
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::ORDER_IGNORE_MESSAGE
+# uninitialized constant #<Class:0x00007fc52043a200>::ORDER_IGNORE_MESSAGE
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::ORDER_IGNORE_MESSAGE
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::SINGLE_VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc52043a200>::SINGLE_VALUE_METHODS
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::SINGLE_VALUE_METHODS
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::STRUCTURAL_OR_METHODS
+# uninitialized constant #<Class:0x00007fc52043a200>::STRUCTURAL_OR_METHODS
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::STRUCTURAL_OR_METHODS
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::VALID_DIRECTIONS
+# uninitialized constant #<Class:0x00007fc52043a200>::VALID_DIRECTIONS
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::VALID_DIRECTIONS
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::VALID_UNSCOPING_VALUES
+# uninitialized constant #<Class:0x00007fc52043a200>::VALID_UNSCOPING_VALUES
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::VALID_UNSCOPING_VALUES
-# uninitialized constant #<Class:0x00007fcf61d8eb80>::VALUE_METHODS
+# uninitialized constant #<Class:0x00007fc52043a200>::VALUE_METHODS
 # Did you mean?  ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::VALUE_METHODS
 #                ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy::CLAUSE_METHODS
 # uninitialized constant ActiveStorage::Attachment::ActiveRecord_Relation::CLAUSE_METHODS
@@ -6731,16 +6896,8 @@
 # wrong constant name unfreeze_time
 # wrong constant name <static-init>
 # wrong constant name <static-init>
-# wrong constant name <Class:Channel>
-# wrong constant name <Class:Connection>
-# uninitialized constant ApplicationCable::Channel::CALLBACK_FILTER_TYPES
-# Did you mean?  ApplicationCable::Channel::CALLBACK_FILTER_TYPES
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # uninitialized constant ApplicationJob::CALLBACK_FILTER_TYPES
 # Did you mean?  ApplicationJob::CALLBACK_FILTER_TYPES
-# wrong constant name <static-init>
 # uninitialized constant ApplicationRecord(abstract)::ACTIONS
 # Did you mean?  ApplicationRecord::ACTIONS
 # wrong constant name <Class:ActiveRecord_AssociationRelation>
@@ -12291,8 +12448,8 @@
 # uninitialized constant LIBARG
 # Did you mean?  LIBARG
 # uninitialized constant LIBPATHFLAG
-# Did you mean?  LIBPATHFLAG
-#                RPATHFLAG
+# Did you mean?  RPATHFLAG
+#                LIBPATHFLAG
 # uninitialized constant LINK_SO
 # Did you mean?  LINK_SO
 # uninitialized constant MAIN_DOES_NOTHING
@@ -12303,8 +12460,8 @@
 # Did you mean?  COUTFLAG
 #                OUTFLAG
 # uninitialized constant RPATHFLAG
-# Did you mean?  LIBPATHFLAG
-#                RPATHFLAG
+# Did you mean?  RPATHFLAG
+#                LIBPATHFLAG
 # uninitialized constant RUBYGEMS_ACTIVATION_MONITOR
 # Did you mean?  RUBYGEMS_ACTIVATION_MONITOR
 # uninitialized constant RULE_SUBST
@@ -13000,28 +13157,28 @@
 #                Puma::Binder::ERROR_503_RESPONSE
 # uninitialized constant Puma::Binder::ERROR_404_RESPONSE
 # Did you mean?  Puma::Binder::ERROR_404_RESPONSE
-#                Puma::Binder::ERROR_400_RESPONSE
 #                Puma::Binder::ERROR_408_RESPONSE
+#                Puma::Binder::ERROR_400_RESPONSE
 #                Puma::Binder::ERROR_503_RESPONSE
 #                Puma::Binder::ERROR_500_RESPONSE
 # uninitialized constant Puma::Binder::ERROR_408_RESPONSE
 # Did you mean?  Puma::Binder::ERROR_408_RESPONSE
-#                Puma::Binder::ERROR_400_RESPONSE
 #                Puma::Binder::ERROR_404_RESPONSE
+#                Puma::Binder::ERROR_400_RESPONSE
 #                Puma::Binder::ERROR_503_RESPONSE
 #                Puma::Binder::ERROR_500_RESPONSE
 # uninitialized constant Puma::Binder::ERROR_500_RESPONSE
 # Did you mean?  Puma::Binder::ERROR_500_RESPONSE
-#                Puma::Binder::ERROR_400_RESPONSE
 #                Puma::Binder::ERROR_503_RESPONSE
+#                Puma::Binder::ERROR_400_RESPONSE
 #                Puma::Binder::ERROR_408_RESPONSE
 #                Puma::Binder::ERROR_404_RESPONSE
 # uninitialized constant Puma::Binder::ERROR_503_RESPONSE
 # Did you mean?  Puma::Binder::ERROR_503_RESPONSE
 #                Puma::Binder::ERROR_500_RESPONSE
-#                Puma::Binder::ERROR_400_RESPONSE
 #                Puma::Binder::ERROR_408_RESPONSE
 #                Puma::Binder::ERROR_404_RESPONSE
+#                Puma::Binder::ERROR_400_RESPONSE
 # uninitialized constant Puma::Binder::FAST_TRACK_KA_TIMEOUT
 # Did you mean?  Puma::Binder::FAST_TRACK_KA_TIMEOUT
 # uninitialized constant Puma::Binder::FIRST_DATA_TIMEOUT
@@ -13044,8 +13201,8 @@
 #                Puma::Binder::HIJACK_IO
 #                Puma::Binder::HIJACK
 # uninitialized constant Puma::Binder::HTTP
-# Did you mean?  Puma::Binder::HTTP
-#                Puma::Binder::HTTPS
+# Did you mean?  Puma::Binder::HTTPS
+#                Puma::Binder::HTTP
 # uninitialized constant Puma::Binder::HTTPS
 # Did you mean?  Puma::Binder::HTTP
 #                Puma::Binder::HTTPS
@@ -13074,22 +13231,22 @@
 # uninitialized constant Puma::Binder::HTTP_VERSION
 # Did you mean?  Puma::Binder::HTTP_VERSION
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_FOR
-# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_SSL
-#                Puma::Binder::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
 #                Puma::Binder::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_SSL
-#                Puma::Binder::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
 #                Puma::Binder::HTTP_X_FORWARDED_PROTO
 #                Puma::Binder::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_SSL
-#                Puma::Binder::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
 #                Puma::Binder::HTTP_X_FORWARDED_PROTO
 #                Puma::Binder::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Binder::HTTP_X_FORWARDED_SSL
-# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_SSL
-#                Puma::Binder::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Binder::HTTP_X_FORWARDED_FOR
+#                Puma::Binder::HTTP_X_FORWARDED_SSL
 #                Puma::Binder::HTTP_X_FORWARDED_PROTO
 #                Puma::Binder::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Binder::KEEP_ALIVE
@@ -13097,8 +13254,8 @@
 # uninitialized constant Puma::Binder::LINE_END
 # Did you mean?  Puma::Binder::LINE_END
 # uninitialized constant Puma::Binder::LOCALHOST
-# Did you mean?  Puma::Binder::LOCALHOST
-#                Puma::Binder::LOCALHOST_IP
+# Did you mean?  Puma::Binder::LOCALHOST_IP
+#                Puma::Binder::LOCALHOST
 # uninitialized constant Puma::Binder::LOCALHOST_ADDR
 # Did you mean?  Puma::Binder::LOCALHOST_IP
 #                Puma::Binder::LOCALHOST_ADDR
@@ -13216,28 +13373,28 @@
 #                Puma::Client::ERROR_503_RESPONSE
 # uninitialized constant Puma::Client::ERROR_404_RESPONSE
 # Did you mean?  Puma::Client::ERROR_404_RESPONSE
-#                Puma::Client::ERROR_400_RESPONSE
 #                Puma::Client::ERROR_408_RESPONSE
+#                Puma::Client::ERROR_400_RESPONSE
 #                Puma::Client::ERROR_503_RESPONSE
 #                Puma::Client::ERROR_500_RESPONSE
 # uninitialized constant Puma::Client::ERROR_408_RESPONSE
 # Did you mean?  Puma::Client::ERROR_408_RESPONSE
-#                Puma::Client::ERROR_400_RESPONSE
 #                Puma::Client::ERROR_404_RESPONSE
+#                Puma::Client::ERROR_400_RESPONSE
 #                Puma::Client::ERROR_503_RESPONSE
 #                Puma::Client::ERROR_500_RESPONSE
 # uninitialized constant Puma::Client::ERROR_500_RESPONSE
 # Did you mean?  Puma::Client::ERROR_500_RESPONSE
-#                Puma::Client::ERROR_400_RESPONSE
 #                Puma::Client::ERROR_503_RESPONSE
+#                Puma::Client::ERROR_400_RESPONSE
 #                Puma::Client::ERROR_408_RESPONSE
 #                Puma::Client::ERROR_404_RESPONSE
 # uninitialized constant Puma::Client::ERROR_503_RESPONSE
 # Did you mean?  Puma::Client::ERROR_503_RESPONSE
 #                Puma::Client::ERROR_500_RESPONSE
-#                Puma::Client::ERROR_400_RESPONSE
 #                Puma::Client::ERROR_408_RESPONSE
 #                Puma::Client::ERROR_404_RESPONSE
+#                Puma::Client::ERROR_400_RESPONSE
 # uninitialized constant Puma::Client::FAST_TRACK_KA_TIMEOUT
 # Did you mean?  Puma::Client::FAST_TRACK_KA_TIMEOUT
 # uninitialized constant Puma::Client::FIRST_DATA_TIMEOUT
@@ -13260,8 +13417,8 @@
 #                Puma::Client::HIJACK_IO
 #                Puma::Client::HIJACK
 # uninitialized constant Puma::Client::HTTP
-# Did you mean?  Puma::Client::HTTP
-#                Puma::Client::HTTPS
+# Did you mean?  Puma::Client::HTTPS
+#                Puma::Client::HTTP
 # uninitialized constant Puma::Client::HTTPS
 # Did you mean?  Puma::Client::HTTP
 #                Puma::Client::HTTPS
@@ -13290,22 +13447,22 @@
 # uninitialized constant Puma::Client::HTTP_VERSION
 # Did you mean?  Puma::Client::HTTP_VERSION
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_FOR
-# Did you mean?  Puma::Client::HTTP_X_FORWARDED_SSL
-#                Puma::Client::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
 #                Puma::Client::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Client::HTTP_X_FORWARDED_SSL
-#                Puma::Client::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
 #                Puma::Client::HTTP_X_FORWARDED_PROTO
 #                Puma::Client::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Client::HTTP_X_FORWARDED_SSL
-#                Puma::Client::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
 #                Puma::Client::HTTP_X_FORWARDED_PROTO
 #                Puma::Client::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Client::HTTP_X_FORWARDED_SSL
-# Did you mean?  Puma::Client::HTTP_X_FORWARDED_SSL
-#                Puma::Client::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Client::HTTP_X_FORWARDED_FOR
+#                Puma::Client::HTTP_X_FORWARDED_SSL
 #                Puma::Client::HTTP_X_FORWARDED_PROTO
 #                Puma::Client::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Client::KEEP_ALIVE
@@ -13313,8 +13470,8 @@
 # uninitialized constant Puma::Client::LINE_END
 # Did you mean?  Puma::Client::LINE_END
 # uninitialized constant Puma::Client::LOCALHOST
-# Did you mean?  Puma::Client::LOCALHOST
-#                Puma::Client::LOCALHOST_IP
+# Did you mean?  Puma::Client::LOCALHOST_IP
+#                Puma::Client::LOCALHOST
 # uninitialized constant Puma::Client::LOCALHOST_ADDR
 # Did you mean?  Puma::Client::LOCALHOST_IP
 #                Puma::Client::LOCALHOST_ADDR
@@ -13432,28 +13589,28 @@
 #                Puma::Events::ERROR_503_RESPONSE
 # uninitialized constant Puma::Events::ERROR_404_RESPONSE
 # Did you mean?  Puma::Events::ERROR_404_RESPONSE
-#                Puma::Events::ERROR_400_RESPONSE
 #                Puma::Events::ERROR_408_RESPONSE
+#                Puma::Events::ERROR_400_RESPONSE
 #                Puma::Events::ERROR_503_RESPONSE
 #                Puma::Events::ERROR_500_RESPONSE
 # uninitialized constant Puma::Events::ERROR_408_RESPONSE
 # Did you mean?  Puma::Events::ERROR_408_RESPONSE
-#                Puma::Events::ERROR_400_RESPONSE
 #                Puma::Events::ERROR_404_RESPONSE
+#                Puma::Events::ERROR_400_RESPONSE
 #                Puma::Events::ERROR_503_RESPONSE
 #                Puma::Events::ERROR_500_RESPONSE
 # uninitialized constant Puma::Events::ERROR_500_RESPONSE
 # Did you mean?  Puma::Events::ERROR_500_RESPONSE
-#                Puma::Events::ERROR_400_RESPONSE
 #                Puma::Events::ERROR_503_RESPONSE
+#                Puma::Events::ERROR_400_RESPONSE
 #                Puma::Events::ERROR_408_RESPONSE
 #                Puma::Events::ERROR_404_RESPONSE
 # uninitialized constant Puma::Events::ERROR_503_RESPONSE
 # Did you mean?  Puma::Events::ERROR_503_RESPONSE
 #                Puma::Events::ERROR_500_RESPONSE
-#                Puma::Events::ERROR_400_RESPONSE
 #                Puma::Events::ERROR_408_RESPONSE
 #                Puma::Events::ERROR_404_RESPONSE
+#                Puma::Events::ERROR_400_RESPONSE
 # uninitialized constant Puma::Events::FAST_TRACK_KA_TIMEOUT
 # Did you mean?  Puma::Events::FAST_TRACK_KA_TIMEOUT
 # uninitialized constant Puma::Events::FIRST_DATA_TIMEOUT
@@ -13476,8 +13633,8 @@
 #                Puma::Events::HIJACK_IO
 #                Puma::Events::HIJACK
 # uninitialized constant Puma::Events::HTTP
-# Did you mean?  Puma::Events::HTTP
-#                Puma::Events::HTTPS
+# Did you mean?  Puma::Events::HTTPS
+#                Puma::Events::HTTP
 # uninitialized constant Puma::Events::HTTPS
 # Did you mean?  Puma::Events::HTTP
 #                Puma::Events::HTTPS
@@ -13506,22 +13663,22 @@
 # uninitialized constant Puma::Events::HTTP_VERSION
 # Did you mean?  Puma::Events::HTTP_VERSION
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_FOR
-# Did you mean?  Puma::Events::HTTP_X_FORWARDED_SSL
-#                Puma::Events::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
 #                Puma::Events::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Events::HTTP_X_FORWARDED_SSL
-#                Puma::Events::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
 #                Puma::Events::HTTP_X_FORWARDED_PROTO
 #                Puma::Events::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Events::HTTP_X_FORWARDED_SSL
-#                Puma::Events::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
 #                Puma::Events::HTTP_X_FORWARDED_PROTO
 #                Puma::Events::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Events::HTTP_X_FORWARDED_SSL
-# Did you mean?  Puma::Events::HTTP_X_FORWARDED_SSL
-#                Puma::Events::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Events::HTTP_X_FORWARDED_FOR
+#                Puma::Events::HTTP_X_FORWARDED_SSL
 #                Puma::Events::HTTP_X_FORWARDED_PROTO
 #                Puma::Events::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Events::KEEP_ALIVE
@@ -13529,8 +13686,8 @@
 # uninitialized constant Puma::Events::LINE_END
 # Did you mean?  Puma::Events::LINE_END
 # uninitialized constant Puma::Events::LOCALHOST
-# Did you mean?  Puma::Events::LOCALHOST
-#                Puma::Events::LOCALHOST_IP
+# Did you mean?  Puma::Events::LOCALHOST_IP
+#                Puma::Events::LOCALHOST
 # uninitialized constant Puma::Events::LOCALHOST_ADDR
 # Did you mean?  Puma::Events::LOCALHOST_IP
 #                Puma::Events::LOCALHOST_ADDR
@@ -13651,28 +13808,28 @@
 #                Puma::Server::ERROR_503_RESPONSE
 # uninitialized constant Puma::Server::ERROR_404_RESPONSE
 # Did you mean?  Puma::Server::ERROR_404_RESPONSE
-#                Puma::Server::ERROR_400_RESPONSE
 #                Puma::Server::ERROR_408_RESPONSE
+#                Puma::Server::ERROR_400_RESPONSE
 #                Puma::Server::ERROR_503_RESPONSE
 #                Puma::Server::ERROR_500_RESPONSE
 # uninitialized constant Puma::Server::ERROR_408_RESPONSE
 # Did you mean?  Puma::Server::ERROR_408_RESPONSE
-#                Puma::Server::ERROR_400_RESPONSE
 #                Puma::Server::ERROR_404_RESPONSE
+#                Puma::Server::ERROR_400_RESPONSE
 #                Puma::Server::ERROR_503_RESPONSE
 #                Puma::Server::ERROR_500_RESPONSE
 # uninitialized constant Puma::Server::ERROR_500_RESPONSE
 # Did you mean?  Puma::Server::ERROR_500_RESPONSE
-#                Puma::Server::ERROR_400_RESPONSE
 #                Puma::Server::ERROR_503_RESPONSE
+#                Puma::Server::ERROR_400_RESPONSE
 #                Puma::Server::ERROR_408_RESPONSE
 #                Puma::Server::ERROR_404_RESPONSE
 # uninitialized constant Puma::Server::ERROR_503_RESPONSE
 # Did you mean?  Puma::Server::ERROR_503_RESPONSE
 #                Puma::Server::ERROR_500_RESPONSE
-#                Puma::Server::ERROR_400_RESPONSE
 #                Puma::Server::ERROR_408_RESPONSE
 #                Puma::Server::ERROR_404_RESPONSE
+#                Puma::Server::ERROR_400_RESPONSE
 # uninitialized constant Puma::Server::FAST_TRACK_KA_TIMEOUT
 # Did you mean?  Puma::Server::FAST_TRACK_KA_TIMEOUT
 # uninitialized constant Puma::Server::FIRST_DATA_TIMEOUT
@@ -13695,8 +13852,8 @@
 #                Puma::Server::HIJACK_IO
 #                Puma::Server::HIJACK
 # uninitialized constant Puma::Server::HTTP
-# Did you mean?  Puma::Server::HTTP
-#                Puma::Server::HTTPS
+# Did you mean?  Puma::Server::HTTPS
+#                Puma::Server::HTTP
 # uninitialized constant Puma::Server::HTTPS
 # Did you mean?  Puma::Server::HTTP
 #                Puma::Server::HTTPS
@@ -13725,22 +13882,22 @@
 # uninitialized constant Puma::Server::HTTP_VERSION
 # Did you mean?  Puma::Server::HTTP_VERSION
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_FOR
-# Did you mean?  Puma::Server::HTTP_X_FORWARDED_SSL
-#                Puma::Server::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
 #                Puma::Server::HTTP_X_FORWARDED_PROTO
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_PROTO
-# Did you mean?  Puma::Server::HTTP_X_FORWARDED_SSL
-#                Puma::Server::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
 #                Puma::Server::HTTP_X_FORWARDED_PROTO
 #                Puma::Server::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_SCHEME
-# Did you mean?  Puma::Server::HTTP_X_FORWARDED_SSL
-#                Puma::Server::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
 #                Puma::Server::HTTP_X_FORWARDED_PROTO
 #                Puma::Server::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Server::HTTP_X_FORWARDED_SSL
-# Did you mean?  Puma::Server::HTTP_X_FORWARDED_SSL
-#                Puma::Server::HTTP_X_FORWARDED_FOR
+# Did you mean?  Puma::Server::HTTP_X_FORWARDED_FOR
+#                Puma::Server::HTTP_X_FORWARDED_SSL
 #                Puma::Server::HTTP_X_FORWARDED_PROTO
 #                Puma::Server::HTTP_X_FORWARDED_SCHEME
 # uninitialized constant Puma::Server::KEEP_ALIVE
@@ -13748,8 +13905,8 @@
 # uninitialized constant Puma::Server::LINE_END
 # Did you mean?  Puma::Server::LINE_END
 # uninitialized constant Puma::Server::LOCALHOST
-# Did you mean?  Puma::Server::LOCALHOST
-#                Puma::Server::LOCALHOST_IP
+# Did you mean?  Puma::Server::LOCALHOST_IP
+#                Puma::Server::LOCALHOST
 # uninitialized constant Puma::Server::LOCALHOST_ADDR
 # Did you mean?  Puma::Server::LOCALHOST_IP
 #                Puma::Server::LOCALHOST_ADDR
@@ -14644,13 +14801,6 @@
 # Did you mean?  Rails::WelcomeController::URL_OPTIONS
 # wrong constant name index
 # wrong constant name <static-init>
-# wrong constant name <Class:Application>
-# uninitialized constant Rails6New::Application::ABSTRACT_RAILTIES
-# Did you mean?  Rails6New::Application::ABSTRACT_RAILTIES
-# uninitialized constant Rails6New::Application::INITIAL_VARIABLES
-# Did you mean?  Rails6New::Application::INITIAL_VARIABLES
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # uninitialized constant Rake::FileUtilsExt::LN_SUPPORTED
 # Did you mean?  Rake::FileUtilsExt::LN_SUPPORTED
 # uninitialized constant Rake::FileUtilsExt::LOW_METHODS
@@ -15218,6 +15368,15 @@
 # wrong constant name <static-init>
 # wrong constant name main
 # wrong constant name output_file
+# wrong constant name find_by_id
+# wrong constant name find_by_id!
+# wrong constant name find_n
+# wrong constant name first_n
+# wrong constant name last_n
+# wrong constant name <static-init>
+# uninitialized constant SorbetRails::CustomParamsMethods::RUBYGEMS_ACTIVATION_MONITOR
+# Did you mean?  SorbetRails::CustomParamsMethods::RUBYGEMS_ACTIVATION_MONITOR
+#                RUBYGEMS_ACTIVATION_MONITOR
 # uninitialized constant SortedSet::InspectKey
 # Did you mean?  SortedSet::InspectKey
 # wrong constant name initialize
@@ -15469,10 +15628,6 @@
 # wrong constant name count$1
 # wrong constant name delete$1
 # wrong constant name delete!$1
-# wrong constant name delete_prefix
-# wrong constant name delete_prefix!
-# wrong constant name delete_suffix
-# wrong constant name delete_suffix!
 # wrong constant name downcase$1
 # wrong constant name downcase!$1
 # wrong constant name each_grapheme_cluster

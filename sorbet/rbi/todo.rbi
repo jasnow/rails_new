@@ -2,8 +2,6 @@
 #   srb rbi todo
 
 # typed: strong
-module ::Anonymous_Delegator_10; end
-module ::Anonymous_Delegator_11; end
 module ::Anonymous_Delegator_2; end
-module ::Anonymous_Delegator_8; end
-module ::Anonymous_Delegator_9; end
+module ::Anonymous_Delegator_5; end
+module ::Anonymous_Delegator_6; end

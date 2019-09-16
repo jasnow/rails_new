@@ -461,7 +461,7 @@ class ActionMailbox::InboundEmail::ActiveRecord_Relation < ActiveRecord::Relatio
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { implementation.params(block: T.proc.params(e: ActionMailbox::InboundEmail).void).void }
+  sig { override.params(block: T.proc.params(e: ActionMailbox::InboundEmail).void).void }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[ActionMailbox::InboundEmail]) }
@@ -679,7 +679,7 @@ class ActionMailbox::InboundEmail::ActiveRecord_AssociationRelation < ActiveReco
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { implementation.params(block: T.proc.params(e: ActionMailbox::InboundEmail).void).void }
+  sig { override.params(block: T.proc.params(e: ActionMailbox::InboundEmail).void).void }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[ActionMailbox::InboundEmail]) }
@@ -896,7 +896,7 @@ class ActionMailbox::InboundEmail::ActiveRecord_Associations_CollectionProxy < A
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { implementation.params(block: T.proc.params(e: ActionMailbox::InboundEmail).void).void }
+  sig { override.params(block: T.proc.params(e: ActionMailbox::InboundEmail).void).void }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[ActionMailbox::InboundEmail]) }
