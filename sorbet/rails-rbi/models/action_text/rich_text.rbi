@@ -191,6 +191,15 @@ class ActionText::RichText < ActiveRecord::Base
 
   sig { params(args: T.untyped).returns(T::Boolean) }
   def self.one?(*args); end
+
+  sig { params(attributes: T.untyped, block: T.untyped).returns(ActionText::RichText) }
+  def self.create(attributes = nil, &block); end
+
+  sig { params(attributes: T.untyped, block: T.untyped).returns(ActionText::RichText) }
+  def self.create!(attributes = nil, &block); end
+
+  sig { params(attributes: T.untyped, block: T.untyped).returns(ActionText::RichText) }
+  def self.new(attributes = nil, &block); end
 end
 
 class ActionText::RichText::ActiveRecord_Relation < ActiveRecord::Relation
@@ -363,7 +372,7 @@ class ActionText::RichText::ActiveRecord_Relation < ActiveRecord::Relation
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { override.params(block: T.proc.params(e: ActionText::RichText).void).void }
+  sig { override.params(block: T.proc.params(e: ActionText::RichText).void).returns(T::Array[ActionText::RichText]) }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[ActionText::RichText]) }
@@ -551,7 +560,7 @@ class ActionText::RichText::ActiveRecord_AssociationRelation < ActiveRecord::Ass
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { override.params(block: T.proc.params(e: ActionText::RichText).void).void }
+  sig { override.params(block: T.proc.params(e: ActionText::RichText).void).returns(T::Array[ActionText::RichText]) }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[ActionText::RichText]) }
@@ -738,7 +747,7 @@ class ActionText::RichText::ActiveRecord_Associations_CollectionProxy < ActiveRe
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { override.params(block: T.proc.params(e: ActionText::RichText).void).void }
+  sig { override.params(block: T.proc.params(e: ActionText::RichText).void).returns(T::Array[ActionText::RichText]) }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[ActionText::RichText]) }
