@@ -5,7 +5,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/edit/master/lib/actionview/all/actionview.rbi
 #
-# typed: ignore
+# typed: strong
 
 # Provides a set of methods for making links and getting URLs that
 # depend on the routing subsystem (see ActionDispatch::Routing).
@@ -275,6 +275,10 @@ module ActionView::Helpers::UrlHelper
 end
 
 module ActionView::Layouts
+  extend T::Helpers
+
+  module ClassMethods ; end
+
   mixes_in_class_methods(ActionView::Layouts::ClassMethods)
 end
 
