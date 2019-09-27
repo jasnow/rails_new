@@ -2124,7 +2124,7 @@ module Digest::UUID
 end
 class File < IO
   def self.empty?(arg0); end
-  def self.probe_stat_in(dir); end
+  def self.join(*arg0); end
 end
 module ActiveSupport::MarshalWithAutoloading
   def load(source, proc = nil); end

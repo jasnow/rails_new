@@ -12861,6 +12861,10 @@ module Parlour
   VERSION = ::T.let(nil, ::T.untyped)
 end
 
+module Parlour::Debugging::Tree
+  INDENT_SPACES = ::T.let(nil, ::T.untyped)
+end
+
 class Parlour::RbiGenerator::Parameter
   PREFIXES = ::T.let(nil, ::T.untyped)
 end
