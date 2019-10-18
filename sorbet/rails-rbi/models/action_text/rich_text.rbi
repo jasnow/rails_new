@@ -783,13 +783,13 @@ module ActionText::RichText::GeneratedAssociationMethods
   sig { returns(::ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy) }
   def embeds_attachments; end
 
-  sig { params(value: T.any(T::Array[::ActiveStorage::Attachment], ::ActiveStorage::Attachment::ActiveRecord_Associations_CollectionProxy)).void }
+  sig { params(value: T::Enumerable[::ActiveStorage::Attachment]).void }
   def embeds_attachments=(value); end
 
   sig { returns(::ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy) }
   def embeds_blobs; end
 
-  sig { params(value: T.any(T::Array[::ActiveStorage::Blob], ::ActiveStorage::Blob::ActiveRecord_Associations_CollectionProxy)).void }
+  sig { params(value: T::Enumerable[::ActiveStorage::Blob]).void }
   def embeds_blobs=(value); end
 
   sig { returns(T.untyped) }

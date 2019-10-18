@@ -1917,6 +1917,7 @@ module ActionController::ParameterEncoding
 end
 
 class ActionController::Parameters
+  include ::SorbetRails::CustomParamsMethods
   EMPTY_ARRAY = ::T.let(nil, ::T.untyped)
   EMPTY_HASH = ::T.let(nil, ::T.untyped)
   PERMITTED_SCALAR_TYPES = ::T.let(nil, ::T.untyped)
@@ -7222,6 +7223,7 @@ class ActiveRecord::Base
   extend ::ActiveModel::Callbacks
   extend ::ActiveModel::Validations::HelperMethods
   extend ::SorbetRails::CustomFinderMethods
+  extend ::SorbetRails::PluckToTStruct
   def self.__callbacks(); end
 
   def self.__callbacks=(val); end
@@ -9970,6 +9972,7 @@ class ActiveRecord::Relation
   include ::ActiveRecord::Calculations
   include ::ActiveRecord::FinderMethods
   include ::SorbetRails::CustomFinderMethods
+  include ::SorbetRails::PluckToTStruct
   def ==(other); end
 
   def _deprecated_scope_source(); end
@@ -10102,6 +10105,9 @@ class ActiveRecord::Relation
   MULTI_VALUE_METHODS = ::T.let(nil, ::T.untyped)
   SINGLE_VALUE_METHODS = ::T.let(nil, ::T.untyped)
   VALUE_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class ActiveRecord::Relation
 end
 
 class ActiveRecord::Result
@@ -15058,6 +15064,10 @@ class IPAddr
   def self.new_ntoh(addr); end
 
   def self.ntop(addr); end
+end
+
+module ITypeAssert
+  Elem = ::T.let(nil, ::T.untyped)
 end
 
 class Integer
@@ -20973,9 +20983,13 @@ end
 
 module SorbetRails::CustomParamsMethods
   include ::Kernel
+  def fetch_typed(*args, &blk); end
+
+  def require_typed(*args, &blk); end
 end
 
 module SorbetRails::CustomParamsMethods
+  extend ::T::Sig
   extend ::T::Helpers
   extend ::T::Private::Methods::MethodHooks
   extend ::T::Private::Methods::SingletonMethodHooks
@@ -20984,6 +20998,11 @@ end
 SorbetRails::ModelPlugins::Base::Parameter = Parlour::RbiGenerator::Parameter
 
 module SorbetRails::PluckToTStruct
+  def pluck_to_tstruct(*args, &blk); end
+end
+
+module SorbetRails::PluckToTStruct
+  extend ::T::Sig
   extend ::T::Private::Methods::MethodHooks
   extend ::T::Private::Methods::SingletonMethodHooks
 end
@@ -21422,6 +21441,10 @@ class SystemExit
   def status(); end
 
   def success?(); end
+end
+
+class TA
+  Elem = ::T.let(nil, ::T.untyped)
 end
 
 module TZInfo::RubyCoreSupport
