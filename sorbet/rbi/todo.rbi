@@ -5,3 +5,9 @@
 module ::Anonymous_Delegator_2; end
 module ::Anonymous_Delegator_5; end
 module ::Anonymous_Delegator_6; end
+module ActiveModel::Validations::HelperMethods; end
+module ActiveModel::Validations::HelperMethods; end
+module ActiveModel::Validations::HelperMethods; end
+module ActiveModel::Validations::HelperMethods; end
+module ActiveModel::Validations::HelperMethods; end
+module ActiveModel::Validations::HelperMethods; end

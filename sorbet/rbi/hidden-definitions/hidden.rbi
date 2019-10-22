@@ -4730,6 +4730,12 @@ class ActionView::AbstractRenderer::RenderedTemplate
   EMPTY_SPACER = ::T.let(nil, ::T.untyped)
 end
 
+class ActionView::ActionViewError
+end
+
+class ActionView::ActionViewError
+end
+
 class ActionView::Base
   include ::ActionView::Context
   include ::ERB::Util
@@ -4932,6 +4938,12 @@ class ActionView::Digestor
   def self.tree(name, finder, partial=T.unsafe(nil), seen=T.unsafe(nil)); end
 end
 
+class ActionView::EncodingError
+end
+
+class ActionView::EncodingError
+end
+
 module ActionView::Helpers::AssetUrlHelper
   ASSET_EXTENSIONS = ::T.let(nil, ::T.untyped)
   ASSET_PUBLIC_DIRECTORIES = ::T.let(nil, ::T.untyped)
@@ -4999,6 +5011,11 @@ end
 
 class ActionView::MissingTemplate
   def initialize(paths, path, prefixes, partial, details, *_); end
+
+  def path(); end
+end
+
+class ActionView::MissingTemplate
 end
 
 class ActionView::OutputBuffer
@@ -5158,6 +5175,9 @@ class ActionView::Template::Error
   SOURCE_CODE_RADIUS = ::T.let(nil, ::T.untyped)
 end
 
+class ActionView::Template::Error
+end
+
 class ActionView::Template::HTML
   def format(); end
 
@@ -5251,6 +5271,8 @@ end
 class ActionView::Template::Types::Type
   SET = ::T.let(nil, ::T.untyped)
 end
+
+ActionView::TemplateError = ActionView::Template::Error
 
 class ActionView::TemplateRenderer
   def render(context, options); end
@@ -5456,6 +5478,9 @@ end
 
 class ActionView::WrongEncodingError
   def initialize(string, encoding); end
+end
+
+class ActionView::WrongEncodingError
 end
 
 module ActiveJob::Arguments
@@ -5991,9 +6016,17 @@ module ActiveModel::Conversion
 end
 
 module ActiveModel::Dirty
+  def attribute_changed?(attr_name, **options); end
+
+  def attribute_changed_in_place?(attr_name); end
+
+  def attribute_previously_changed?(attr_name); end
+
   def attribute_was(attr_name); end
 
   def changed(); end
+
+  def changed?(); end
 
   def changed_attributes(); end
 
@@ -6214,6 +6247,9 @@ end
 module ActiveModel::Translation
 end
 
+module ActiveModel::Type
+end
+
 class ActiveModel::Type::BigInteger
 end
 
@@ -6242,6 +6278,9 @@ end
 
 class ActiveModel::Type::Boolean
   FALSE_VALUES = ::T.let(nil, ::T.untyped)
+end
+
+class ActiveModel::Type::Boolean
 end
 
 class ActiveModel::Type::Date
@@ -6473,6 +6512,28 @@ module ActiveModel::Validations::Callbacks
   extend ::ActiveSupport::Concern
 end
 
+module ActiveModel::Validations::HelperMethods
+  def validates_absence_of(*attr_names); end
+
+  def validates_acceptance_of(*attr_names); end
+
+  def validates_confirmation_of(*attr_names); end
+
+  def validates_exclusion_of(*attr_names); end
+
+  def validates_format_of(*attr_names); end
+
+  def validates_inclusion_of(*attr_names); end
+
+  def validates_length_of(*attr_names); end
+
+  def validates_numericality_of(*attr_names); end
+
+  def validates_presence_of(*attr_names); end
+
+  def validates_size_of(*attr_names); end
+end
+
 module ActiveModel::Validations
   extend ::ActiveSupport::Concern
 end
@@ -6509,8 +6570,14 @@ class ActiveRecord::AmbiguousSourceReflectionForThroughAssociation
   def initialize(klass, macro, association_name, options, possible_sources); end
 end
 
+class ActiveRecord::AmbiguousSourceReflectionForThroughAssociation
+end
+
 class ActiveRecord::AssociationNotFoundError
   def initialize(record=T.unsafe(nil), association_name=T.unsafe(nil)); end
+end
+
+class ActiveRecord::AssociationNotFoundError
 end
 
 class ActiveRecord::AssociationRelation
@@ -6866,6 +6933,8 @@ module ActiveRecord::AttributeMethods::Dirty
 
   def saved_change_to_attribute(attr_name); end
 
+  def saved_change_to_attribute?(attr_name, **options); end
+
   def saved_changes(); end
 
   def saved_changes?(); end
@@ -6916,6 +6985,9 @@ module ActiveRecord::AttributeMethods::Read
 end
 
 module ActiveRecord::AttributeMethods::Serialization
+end
+
+module ActiveRecord::AttributeMethods::Serialization
   extend ::ActiveSupport::Concern
 end
 
@@ -6963,22 +7035,32 @@ end
 
 class ActiveRecord::Base
   include ::ActiveRecord::Core
+  include ::ActiveRecord::Persistence
   include ::ActiveRecord::ReadonlyAttributes
   include ::ActiveRecord::ModelSchema
+  include ::ActiveRecord::Inheritance
+  include ::ActiveRecord::Scoping
+  include ::ActiveRecord::Scoping::Default
+  include ::ActiveRecord::Scoping::Named
   include ::ActiveRecord::Sanitization
   include ::ActiveRecord::AttributeAssignment
   include ::ActiveModel::AttributeAssignment
   include ::ActiveModel::ForbiddenAttributesProtection
   include ::ActiveModel::Conversion
   include ::ActiveRecord::Integration
+  include ::ActiveModel::Validations
   include ::ActiveSupport::Callbacks
   include ::ActiveModel::Validations::HelperMethods
+  include ::ActiveRecord::Validations
   include ::ActiveRecord::CounterCache
   include ::ActiveRecord::Attributes
   include ::ActiveRecord::AttributeDecorators
   include ::ActiveRecord::Locking::Optimistic
+  include ::ActiveRecord::Locking::Pessimistic
   include ::ActiveRecord::DefineCallbacks
   include ::ActiveModel::Validations::Callbacks
+  include ::ActiveModel::AttributeMethods
+  include ::ActiveRecord::AttributeMethods
   include ::ActiveRecord::Base::GeneratedAttributeMethods
   include ::ActiveRecord::Base::GeneratedAssociationMethods
   include ::ActiveRecord::AttributeMethods::Read
@@ -6988,12 +7070,18 @@ class ActiveRecord::Base
   include ::ActiveRecord::AttributeMethods::PrimaryKey
   include ::ActiveRecord::AttributeMethods::TimeZoneConversion
   include ::ActiveModel::Dirty
+  include ::ActiveRecord::AttributeMethods::Dirty
+  include ::ActiveRecord::AttributeMethods::Serialization
   include ::ActiveRecord::Callbacks
   include ::ActiveRecord::Timestamp
+  include ::ActiveRecord::Associations
+  include ::ActiveModel::SecurePassword
   include ::ActiveRecord::AutosaveAssociation
+  include ::ActiveRecord::NestedAttributes
   include ::ActiveRecord::Transactions
   include ::ActiveRecord::TouchLater
   include ::ActiveRecord::NoTouching
+  include ::ActiveRecord::Reflection
   include ::ActiveModel::Serializers::JSON
   include ::ActiveModel::Serialization
   include ::ActiveRecord::Serialization
@@ -7211,7 +7299,10 @@ module ActiveRecord::Base::GeneratedAttributeMethods
 end
 
 class ActiveRecord::Base
+  extend ::ActiveSupport::Benchmarkable
+  extend ::ActiveSupport::DescendantsTracker
   extend ::ActiveRecord::ConnectionHandling
+  extend ::ActiveRecord::QueryCache::ClassMethods
   extend ::ActiveRecord::Querying
   extend ::ActiveRecord::Translation
   extend ::ActiveModel::Translation
@@ -7308,11 +7399,19 @@ class ActiveRecord::Base
 
   def self._validators?(); end
 
+  def self.after_create(*args, **options, &block); end
+
+  def self.after_destroy(*args, **options, &block); end
+
   def self.after_find(*args, **options, &block); end
 
   def self.after_initialize(*args, **options, &block); end
 
+  def self.after_save(*args, **options, &block); end
+
   def self.after_touch(*args, **options, &block); end
+
+  def self.after_update(*args, **options, &block); end
 
   def self.aggregate_reflections(); end
 
@@ -7323,6 +7422,14 @@ class ActiveRecord::Base
   def self.allow_unsafe_raw_sql(); end
 
   def self.allow_unsafe_raw_sql=(obj); end
+
+  def self.around_create(*args, **options, &block); end
+
+  def self.around_destroy(*args, **options, &block); end
+
+  def self.around_save(*args, **options, &block); end
+
+  def self.around_update(*args, **options, &block); end
 
   def self.attachment_reflections(); end
 
@@ -7353,6 +7460,14 @@ class ActiveRecord::Base
   def self.attributes_to_define_after_schema_loads=(val); end
 
   def self.attributes_to_define_after_schema_loads?(); end
+
+  def self.before_create(*args, **options, &block); end
+
+  def self.before_destroy(*args, **options, &block); end
+
+  def self.before_save(*args, **options, &block); end
+
+  def self.before_update(*args, **options, &block); end
 
   def self.belongs_to_required_by_default(); end
 
@@ -7801,6 +7916,10 @@ class ActiveRecord::ConnectionAdapters::ColumnDefinition
   def self.[](*_); end
 
   def self.members(); end
+end
+
+module ActiveRecord::ConnectionAdapters::ColumnMethods
+  def primary_key(name, type=T.unsafe(nil), **options); end
 end
 
 module ActiveRecord::ConnectionAdapters::ColumnMethods::ClassMethods
@@ -8308,11 +8427,22 @@ class ActiveRecord::ConnectionAdapters::StatementPool
 end
 
 class ActiveRecord::ConnectionAdapters::Table
+  include ::ActiveRecord::ConnectionAdapters::ColumnMethods
+  def belongs_to(*args, **options); end
+
   def bigint(*names, **options); end
 
   def binary(*names, **options); end
 
   def boolean(*names, **options); end
+
+  def change(column_name, type, options=T.unsafe(nil)); end
+
+  def change_default(column_name, default_or_changes); end
+
+  def column(column_name, type, **options); end
+
+  def column_exists?(column_name, type=T.unsafe(nil), options=T.unsafe(nil)); end
 
   def date(*names, **options); end
 
@@ -8321,6 +8451,14 @@ class ActiveRecord::ConnectionAdapters::Table
   def decimal(*names, **options); end
 
   def float(*names, **options); end
+
+  def foreign_key(*args); end
+
+  def foreign_key_exists?(*args); end
+
+  def index(column_name, options=T.unsafe(nil)); end
+
+  def index_exists?(column_name, options=T.unsafe(nil)); end
 
   def initialize(table_name, base); end
 
@@ -8332,6 +8470,24 @@ class ActiveRecord::ConnectionAdapters::Table
 
   def numeric(*names, **options); end
 
+  def references(*args, **options); end
+
+  def remove(*column_names); end
+
+  def remove_belongs_to(*args, **options); end
+
+  def remove_foreign_key(*args); end
+
+  def remove_index(options=T.unsafe(nil)); end
+
+  def remove_references(*args, **options); end
+
+  def remove_timestamps(options=T.unsafe(nil)); end
+
+  def rename(column_name, new_column_name); end
+
+  def rename_index(index_name, new_index_name); end
+
   def string(*names, **options); end
 
   def text(*names, **options); end
@@ -8339,6 +8495,8 @@ class ActiveRecord::ConnectionAdapters::Table
   def time(*names, **options); end
 
   def timestamp(*names, **options); end
+
+  def timestamps(options=T.unsafe(nil)); end
 
   def virtual(*names, **options); end
 end
@@ -8348,13 +8506,22 @@ class ActiveRecord::ConnectionAdapters::Table
 end
 
 class ActiveRecord::ConnectionAdapters::TableDefinition
+  include ::ActiveRecord::ConnectionAdapters::ColumnMethods
+  def [](name); end
+
   def as(); end
+
+  def belongs_to(*args, **options); end
 
   def bigint(*names, **options); end
 
   def binary(*names, **options); end
 
   def boolean(*names, **options); end
+
+  def column(name, type, **options); end
+
+  def columns(); end
 
   def comment(); end
 
@@ -8371,6 +8538,8 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
   def foreign_keys(); end
 
   def if_not_exists(); end
+
+  def index(column_name, options=T.unsafe(nil)); end
 
   def indexes(); end
 
@@ -8390,6 +8559,10 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
 
   def primary_keys(name=T.unsafe(nil)); end
 
+  def references(*args, **options); end
+
+  def remove_column(name); end
+
   def string(*names, **options); end
 
   def temporary(); end
@@ -8399,6 +8572,8 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
   def time(*names, **options); end
 
   def timestamp(*names, **options); end
+
+  def timestamps(**options); end
 
   def virtual(*names, **options); end
 end
@@ -8560,6 +8735,12 @@ end
 module ActiveRecord::ConnectionHandling
 end
 
+class ActiveRecord::ConnectionTimeoutError
+end
+
+class ActiveRecord::ConnectionTimeoutError
+end
+
 module ActiveRecord::Core
   def ==(comparison_object); end
 
@@ -8692,6 +8873,9 @@ class ActiveRecord::DeleteRestrictionError
   def initialize(name=T.unsafe(nil)); end
 end
 
+class ActiveRecord::DeleteRestrictionError
+end
+
 module ActiveRecord::DynamicMatchers
 end
 
@@ -8740,6 +8924,9 @@ class ActiveRecord::EagerLoadPolymorphicError
   def initialize(reflection=T.unsafe(nil)); end
 end
 
+class ActiveRecord::EagerLoadPolymorphicError
+end
+
 module ActiveRecord::Enum
   def enum(*args, **kwargs); end
 
@@ -8761,6 +8948,12 @@ end
 
 module ActiveRecord::Enum
   def self.extended(base); end
+end
+
+class ActiveRecord::ExclusiveConnectionTimeoutError
+end
+
+class ActiveRecord::ExclusiveConnectionTimeoutError
 end
 
 module ActiveRecord::Explain
@@ -8864,32 +9057,83 @@ class ActiveRecord::HasManyThroughAssociationNotFoundError
   def initialize(owner_class_name=T.unsafe(nil), reflection=T.unsafe(nil)); end
 end
 
+class ActiveRecord::HasManyThroughAssociationNotFoundError
+end
+
 class ActiveRecord::HasManyThroughAssociationPointlessSourceTypeError
   def initialize(owner_class_name=T.unsafe(nil), reflection=T.unsafe(nil), source_reflection=T.unsafe(nil)); end
+end
+
+class ActiveRecord::HasManyThroughAssociationPointlessSourceTypeError
 end
 
 class ActiveRecord::HasManyThroughAssociationPolymorphicSourceError
   def initialize(owner_class_name=T.unsafe(nil), reflection=T.unsafe(nil), source_reflection=T.unsafe(nil)); end
 end
 
+class ActiveRecord::HasManyThroughAssociationPolymorphicSourceError
+end
+
 class ActiveRecord::HasManyThroughAssociationPolymorphicThroughError
   def initialize(owner_class_name=T.unsafe(nil), reflection=T.unsafe(nil)); end
+end
+
+class ActiveRecord::HasManyThroughAssociationPolymorphicThroughError
+end
+
+class ActiveRecord::HasManyThroughCantAssociateThroughHasOneOrManyReflection
+end
+
+class ActiveRecord::HasManyThroughCantAssociateThroughHasOneOrManyReflection
+end
+
+class ActiveRecord::HasManyThroughNestedAssociationsAreReadonly
+end
+
+class ActiveRecord::HasManyThroughNestedAssociationsAreReadonly
 end
 
 class ActiveRecord::HasManyThroughOrderError
   def initialize(owner_class_name=T.unsafe(nil), reflection=T.unsafe(nil), through_reflection=T.unsafe(nil)); end
 end
 
+class ActiveRecord::HasManyThroughOrderError
+end
+
 class ActiveRecord::HasManyThroughSourceAssociationNotFoundError
   def initialize(reflection=T.unsafe(nil)); end
+end
+
+class ActiveRecord::HasManyThroughSourceAssociationNotFoundError
 end
 
 class ActiveRecord::HasOneAssociationPolymorphicThroughError
   def initialize(owner_class_name=T.unsafe(nil), reflection=T.unsafe(nil)); end
 end
 
+class ActiveRecord::HasOneAssociationPolymorphicThroughError
+end
+
 class ActiveRecord::HasOneThroughCantAssociateThroughCollection
   def initialize(owner_class_name=T.unsafe(nil), reflection=T.unsafe(nil), through_reflection=T.unsafe(nil)); end
+end
+
+class ActiveRecord::HasOneThroughCantAssociateThroughCollection
+end
+
+class ActiveRecord::HasOneThroughCantAssociateThroughHasOneOrManyReflection
+end
+
+class ActiveRecord::HasOneThroughCantAssociateThroughHasOneOrManyReflection
+end
+
+class ActiveRecord::HasOneThroughNestedAssociationsAreReadonly
+end
+
+class ActiveRecord::HasOneThroughNestedAssociationsAreReadonly
+end
+
+module ActiveRecord::Inheritance
 end
 
 module ActiveRecord::Inheritance
@@ -9018,6 +9262,9 @@ class ActiveRecord::InverseOfAssociationNotFoundError
   def initialize(reflection=T.unsafe(nil), associated_class=T.unsafe(nil)); end
 end
 
+class ActiveRecord::InverseOfAssociationNotFoundError
+end
+
 module ActiveRecord::LegacyYamlAdapter
 end
 
@@ -9062,6 +9309,11 @@ end
 
 module ActiveRecord::Locking::Pessimistic
   def lock!(lock=T.unsafe(nil)); end
+
+  def with_lock(lock=T.unsafe(nil)); end
+end
+
+module ActiveRecord::Locking::Pessimistic
 end
 
 class ActiveRecord::LogSubscriber
@@ -9406,11 +9658,55 @@ module ActiveRecord::NullRelation
 end
 
 module ActiveRecord::Persistence
+  def becomes(klass); end
+
+  def becomes!(klass); end
+
+  def decrement(attribute, by=T.unsafe(nil)); end
+
+  def decrement!(attribute, by=T.unsafe(nil), touch: T.unsafe(nil)); end
+
   def delete(); end
 
   def destroy(); end
 
   def destroy!(); end
+
+  def destroyed?(); end
+
+  def increment(attribute, by=T.unsafe(nil)); end
+
+  def increment!(attribute, by=T.unsafe(nil), touch: T.unsafe(nil)); end
+
+  def new_record?(); end
+
+  def persisted?(); end
+
+  def reload(options=T.unsafe(nil)); end
+
+  def save(*args, &block); end
+
+  def save!(*args, &block); end
+
+  def toggle(attribute); end
+
+  def toggle!(attribute); end
+
+  def touch(*names, time: T.unsafe(nil)); end
+
+  def update(attributes); end
+
+  def update!(attributes); end
+
+  def update_attribute(name, value); end
+
+  def update_attributes(*args, &block); end
+
+  def update_attributes!(*args, &block); end
+
+  def update_column(name, value); end
+
+  def update_columns(attributes); end
 end
 
 module ActiveRecord::Persistence
@@ -9957,6 +10253,9 @@ class ActiveRecord::RecordInvalid
   def record(); end
 end
 
+class ActiveRecord::RecordInvalid
+end
+
 module ActiveRecord::Reflection
   extend ::ActiveStorage::Reflection::ReflectionExtension
 end
@@ -10147,6 +10446,9 @@ class ActiveRecord::Result
   def to_hash(); end
 end
 
+class ActiveRecord::Result
+end
+
 class ActiveRecord::RuntimeRegistry
   def connection_handler(); end
 
@@ -10177,6 +10479,10 @@ end
 
 class ActiveRecord::Schema
   def define(info, &block); end
+end
+
+class ActiveRecord::Schema
+  def self.define(info=T.unsafe(nil), &block); end
 end
 
 class ActiveRecord::SchemaMigration
@@ -10229,7 +10535,13 @@ class ActiveRecord::SchemaMigration
 end
 
 module ActiveRecord::Scoping::Default
+end
+
+module ActiveRecord::Scoping::Default
   extend ::ActiveSupport::Concern
+end
+
+module ActiveRecord::Scoping::Named
 end
 
 module ActiveRecord::Scoping::Named
@@ -10636,8 +10948,14 @@ class ActiveRecord::ThroughCantAssociateThroughHasOneOrManyReflection
   def initialize(owner=T.unsafe(nil), reflection=T.unsafe(nil)); end
 end
 
+class ActiveRecord::ThroughCantAssociateThroughHasOneOrManyReflection
+end
+
 class ActiveRecord::ThroughNestedAssociationsAreReadonly
   def initialize(owner=T.unsafe(nil), reflection=T.unsafe(nil)); end
+end
+
+class ActiveRecord::ThroughNestedAssociationsAreReadonly
 end
 
 module ActiveRecord::Timestamp
@@ -10695,6 +11013,9 @@ end
 module ActiveRecord::Translation
 end
 
+module ActiveRecord::Type
+end
+
 class ActiveRecord::Type::AdapterSpecificRegistry
   def add_modifier(options, klass, **args); end
 end
@@ -10705,6 +11026,8 @@ end
 ActiveRecord::Type::BigInteger = ActiveModel::Type::BigInteger
 
 ActiveRecord::Type::Binary = ActiveModel::Type::Binary
+
+ActiveRecord::Type::Boolean = ActiveModel::Type::Boolean
 
 class ActiveRecord::Type::Date
   include ::ActiveRecord::Type::Internal::Timezone
@@ -10868,6 +11191,8 @@ end
 class ActiveRecord::Type::UnsignedInteger
 end
 
+ActiveRecord::Type::Value = ActiveModel::Type::Value
+
 module ActiveRecord::Type
   def self.add_modifier(*args, &block); end
 
@@ -10908,6 +11233,14 @@ end
 module ActiveRecord::TypeCaster
 end
 
+class ActiveRecord::TypeConflictError
+end
+
+class ActiveRecord::TypeConflictError
+end
+
+ActiveRecord::UnknownAttributeError = ActiveModel::UnknownAttributeError
+
 module ActiveRecord::VERSION
   MAJOR = ::T.let(nil, ::T.untyped)
   MINOR = ::T.let(nil, ::T.untyped)
@@ -10917,6 +11250,10 @@ module ActiveRecord::VERSION
 end
 
 module ActiveRecord::Validations
+  def save(options=T.unsafe(nil)); end
+
+  def save!(options=T.unsafe(nil)); end
+
   def valid?(context=T.unsafe(nil)); end
 
   def validate(context=T.unsafe(nil)); end
