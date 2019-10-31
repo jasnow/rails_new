@@ -12363,6 +12363,7 @@ class Array
   def to_csv(**options); end
 
   def to_h(); end
+
 end
 
 class Array
@@ -14374,8 +14375,6 @@ class Hash
 
   def default_proc=(default_proc); end
 
-  def dig(*_); end
-
   def fetch_values(*_); end
 
   def flatten(*_); end
@@ -14404,7 +14403,7 @@ class Hash
 end
 
 class Hash
-  def self.try_convert(_); end
+  def self.from_trusted_xml(xml); end
 end
 
 HashWithIndifferentAccess = ActiveSupport::HashWithIndifferentAccess
@@ -14955,8 +14954,6 @@ class IO
   def self.default_console_size(); end
 
   def self.foreach(*_); end
-
-  def self.pipe(*_); end
 end
 
 class IPAddr
@@ -16209,6 +16206,8 @@ module Minitest::Assertions
 
   def assert_output(stdout=T.unsafe(nil), stderr=T.unsafe(nil)); end
 
+  def assert_path_exists(path, msg=T.unsafe(nil)); end
+
   def assert_predicate(o1, op, msg=T.unsafe(nil)); end
 
   def assert_respond_to(obj, meth, msg=T.unsafe(nil)); end
@@ -16228,6 +16227,8 @@ module Minitest::Assertions
   def diff(exp, act); end
 
   def exception_details(e, msg); end
+
+  def fail_after(y, m, d, msg); end
 
   def flunk(msg=T.unsafe(nil)); end
 
@@ -16251,6 +16252,8 @@ module Minitest::Assertions
 
   def refute_operator(o1, op, o2=T.unsafe(nil), msg=T.unsafe(nil)); end
 
+  def refute_path_exists(path, msg=T.unsafe(nil)); end
+
   def refute_predicate(o1, op, msg=T.unsafe(nil)); end
 
   def refute_respond_to(obj, meth, msg=T.unsafe(nil)); end
@@ -16259,7 +16262,11 @@ module Minitest::Assertions
 
   def skip(msg=T.unsafe(nil), bt=T.unsafe(nil)); end
 
+  def skip_until(y, m, d, msg); end
+
   def skipped?(); end
+
+  def things_to_diff(exp, act); end
   E = ::T.let(nil, ::T.untyped)
   UNDEFINED = ::T.let(nil, ::T.untyped)
 end
@@ -16276,6 +16283,8 @@ module Minitest::Guard
   def maglev?(platform=T.unsafe(nil)); end
 
   def mri?(platform=T.unsafe(nil)); end
+
+  def osx?(platform=T.unsafe(nil)); end
 
   def rubinius?(platform=T.unsafe(nil)); end
 
@@ -16604,6 +16613,7 @@ end
 
 class Net::IMAP
   def open_timeout(); end
+
   RESPONSE_ERRORS = ::T.let(nil, ::T.untyped)
 end
 
@@ -19615,6 +19625,7 @@ end
 
 module Random::Formatter
   def alphanumeric(n=T.unsafe(nil)); end
+
   ALPHANUMERIC = ::T.let(nil, ::T.untyped)
 end
 
@@ -22025,6 +22036,7 @@ module URI
   def self.encode_www_form_component(str, enc=T.unsafe(nil)); end
 
   def self.get_encoding(label); end
+
 end
 
 class UnboundMethod
