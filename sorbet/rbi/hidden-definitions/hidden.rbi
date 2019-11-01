@@ -1725,8 +1725,65 @@ end
 class ActionController::InvalidCrossOriginRequest
 end
 
+module ActionController::Live
+  def new_controller_thread(); end
+
+  def process(name); end
+
+  def response_body=(body); end
+end
+
+class ActionController::Live::Buffer
+  include ::MonitorMixin
+  def call_on_error(); end
+
+  def connected?(); end
+
+  def ignore_disconnect(); end
+
+  def ignore_disconnect=(ignore_disconnect); end
+
+  def initialize(response); end
+
+  def on_error(&block); end
+end
+
+class ActionController::Live::Buffer
+end
+
+module ActionController::Live::ClassMethods
+  def make_response!(request); end
+end
+
+module ActionController::Live::ClassMethods
+end
+
+class ActionController::Live::ClientDisconnected
+end
+
+class ActionController::Live::ClientDisconnected
+end
+
+class ActionController::Live::Response
+end
+
+class ActionController::Live::Response
+end
+
 class ActionController::Live::SSE
+  def close(); end
+
+  def initialize(stream, options=T.unsafe(nil)); end
+
+  def write(object, options=T.unsafe(nil)); end
   PERMITTED_OPTIONS = ::T.let(nil, ::T.untyped)
+end
+
+class ActionController::Live::SSE
+end
+
+module ActionController::Live
+  extend ::ActiveSupport::Concern
 end
 
 class ActionController::LogSubscriber
@@ -2439,7 +2496,11 @@ module ActionDispatch::Http::FilterParameters
 end
 
 module ActionDispatch::Http::FilterRedirect
+  def filtered_location(); end
   FILTERED = ::T.let(nil, ::T.untyped)
+end
+
+module ActionDispatch::Http::FilterRedirect
 end
 
 class ActionDispatch::Http::Headers
@@ -2787,12 +2848,154 @@ class ActionDispatch::RequestId
 end
 
 class ActionDispatch::Response
+  include ::Rack::Response::Helpers
+  include ::ActionDispatch::Http::FilterRedirect
+  include ::ActionDispatch::Http::Cache::Response
+  include ::MonitorMixin
+  def [](*args, &block); end
+
+  def []=(*args, &block); end
+
+  def _cache_control(); end
+
+  def _cache_control=(v); end
+
+  def abort(); end
+
+  def await_commit(); end
+
+  def await_sent(); end
+
+  def body(); end
+
+  def body=(body); end
+
+  def body_parts(); end
+
+  def charset(); end
+
+  def charset=(charset); end
+
+  def close(); end
+
+  def code(); end
+
+  def commit!(); end
+
+  def committed?(); end
+
+  def content_type=(content_type); end
+
+  def cookies(); end
+
+  def default_charset(); end
+
+  def default_charset=(obj); end
+
+  def default_headers(); end
+
+  def default_headers=(obj); end
+
+  def delete_header(key); end
+
+  def each(&block); end
+
+  def get_header(key); end
+
+  def has_header?(key); end
+
+  def header(); end
+
+  def headers(); end
+
+  def initialize(status=T.unsafe(nil), header=T.unsafe(nil), body=T.unsafe(nil)); end
+
+  def message(); end
+
+  def prepare!(); end
+
+  def redirect_url(); end
+
+  def request(); end
+
+  def request=(request); end
+
+  def reset_body!(); end
+
+  def response_code(); end
+
+  def return_only_media_type_on_content_type(); end
+
+  def return_only_media_type_on_content_type=(obj); end
+
+  def send_file(path); end
+
+  def sending!(); end
+
+  def sending?(); end
+
+  def sending_file=(v); end
+
+  def sent!(); end
+
+  def sent?(); end
+
+  def set_header(key, v); end
+
+  def status(); end
+
+  def status=(status); end
+
+  def status_message(); end
+
+  def stream(); end
+
+  def to_a(); end
+
+  def write(string); end
   CONTENT_TYPE = ::T.let(nil, ::T.untyped)
   CONTENT_TYPE_PARSER = ::T.let(nil, ::T.untyped)
   LOCATION = ::T.let(nil, ::T.untyped)
   NO_CONTENT_CODES = ::T.let(nil, ::T.untyped)
   NullContentTypeHeader = ::T.let(nil, ::T.untyped)
   SET_COOKIE = ::T.let(nil, ::T.untyped)
+end
+
+class ActionDispatch::Response::Buffer
+  def abort(); end
+
+  def body(); end
+
+  def close(); end
+
+  def closed?(); end
+
+  def each(&block); end
+
+  def initialize(response, buf); end
+
+  def write(string); end
+end
+
+class ActionDispatch::Response::Buffer
+end
+
+class ActionDispatch::Response
+  def self.create(status=T.unsafe(nil), header=T.unsafe(nil), body=T.unsafe(nil), default_headers: T.unsafe(nil)); end
+
+  def self.default_charset(); end
+
+  def self.default_charset=(obj); end
+
+  def self.default_headers(); end
+
+  def self.default_headers=(obj); end
+
+  def self.merge_default_headers(original, default); end
+
+  def self.return_only_media_type_on_content_type(); end
+
+  def self.return_only_media_type_on_content_type=(obj); end
 end
 
 module ActionDispatch::Routing
@@ -6514,15 +6717,7 @@ class ActiveRecord::AssociationNotFoundError
 end
 
 class ActiveRecord::AssociationRelation
-  def build(*args, &block); end
-
-  def create(*args, &block); end
-
-  def create!(*args, &block); end
-
   def initialize(klass, association); end
-
-  def new(*args, &block); end
 
   def proxy_association(); end
 end
@@ -8518,7 +8713,7 @@ module ActiveRecord::ConnectionHandling
 
   def connected?(); end
 
-  def connected_to(database: T.unsafe(nil), role: T.unsafe(nil), &blk); end
+  def connected_to(database: T.unsafe(nil), role: T.unsafe(nil), prevent_writes: T.unsafe(nil), &blk); end
 
   def connected_to?(role:); end
 
@@ -11260,7 +11455,11 @@ class ActiveStorage::Blob
 
   def self.build_after_upload(io:, filename:, content_type: T.unsafe(nil), metadata: T.unsafe(nil), identify: T.unsafe(nil)); end
 
-  def self.create_after_upload!(io:, filename:, content_type: T.unsafe(nil), metadata: T.unsafe(nil), identify: T.unsafe(nil)); end
+  def self.create_after_unfurling!(io:, filename:, content_type: T.unsafe(nil), metadata: T.unsafe(nil), identify: T.unsafe(nil), record: T.unsafe(nil)); end
+
+  def self.create_after_upload!(io:, filename:, content_type: T.unsafe(nil), metadata: T.unsafe(nil), identify: T.unsafe(nil), record: T.unsafe(nil)); end
+
+  def self.create_and_upload!(io:, filename:, content_type: T.unsafe(nil), metadata: T.unsafe(nil), identify: T.unsafe(nil), record: T.unsafe(nil)); end
 
   def self.create_before_direct_upload!(filename:, byte_size:, checksum:, content_type: T.unsafe(nil), metadata: T.unsafe(nil)); end
 
@@ -16531,8 +16730,6 @@ class Net::HTTP
   ENVIRONMENT_VARIABLE_IS_MULTIUSER_SAFE = ::T.let(nil, ::T.untyped)
 end
 
-Net::HTTP::ProxyMod = Net::HTTP::ProxyDelta
-
 class Net::HTTPAlreadyReported
   HAS_BODY = ::T.let(nil, ::T.untyped)
 end
@@ -16546,9 +16743,13 @@ Net::HTTPClientErrorCode = Net::HTTPClientError
 
 Net::HTTPFatalErrorCode = Net::HTTPClientError
 
-Net::HTTPInformation::EXCEPTION_TYPE = Net::HTTPError
+class Net::HTTPInformation
+end
 
-Net::HTTPInformationCode = Net::HTTPInformation
+Net::HTTPInformationCode::EXCEPTION_TYPE = Net::HTTPError
+
+class Net::HTTPInformation
+end
 
 class Net::HTTPLoopDetected
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -16596,7 +16797,15 @@ Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
 
 Net::HTTPServerErrorCode = Net::HTTPServerError
 
-Net::HTTPSession = Net::HTTP
+class Net::HTTP
+end
+
+Net::HTTPSession::ProxyDelta = Net::HTTP::ProxyDelta
+
+Net::HTTPSession::ProxyMod = Net::HTTP::ProxyDelta
+
+class Net::HTTP
+end
 
 Net::HTTPSuccess::EXCEPTION_TYPE = Net::HTTPError
 

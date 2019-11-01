@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/activerecord/all/activerecord.rbi
 #
-# activerecord-6.0.0
+# activerecord-6.0.1.rc1
 module Arel
   def self.arel_node?(value); end
   def self.fetch_attribute(value); end
@@ -146,7 +146,7 @@ end
 module Arel::Attributes
   def self.for(column); end
 end
-class Anonymous_Struct_3 < Struct
+class Anonymous_Struct_2 < Struct
   def name; end
   def name=(_); end
   def relation; end
@@ -156,7 +156,7 @@ class Anonymous_Struct_3 < Struct
   def self.members; end
   def self.new(*arg0); end
 end
-class Arel::Attributes::Attribute < Anonymous_Struct_3
+class Arel::Attributes::Attribute < Anonymous_Struct_2
   def able_to_type_cast?; end
   def lower; end
   def type_cast_for_database(value); end
@@ -635,7 +635,7 @@ class Arel::Visitors::Dot::Node
   def name; end
   def name=(arg0); end
 end
-class Anonymous_Struct_4 < Struct
+class Anonymous_Struct_3 < Struct
   def from; end
   def from=(_); end
   def name; end
@@ -647,7 +647,7 @@ class Anonymous_Struct_4 < Struct
   def to; end
   def to=(_); end
 end
-class Arel::Visitors::Dot::Edge < Anonymous_Struct_4
+class Arel::Visitors::Dot::Edge < Anonymous_Struct_3
 end
 class Arel::Visitors::IBM_DB < Arel::Visitors::ToSql
   def collect_optimizer_hints(o, collector); end
@@ -1442,6 +1442,7 @@ class ActiveRecord::ConnectionAdapters::AbstractAdapter
   def discard!; end
   def disconnect!; end
   def enable_extension(name); end
+  def exec_insert_all(*arg0); end
   def expire; end
   def extensions; end
   def extract_limit(sql_type); end
@@ -1465,6 +1466,7 @@ class ActiveRecord::ConnectionAdapters::AbstractAdapter
   def pool=(arg0); end
   def prefetch_primary_key?(table_name = nil); end
   def prepared_statements; end
+  def prepared_statements_disabled_cache; end
   def preventing_writes?; end
   def raw_connection; end
   def reconnect!; end
@@ -1499,6 +1501,7 @@ class ActiveRecord::ConnectionAdapters::AbstractAdapter
   def supports_bulk_alter?; end
   def supports_comments?; end
   def supports_comments_in_create?; end
+  def supports_common_table_expressions?; end
   def supports_datetime_with_precision?; end
   def supports_ddl_transactions?; end
   def supports_explain?; end
@@ -1642,6 +1645,7 @@ module ActiveRecord::ConnectionAdapters::DatabaseStatements
   def enable_lazy_transactions!(*args, &block); end
   def exec_delete(sql, name = nil, binds = nil); end
   def exec_insert(sql, name = nil, binds = nil, pk = nil, sequence_name = nil); end
+  def exec_insert_all(sql, name); end
   def exec_query(sql, name = nil, binds = nil, prepare: nil); end
   def exec_rollback_db_transaction; end
   def exec_update(sql, name = nil, binds = nil); end
