@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/site_ruby/all/site_ruby.rbi
 #
-# site_ruby-2.5.0
+# site_ruby-2.6.0
 module Kernel
   def self.gem(dep, *reqs); end
 end

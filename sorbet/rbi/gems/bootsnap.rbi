@@ -177,6 +177,19 @@ module Bootsnap::CompileCache::Native
   def self.coverage_running?; end
   def self.fetch(arg0, arg1, arg2); end
 end
+module Bootsnap::CompileCache::ISeq
+  def self.cache_dir; end
+  def self.cache_dir=(arg0); end
+  def self.compile_option_updated; end
+  def self.input_to_output(_); end
+  def self.input_to_storage(_, path); end
+  def self.install!(cache_dir); end
+  def self.storage_to_output(binary); end
+end
+module Bootsnap::CompileCache::ISeq::InstructionSequenceMixin
+  def compile_option=(hash); end
+  def load_iseq(path); end
+end
 module Bootsnap::CompileCache::YAML
   def self.input_to_output(data); end
   def self.input_to_storage(contents, _); end
