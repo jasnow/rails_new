@@ -8,13 +8,13 @@
 
  1. Run **gem install rails -pre** if needed.
  2. Run **rails _6.0.0.rc2_ new rails_6_new.**
- 3. Run **cd rails_6_new; echo 'rvm use 2.6.5@ruby2.6-rails6.0 --create' > .rvmrc**
+ 3. Run **cd rails_6_new; echo 'rvm use 2.6.6@ruby2.6-rails6.0 --create' > .rvmrc**
  4. Created repo on Github and fixed .git/config. Run "git pull" to sync.
  5. Add .travis.yml file such as:
 ```
 language: ruby
 rvm:
-  - 2.6.5
+  - 2.6.6
 before_install: gem install bundler
 cache: bundler
 ```
