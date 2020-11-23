@@ -1,6 +1,6 @@
 # README
 
-* Ruby version: 2.6.x (latest)
+* Ruby version: 2.7.x (latest)
 
 * Rails version: 6.0.x (latest)
 
