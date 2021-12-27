@@ -7,8 +7,8 @@
 ## How to create this repo
 
  1. Run **gem install rails -pre** if needed.
- 2. Run **rails _6.1.4.4_ new rails_6_new.**
- 3. Run **cd rails_6_new; echo 'rvm use 3.0.3@ruby3.0-rails6.1 --create' > .rvmrc**
+ 2. Run **rails _6.1.4.4_ new rails_new.**
+ 3. Run **cd rails_new; echo 'rvm use 3.1.0@ruby3.1-rails6.1 --create' > .rvmrc**
  4. Created repo on Github and fixed .git/config. Run "git pull" to sync.
  5. Add .travis.yml file such as:
 ```
