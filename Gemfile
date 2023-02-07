@@ -19,6 +19,8 @@ group :development do
 end
 
 gem "standard", group: [:development, :test]
+gem "ruby_audit"
+gem "spektr"
 
 # HID: group :development, :test do
 # HID:  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
