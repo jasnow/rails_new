@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start
+
 # typed: strong
 # HID: ENV['RAILS_ENV'] ||= 'test'
 # HID: require_relative '../config/environment'
