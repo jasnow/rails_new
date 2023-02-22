@@ -1,20 +1,20 @@
 # README
 
-* Ruby version: 3.0.x (latest)
+* Ruby version: 3.2.1 (latest)
 
-* Rails version: 6.1.x (latest)
+* Rails version: 7.0.4.2 (latest)
 
 ## How to create this repo
 
  1. Run **gem install rails -pre** if needed.
- 2. Run **rails _6.1.4.4_ new rails_new.**
- 3. Run **cd rails_new; echo 'rvm use 3.1.0@ruby3.1-rails6.1 --create' > .rvmrc**
+ 2. Run **rails new rails_new.**
+ 3. Run **cd rails_new; echo 'rvm use 3.2.10@ruby3.2-rails7.0 --create' > .rvmrc**
  4. Created repo on Github and fixed .git/config. Run "git pull" to sync.
  5. Add .travis.yml file such as:
 ```
 language: ruby
 rvm:
-  - 3.0.3
+  - 3.2.1
 before_install: gem install bundler
 cache: bundler
 ```
