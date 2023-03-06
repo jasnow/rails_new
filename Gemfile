@@ -21,7 +21,6 @@ end
 gem "standard", group: [:development, :test]
 gem "ruby_audit"
 gem "spektr"
-gem 'simplecov', require: false, group: :test
 
 # HID: group :development, :test do
 # HID:  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -48,3 +47,5 @@ gem 'simplecov', require: false, group: :test
 # gem 'sorbet-rails'
 # gem 'dalli' # Needed by sorbet.
 # gem 'redis' # Needed by sorbet.
+
+gem 'simplecov', require: false, group: :test
