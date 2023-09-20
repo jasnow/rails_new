@@ -18,6 +18,6 @@ module Rails6New
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
-    config.active_record.legacy_connection_handling = false
+    config.active_support.cache_format_version = 7.0
   end
 end
