@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version")
 
 gem "rails", "7.2.0.beta2"
-gem 'net-pop', github: 'ruby/net-pop' # 6/28/2024: Required for RUBY 3.3.3
+gem 'net-pop', github: 'ruby/net-pop' # 6/28/2024: Required for RUBY 3.3.3+
 
 gem "sqlite3", "~> 1.4"
 gem "puma"
