@@ -5,7 +5,7 @@ ruby File.read(".ruby-version")
 
 gem "rails", "7.2.0"
 
-gem "sqlite3", "~> 1.4"
+gem "sqlite3"
 gem "puma"
 gem "sassc-rails"
 gem "webpacker"
