@@ -23,7 +23,7 @@ gem "ruby_audit"
 gem "spektr"
 
 # HID: group :development, :test do
-# HID:  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+# HID:  gem 'byebug', platforms: [:mri, :windows]
 # HID: end
 # HID:
 # HID:group :development do
