@@ -9,7 +9,7 @@ gem "sqlite3"
 gem "puma"
 gem "sassc-rails"
 gem "webpacker"
-gem "turbolinks", "5.2.0" # 3/11/2023: Locked down b/c of js.
+gem "turbolinks"
 gem "jbuilder"
 
 gem "bootsnap", require: false

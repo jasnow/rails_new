@@ -348,7 +348,7 @@ GEM
       pastel (~> 0.8)
       strings (~> 0.2.0)
       tty-screen (~> 0.8)
-    turbolinks (5.2.0)
+    turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
     tzinfo (2.0.6)
@@ -392,7 +392,7 @@ DEPENDENCIES
   spektr
   sqlite3
   standard
-  turbolinks (= 5.2.0)
+  turbolinks
   webpacker
 
 CHECKSUMS
@@ -539,7 +539,7 @@ CHECKSUMS
   tty-screen (0.8.2) sha256=c090652115beae764336c28802d633f204fb84da93c6a968aa5d8e319e819b50
   tty-spinner (0.9.3) sha256=0e036f047b4ffb61f2aa45f5a770ec00b4d04130531558a94bfc5b192b570542
   tty-table (0.12.0) sha256=fdc27a4750835c1a16efe19a0b857e3ced3652cc7aceafe6dca94908965b9939
-  turbolinks (5.2.0) sha256=f94601b8d23f587b73bfd81b2dd054ce3a8bc6d70e8488f89dcd30f5975da149
+  turbolinks (5.2.1) sha256=5fea5889c4e2a78a5bd9abda3860c565342b50c6e2593697d5558a08e15cce9c
   turbolinks-source (5.2.0) sha256=362a41fa851a22b0f15cf8f944b6c7c5788f645dc1f61ae25478bb25c3bc85d4
   tzinfo (2.0.6) sha256=8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b
   unicode-display_width (2.6.0) sha256=12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a
