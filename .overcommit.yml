@@ -31,3 +31,8 @@
 #
 #  IndexTags:
 #    enabled: true # Generate a tags file with `ctags` each time HEAD changes
+PostCommit:
+  GitPkgsReindex:
+    enabled: true
+    required_executable: 'git'
+    command: ['sh', '-c', 'd="$(git rev-parse --git-dir)"; [ -d "$d/rebase-merge" ] || [ -d "$d/rebase-apply" ] || git pkgs reindex --quiet 2>/dev/null || true']
